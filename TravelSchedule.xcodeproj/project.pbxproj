@@ -71,11 +71,11 @@
 		94C4EBD72EC5F50D0086C35E /* TravelSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				94FBFF282ECB0D6400F2EBFB /* Services */,
 				94C4EBDC2EC5F7260086C35E /* App */,
+				94FBFF2F2ECB15DA00F2EBFB /* Views */,
+				94FBFF282ECB0D6400F2EBFB /* Services */,
 				94C4EBD32EC5F50D0086C35E /* Preview Content */,
 				94C4EBDD2EC5F7A60086C35E /* Resources */,
-				94C4EBD52EC5F50D0086C35E /* ContentView.swift */,
 			);
 			path = TravelSchedule;
 			sourceTree = "<group>";
@@ -113,6 +113,14 @@
 				94FBFF292ECB0D8400F2EBFB /* NearestStationsService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		94FBFF2F2ECB15DA00F2EBFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94C4EBD52EC5F50D0086C35E /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
