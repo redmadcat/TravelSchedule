@@ -11,6 +11,10 @@
 		94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD42EC5F50D0086C35E /* Assets.xcassets */; };
 		94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD52EC5F50D0086C35E /* ContentView.swift */; };
 		94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD62EC5F50D0086C35E /* TravelScheduleApp.swift */; };
+		94FBFF1D2ECB02DE00F2EBFB /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 94FBFF1C2ECB02DE00F2EBFB /* OpenAPIRuntime */; };
+		94FBFF202ECB030D00F2EBFB /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 94FBFF1F2ECB030D00F2EBFB /* OpenAPIURLSession */; };
+		94FBFF232ECB040500F2EBFB /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 94FBFF222ECB040500F2EBFB /* openapi.yaml */; };
+		94FBFF252ECB043F00F2EBFB /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 94FBFF242ECB042F00F2EBFB /* openapi-generator-config.yaml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,8 @@
 		94C4EBD42EC5F50D0086C35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C4EBD52EC5F50D0086C35E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94C4EBD62EC5F50D0086C35E /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
+		94FBFF222ECB040500F2EBFB /* openapi.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
+		94FBFF242ECB042F00F2EBFB /* openapi-generator-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FBFF1D2ECB02DE00F2EBFB /* OpenAPIRuntime in Frameworks */,
+				94FBFF202ECB030D00F2EBFB /* OpenAPIURLSession in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +86,19 @@
 		94C4EBDD2EC5F7A60086C35E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				94FBFF212ECB03F800F2EBFB /* yaml */,
 				94C4EBD42EC5F50D0086C35E /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		94FBFF212ECB03F800F2EBFB /* yaml */ = {
+			isa = PBXGroup;
+			children = (
+				94FBFF242ECB042F00F2EBFB /* openapi-generator-config.yaml */,
+				94FBFF222ECB040500F2EBFB /* openapi.yaml */,
+			);
+			path = yaml;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,9 +115,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				94FBFF1A2ECB02B300F2EBFB /* PBXTargetDependency */,
 			);
 			name = TravelSchedule;
 			packageProductDependencies = (
+				94FBFF1C2ECB02DE00F2EBFB /* OpenAPIRuntime */,
+				94FBFF1F2ECB030D00F2EBFB /* OpenAPIURLSession */,
 			);
 			productName = TravelSchedule;
 			productReference = 94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */;
@@ -129,6 +150,11 @@
 			);
 			mainGroup = 94C4EBB82EC5F0A00086C35E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				94FBFF162ECB028800F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				94FBFF1B2ECB02DE00F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+				94FBFF1E2ECB030D00F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 94C4EBC22EC5F0A00086C35E /* Products */;
 			projectDirPath = "";
@@ -145,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */,
+				94FBFF252ECB043F00F2EBFB /* openapi-generator-config.yaml in Resources */,
 				94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */,
+				94FBFF232ECB040500F2EBFB /* openapi.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +190,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94FBFF1A2ECB02B300F2EBFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 94FBFF192ECB02B300F2EBFB /* OpenAPIGenerator */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		94C4EBCD2EC5F0AE0086C35E /* Debug */ = {
@@ -365,6 +400,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94FBFF162ECB028800F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.3;
+			};
+		};
+		94FBFF1B2ECB02DE00F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.3;
+			};
+		};
+		94FBFF1E2ECB030D00F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94FBFF192ECB02B300F2EBFB /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94FBFF162ECB028800F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			productName = "plugin:OpenAPIGenerator";
+		};
+		94FBFF1C2ECB02DE00F2EBFB /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94FBFF1B2ECB02DE00F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+		94FBFF1F2ECB030D00F2EBFB /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94FBFF1E2ECB030D00F2EBFB /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94C4EBB92EC5F0A00086C35E /* Project object */;
 }
