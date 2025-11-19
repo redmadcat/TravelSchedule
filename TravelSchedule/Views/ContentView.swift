@@ -21,6 +21,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             testFetchStations()
+            testFetchCopyright()
         }
     }
     
@@ -41,6 +42,25 @@ struct ContentView: View {
                     distance: 50
                 )
                 print("Successfully fetched stations: \(stations)")
+            } catch {
+                print("Error fetching stations: \(error)")
+            }
+        }
+    }
+    
+    func testFetchCopyright() {
+        Task {
+            do {
+                let client = Client(
+                    serverURL: try Servers.Server1.url(),
+                    transport: URLSessionTransport()
+                )
+                
+                let service = CopyrightService(client: client, apikey: apikey)
+                
+                print("Fetching copyright...")
+                let copyright = try await service.getCopyright()
+                print("Successfully fetched copyright: \(copyright)")
             } catch {
                 print("Error fetching stations: \(error)")
             }
