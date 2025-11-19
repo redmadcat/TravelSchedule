@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */; };
+		941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59492ECDB1A100B99489 /* CopyrightService.swift */; };
 		94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */; };
 		94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD42EC5F50D0086C35E /* Assets.xcassets */; };
 		94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD52EC5F50D0086C35E /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightServiceProtocol.swift; sourceTree = "<group>"; };
+		941B59492ECDB1A100B99489 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
 		94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94C4EBD42EC5F50D0086C35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		94FBFF282ECB0D6400F2EBFB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				941B59492ECDB1A100B99489 /* CopyrightService.swift */,
+				941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */,
 				94FBFF2B2ECB0DCB00F2EBFB /* NearestStationsServiceProtocol.swift */,
 				94FBFF292ECB0D8400F2EBFB /* NearestStationsService.swift */,
 			);
@@ -208,8 +214,10 @@
 			files = (
 				94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */,
 				94FBFF2C2ECB0DDB00F2EBFB /* NearestStationsServiceProtocol.swift in Sources */,
+				941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */,
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
 				94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */,
+				941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
