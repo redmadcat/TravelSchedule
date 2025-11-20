@@ -8,13 +8,9 @@
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-final class CopyrightService: CopyrightServiceProtocol {
-    private let client: Client
-    private let apikey: String
-    
-    init(client: Client, apikey: String) {
-        self.client = client
-        self.apikey = apikey
+final class CopyrightService: BaseSerivce, CopyrightServiceProtocol {
+    override init(client: Client, apikey: String) {
+        super.init(client: client, apikey: apikey)
     }
         
     // MARK: - CopyrightServiceProtocol
