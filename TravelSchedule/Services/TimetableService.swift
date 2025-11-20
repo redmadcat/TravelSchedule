@@ -9,10 +9,6 @@ import OpenAPIRuntime
 import OpenAPIURLSession
 
 final class TimetableService: BaseSerivce, TimetableServiceProtocol {
-    override init(client: Client, apikey: String) {
-        super.init(client: client, apikey: apikey)
-    }
-    
     // MARK: - TimetableServiceProtocol
     func getNearestStations(lat: Double, lng: Double, distance: Int) async throws -> NearestStations {
         try await NearestStationsService(client: client, apikey: apikey)
@@ -22,6 +18,11 @@ final class TimetableService: BaseSerivce, TimetableServiceProtocol {
     func search(from: String, to: String, date: String) async throws -> Segments {
         try await SearchService(client: client, apikey: apikey)
             .search(from: from, to: to, date: date)
+    }
+    
+    func getStationSchedule(station: String, date: String) async throws -> ScheduleResponse {
+        try await ScheduleService(client: client, apikey: apikey)
+            .getStationSchedule(station: station, date: date)
     }
     
     func getCopyright() async throws -> Copyright {

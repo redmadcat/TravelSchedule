@@ -8,6 +8,6 @@
 protocol TimetableServiceProtocol:
     NearestStationsServiceProtocol,
     SearchServiceProtocol,
+    ScheduleServiceProtocol,
     CopyrightServiceProtocol {
-    
 }
