@@ -10,5 +10,6 @@ protocol TimetableServiceProtocol:
     SearchServiceProtocol,
     ScheduleServiceProtocol,
     ThreadServiceProtocol,
+    NearestSettlementServiceProtocol,
     CopyrightServiceProtocol {
 }

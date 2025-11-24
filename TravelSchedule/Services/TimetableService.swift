@@ -30,6 +30,10 @@ final class TimetableService: BaseSerivce, TimetableServiceProtocol {
             .getRouteStations(uid: uid, date: date)
     }
     
+    func getNearestCity(lat: Double, lng: Double) async throws -> NearestCityResponse {
+        try await NearestSettlementService(client: client, apikey: apikey).getNearestCity(lat: lat, lng: lng)
+    }
+    
     func getCopyright() async throws -> Copyright {
         try await CopyrightService(client: client, apikey: apikey).getCopyright()
     }
