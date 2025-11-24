@@ -16,6 +16,8 @@
 		9461FFA82ECF414B0083B7D9 /* ScheduleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFA72ECF41430083B7D9 /* ScheduleServiceProtocol.swift */; };
 		9461FFAE2ECF49F70083B7D9 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFAD2ECF49EE0083B7D9 /* ThreadService.swift */; };
 		9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFAF2ECF4A0C0083B7D9 /* ThreadServiceProtocol.swift */; };
+		9461FFBB2ED42E800083B7D9 /* NearestSettlementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFB82ED42E710083B7D9 /* NearestSettlementService.swift */; };
+		9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */; };
 		94B671302ECF182B001E271D /* TimetableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6712F2ECF1820001E271D /* TimetableService.swift */; };
 		94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */; };
 		94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		9461FFA72ECF41430083B7D9 /* ScheduleServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleServiceProtocol.swift; sourceTree = "<group>"; };
 		9461FFAD2ECF49EE0083B7D9 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		9461FFAF2ECF4A0C0083B7D9 /* ThreadServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadServiceProtocol.swift; sourceTree = "<group>"; };
+		9461FFB82ED42E710083B7D9 /* NearestSettlementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestSettlementService.swift; sourceTree = "<group>"; };
+		9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestSettlementServiceProtocol.swift; sourceTree = "<group>"; };
 		94B6712F2ECF1820001E271D /* TimetableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableService.swift; sourceTree = "<group>"; };
 		94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableServiceProtocol.swift; sourceTree = "<group>"; };
 		94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,9 +135,11 @@
 		94FBFF282ECB0D6400F2EBFB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9461FF962ECF30EC0083B7D9 /* BaseSerivce.swift */,
+				9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */,
+				9461FFB82ED42E710083B7D9 /* NearestSettlementService.swift */,
 				9461FFAF2ECF4A0C0083B7D9 /* ThreadServiceProtocol.swift */,
 				9461FFAD2ECF49EE0083B7D9 /* ThreadService.swift */,
-				9461FF962ECF30EC0083B7D9 /* BaseSerivce.swift */,
 				9461FFA72ECF41430083B7D9 /* ScheduleServiceProtocol.swift */,
 				9461FFA52ECF41250083B7D9 /* ScheduleService.swift */,
 				9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */,
@@ -240,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */,
+				9461FFBB2ED42E800083B7D9 /* NearestSettlementService.swift in Sources */,
 				94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */,
 				9461FFA82ECF414B0083B7D9 /* ScheduleServiceProtocol.swift in Sources */,
 				94FBFF2C2ECB0DDB00F2EBFB /* NearestStationsServiceProtocol.swift in Sources */,
@@ -248,6 +255,7 @@
 				94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */,
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
+				9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */,
 				941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */,
 				9461FFAE2ECF49F70083B7D9 /* ThreadService.swift in Sources */,
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
