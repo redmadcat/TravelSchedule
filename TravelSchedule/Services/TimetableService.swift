@@ -25,6 +25,11 @@ final class TimetableService: BaseSerivce, TimetableServiceProtocol {
             .getStationSchedule(station: station, date: date)
     }
     
+    func getRouteStations(uid: String, date: String?) async throws -> ThreadStationsResponse {
+        try await ThreadService(client: client, apikey: apikey)
+            .getRouteStations(uid: uid, date: date)
+    }
+    
     func getCopyright() async throws -> Copyright {
         try await CopyrightService(client: client, apikey: apikey).getCopyright()
     }
