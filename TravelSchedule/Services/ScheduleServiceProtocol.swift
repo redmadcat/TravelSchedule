@@ -8,5 +8,5 @@
 typealias ScheduleResponse = Components.Schemas.ScheduleResponse
 
 protocol ScheduleServiceProtocol {
-    func getStationSchedule(station: String, date: String) async throws -> ScheduleResponse
+    func getStationSchedule(station: String, date: String?) async throws -> ScheduleResponse
 }

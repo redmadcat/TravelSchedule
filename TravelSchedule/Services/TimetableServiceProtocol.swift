@@ -11,5 +11,6 @@ protocol TimetableServiceProtocol:
     ScheduleServiceProtocol,
     ThreadServiceProtocol,
     NearestSettlementServiceProtocol,
+    CarrierServiceProtocol,
     CopyrightServiceProtocol {
 }
