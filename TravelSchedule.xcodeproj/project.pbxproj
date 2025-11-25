@@ -20,6 +20,8 @@
 		9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */; };
 		9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC12ED44B260083B7D9 /* CarrierService.swift */; };
 		9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */; };
+		94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF72ED58ACD009C8B0F /* StationsService.swift */; };
+		94A1FCFA2ED58AE9009C8B0F /* StationsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */; };
 		94B671302ECF182B001E271D /* TimetableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6712F2ECF1820001E271D /* TimetableService.swift */; };
 		94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */; };
 		94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestSettlementServiceProtocol.swift; sourceTree = "<group>"; };
 		9461FFC12ED44B260083B7D9 /* CarrierService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierService.swift; sourceTree = "<group>"; };
 		9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierServiceProtocol.swift; sourceTree = "<group>"; };
+		94A1FCF72ED58ACD009C8B0F /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
+		94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsServiceProtocol.swift; sourceTree = "<group>"; };
 		94B6712F2ECF1820001E271D /* TimetableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableService.swift; sourceTree = "<group>"; };
 		94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableServiceProtocol.swift; sourceTree = "<group>"; };
 		94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				9461FF962ECF30EC0083B7D9 /* BaseSerivce.swift */,
+				94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */,
+				94A1FCF72ED58ACD009C8B0F /* StationsService.swift */,
 				9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */,
 				9461FFC12ED44B260083B7D9 /* CarrierService.swift */,
 				9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */,
@@ -260,7 +266,9 @@
 				94FBFF2C2ECB0DDB00F2EBFB /* NearestStationsServiceProtocol.swift in Sources */,
 				9461FF952ECF2DB40083B7D9 /* SearchServiceProtocol.swift in Sources */,
 				94B671302ECF182B001E271D /* TimetableService.swift in Sources */,
+				94A1FCFA2ED58AE9009C8B0F /* StationsServiceProtocol.swift in Sources */,
 				94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */,
+				94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */,
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
 				9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */,
