@@ -38,6 +38,10 @@ final class TimetableService: BaseSerivce, TimetableServiceProtocol {
         try await CarrierService(client: client, apikey: apikey).getCarrierInfo(code: code, system: system)
     }
     
+    func getAllStations() async throws -> AllStationsResponse {
+        try await StationsService(client: client, apikey: apikey).getAllStations()
+    }
+    
     func getCopyright() async throws -> Copyright {
         try await CopyrightService(client: client, apikey: apikey).getCopyright()
     }
