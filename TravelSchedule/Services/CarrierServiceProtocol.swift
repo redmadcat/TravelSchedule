@@ -8,5 +8,5 @@
 typealias CarrierResponse = Components.Schemas.CarrierResponse
 
 protocol CarrierServiceProtocol {
-    func getCarrierInfo(code: String, system: String?) async throws -> CarrierResponse
+    func getCarrierInfo(code: String) async throws -> CarrierResponse
 }

@@ -7,11 +7,10 @@
 
 class CarrierService: BaseSerivce, CarrierServiceProtocol {
     // MARK: - CarrierServiceProtocol
-    func getCarrierInfo(code: String, system: String?) async throws -> CarrierResponse {
+    func getCarrierInfo(code: String) async throws -> CarrierResponse {
         let response = try await client.getCarrierInfo(query: .init(
             apikey: apikey,
-            code: code,
-            system: system
+            code: code
         ))
         return try response.ok.body.json
     }

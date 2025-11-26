@@ -7,11 +7,10 @@
 
 final class ScheduleService: BaseSerivce, ScheduleServiceProtocol {
     // MARK: - ScheduleServiceProtocol
-    func getStationSchedule(station: String, date: String?) async throws -> ScheduleResponse {
+    func getStationSchedule(station: String) async throws -> ScheduleResponse {
         let response = try await client.getStationSchedule(query: .init(
             apikey: apikey,
-            station: station,
-            date: date
+            station: station
         ))
         return try response.ok.body.json
     }

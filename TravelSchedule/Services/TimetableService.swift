@@ -15,27 +15,26 @@ final class TimetableService: BaseSerivce, TimetableServiceProtocol {
             .getNearestStations(lat: lat, lng: lng, distance: distance)
     }
     
-    func search(from: String, to: String, date: String?) async throws -> Segments {
+    func search(from: String, to: String) async throws -> Segments {
         try await SearchService(client: client, apikey: apikey)
-            .search(from: from, to: to, date: date)
+            .search(from: from, to: to)
     }
     
-    func getStationSchedule(station: String, date: String?) async throws -> ScheduleResponse {
+    func getStationSchedule(station: String) async throws -> ScheduleResponse {
         try await ScheduleService(client: client, apikey: apikey)
-            .getStationSchedule(station: station, date: date)
+            .getStationSchedule(station: station)
     }
     
-    func getRouteStations(uid: String, date: String?) async throws -> ThreadStationsResponse {
-        try await ThreadService(client: client, apikey: apikey)
-            .getRouteStations(uid: uid, date: date)
+    func getRouteStations(uid: String) async throws -> ThreadStationsResponse {
+        try await ThreadService(client: client, apikey: apikey).getRouteStations(uid: uid)
     }
     
     func getNearestCity(lat: Double, lng: Double) async throws -> NearestCityResponse {
         try await NearestSettlementService(client: client, apikey: apikey).getNearestCity(lat: lat, lng: lng)
     }
     
-    func getCarrierInfo(code: String, system: String?) async throws -> CarrierResponse {
-        try await CarrierService(client: client, apikey: apikey).getCarrierInfo(code: code, system: system)
+    func getCarrierInfo(code: String) async throws -> CarrierResponse {
+        try await CarrierService(client: client, apikey: apikey).getCarrierInfo(code: code)
     }
     
     func getAllStations() async throws -> AllStationsResponse {

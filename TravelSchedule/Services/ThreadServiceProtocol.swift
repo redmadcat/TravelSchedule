@@ -8,5 +8,5 @@
 typealias ThreadStationsResponse = Components.Schemas.ThreadStationsResponse
 
 protocol ThreadServiceProtocol {
-    func getRouteStations(uid: String, date: String?) async throws -> ThreadStationsResponse
+    func getRouteStations(uid: String) async throws -> ThreadStationsResponse
 }
