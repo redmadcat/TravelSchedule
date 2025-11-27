@@ -8,7 +8,7 @@
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-final class NearestStationsService: BaseSerivce, NearestStationsServiceProtocol {
+final class NearestStationsService: BaseService, NearestStationsServiceProtocol {
     // MARK: - NearestStationsServiceProtocol
     func getNearestStations(lat: Double, lng: Double, distance: Int) async throws -> NearestStations {
         let response = try await client.getNearestStations(query: .init(

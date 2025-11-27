@@ -5,7 +5,7 @@
 //  Created by Roman Yaschenkov on 20.11.2025.
 //
 
-final class SearchService: BaseSerivce, SearchServiceProtocol {
+final class SearchService: BaseService, SearchServiceProtocol {
     // MARK: - SearchServiceProtocol
     func search(from: String, to: String) async throws -> Segments {
         let response = try await client.getSchedualBetweenStations(query: .init(

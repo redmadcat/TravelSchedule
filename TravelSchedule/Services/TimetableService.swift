@@ -8,7 +8,7 @@
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-final class TimetableService: BaseSerivce, TimetableServiceProtocol {
+final class TimetableService: BaseService, TimetableServiceProtocol {
     // MARK: - TimetableServiceProtocol
     func getNearestStations(lat: Double, lng: Double, distance: Int) async throws -> NearestStations {
         try await NearestStationsService(client: client, apikey: apikey)

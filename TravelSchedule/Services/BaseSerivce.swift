@@ -8,7 +8,7 @@
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-class BaseSerivce {
+class BaseService {
     private(set) var client: Client
     private(set) var apikey: String
     

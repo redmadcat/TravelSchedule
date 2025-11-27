@@ -8,7 +8,7 @@
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-final class CopyrightService: BaseSerivce, CopyrightServiceProtocol {
+final class CopyrightService: BaseService, CopyrightServiceProtocol {
     // MARK: - CopyrightServiceProtocol
     func getCopyright() async throws -> Copyright {
         let response = try await client.getCopyright(query: .init(apikey: apikey))
