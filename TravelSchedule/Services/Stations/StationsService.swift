@@ -7,7 +7,7 @@
 
 import Foundation
 
-class StationsService: BaseService, StationsServiceProtocol {
+final class StationsService: BaseService, StationsServiceProtocol {
     func getAllStations() async throws -> AllStationsResponse {
         let response = try await client.getAllStations(query: .init(apikey: apiKey))
         
