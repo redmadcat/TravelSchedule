@@ -1,5 +1,5 @@
 //
-//  ISO8601DateTranscoder.swift
+//  ISO8601Coder.swift
 //  TravelSchedule
 //
 //  Created by Roman Yaschenkov on 26.11.2025.
@@ -8,7 +8,7 @@
 import Foundation
 import OpenAPIRuntime
 
-struct ISO8601DateTranscoder: DateTranscoder {
+struct ISO8601Coder: DateTranscoder {
     /// Creates and returns an ISO 8601 formatted string representation of the specified date.
     public func encode(_ date: Date) throws -> String { ISO8601DateFormatter().string(from: date) }
 

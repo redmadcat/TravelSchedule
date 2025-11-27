@@ -27,7 +27,7 @@ struct ContentView: View {
             do {
                 let client = Client(
                     serverURL: try Servers.Server1.url(),
-                    configuration: .init(dateTranscoder: ISO8601DateTranscoder()),
+                    configuration: .init(dateTranscoder: ISO8601Coder()),
                     transport: URLSessionTransport()
                 )
                 let timetableService = TimetableService(client: client, apiKey: Auth.apiKey)

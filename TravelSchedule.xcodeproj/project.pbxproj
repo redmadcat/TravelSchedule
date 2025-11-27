@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */; };
 		941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59492ECDB1A100B99489 /* CopyrightService.swift */; };
-		945F7AE52ED6E8E90009DB67 /* ISO8601DateTranscoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F7AE42ED6E8E00009DB67 /* ISO8601DateTranscoder.swift */; };
+		945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */; };
 		9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF922ECF2D7B0083B7D9 /* SearchService.swift */; };
 		9461FF952ECF2DB40083B7D9 /* SearchServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */; };
 		9461FF972ECF30F40083B7D9 /* BaseSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF962ECF30EC0083B7D9 /* BaseSerivce.swift */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightServiceProtocol.swift; sourceTree = "<group>"; };
 		941B59492ECDB1A100B99489 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
-		945F7AE42ED6E8E00009DB67 /* ISO8601DateTranscoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateTranscoder.swift; sourceTree = "<group>"; };
+		945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601Coder.swift; sourceTree = "<group>"; };
 		9461FF922ECF2D7B0083B7D9 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceProtocol.swift; sourceTree = "<group>"; };
 		9461FF962ECF30EC0083B7D9 /* BaseSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSerivce.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		949EA7732ED6CD0E00633E65 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				945F7AE42ED6E8E00009DB67 /* ISO8601DateTranscoder.swift */,
+				945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */,
 				949EA7742ED6CD1B00633E65 /* APIHelper.swift */,
 			);
 			path = Helpers;
@@ -356,7 +356,7 @@
 				94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */,
 				94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */,
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
-				945F7AE52ED6E8E90009DB67 /* ISO8601DateTranscoder.swift in Sources */,
+				945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
 				9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */,
 				941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */,
