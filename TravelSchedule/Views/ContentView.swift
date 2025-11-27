@@ -30,7 +30,7 @@ struct ContentView: View {
                     configuration: .init(dateTranscoder: ISO8601DateTranscoder()),
                     transport: URLSessionTransport()
                 )
-                let timetableService = TimetableService(client: client, apikey: Auth.apikey)
+                let timetableService = TimetableService(client: client, apiKey: Auth.apiKey)
                 
                 let nearestStations = try await timetableService.getNearestStations(lat: 59.864177, lng: 30.319163, distance: 50)
                 print("Successfully fetched stations:\n\(nearestStations)")

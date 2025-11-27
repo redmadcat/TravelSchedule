@@ -11,37 +11,37 @@ import OpenAPIURLSession
 final class TimetableService: BaseService, TimetableServiceProtocol {
     // MARK: - TimetableServiceProtocol
     func getNearestStations(lat: Double, lng: Double, distance: Int) async throws -> NearestStations {
-        try await NearestStationsService(client: client, apikey: apikey)
+        try await NearestStationsService(client: client, apiKey: apiKey)
             .getNearestStations(lat: lat, lng: lng, distance: distance)
     }
     
     func search(from: String, to: String) async throws -> Segments {
-        try await SearchService(client: client, apikey: apikey)
+        try await SearchService(client: client, apiKey: apiKey)
             .search(from: from, to: to)
     }
     
     func getStationSchedule(station: String) async throws -> ScheduleResponse {
-        try await ScheduleService(client: client, apikey: apikey)
+        try await ScheduleService(client: client, apiKey: apiKey)
             .getStationSchedule(station: station)
     }
     
     func getRouteStations(uid: String) async throws -> ThreadStationsResponse {
-        try await ThreadService(client: client, apikey: apikey).getRouteStations(uid: uid)
+        try await ThreadService(client: client, apiKey: apiKey).getRouteStations(uid: uid)
     }
     
     func getNearestCity(lat: Double, lng: Double) async throws -> NearestCityResponse {
-        try await NearestSettlementService(client: client, apikey: apikey).getNearestCity(lat: lat, lng: lng)
+        try await NearestSettlementService(client: client, apiKey: apiKey).getNearestCity(lat: lat, lng: lng)
     }
     
     func getCarrierInfo(code: String) async throws -> CarrierResponse {
-        try await CarrierService(client: client, apikey: apikey).getCarrierInfo(code: code)
+        try await CarrierService(client: client, apiKey: apiKey).getCarrierInfo(code: code)
     }
     
     func getAllStations() async throws -> AllStationsResponse {
-        try await StationsService(client: client, apikey: apikey).getAllStations()
+        try await StationsService(client: client, apiKey: apiKey).getAllStations()
     }
     
     func getCopyright() async throws -> Copyright {
-        try await CopyrightService(client: client, apikey: apikey).getCopyright()
+        try await CopyrightService(client: client, apiKey: apiKey).getCopyright()
     }
 }

@@ -9,7 +9,7 @@ final class SearchService: BaseService, SearchServiceProtocol {
     // MARK: - SearchServiceProtocol
     func search(from: String, to: String) async throws -> Segments {
         let response = try await client.getSchedualBetweenStations(query: .init(
-            apikey: apikey,
+            apikey: apiKey,
             from: from,
             to: to
         ))

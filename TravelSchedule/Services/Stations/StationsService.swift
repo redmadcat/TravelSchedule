@@ -9,7 +9,7 @@ import Foundation
 
 class StationsService: BaseService, StationsServiceProtocol {
     func getAllStations() async throws -> AllStationsResponse {
-        let response = try await client.getAllStations(query: .init(apikey: apikey))
+        let response = try await client.getAllStations(query: .init(apikey: apiKey))
         
         let responseBody = try response.ok.body.text_html_charset_utf_hyphen_8
         

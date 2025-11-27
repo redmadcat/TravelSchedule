@@ -91,6 +91,88 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		94A814CF2ED8518600DC20D7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9461FF962ECF30EC0083B7D9 /* BaseSerivce.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		94A814D02ED8519300DC20D7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */,
+				9461FF922ECF2D7B0083B7D9 /* SearchService.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		94A814D12ED851B500DC20D7 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				9461FFA72ECF41430083B7D9 /* ScheduleServiceProtocol.swift */,
+				9461FFA52ECF41250083B7D9 /* ScheduleService.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		94A814D22ED851C500DC20D7 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				9461FFAF2ECF4A0C0083B7D9 /* ThreadServiceProtocol.swift */,
+				9461FFAD2ECF49EE0083B7D9 /* ThreadService.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		94A814D32ED851D700DC20D7 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */,
+				94A1FCF72ED58ACD009C8B0F /* StationsService.swift */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		94A814D42ED851E800DC20D7 /* Carrier */ = {
+			isa = PBXGroup;
+			children = (
+				9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */,
+				9461FFC12ED44B260083B7D9 /* CarrierService.swift */,
+			);
+			path = Carrier;
+			sourceTree = "<group>";
+		};
+		94A814D52ED851F600DC20D7 /* Nearest */ = {
+			isa = PBXGroup;
+			children = (
+				9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */,
+				9461FFB82ED42E710083B7D9 /* NearestSettlementService.swift */,
+				94FBFF2B2ECB0DCB00F2EBFB /* NearestStationsServiceProtocol.swift */,
+				94FBFF292ECB0D8400F2EBFB /* NearestStationsService.swift */,
+			);
+			path = Nearest;
+			sourceTree = "<group>";
+		};
+		94A814D62ED8520A00DC20D7 /* Copyright */ = {
+			isa = PBXGroup;
+			children = (
+				941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */,
+				941B59492ECDB1A100B99489 /* CopyrightService.swift */,
+			);
+			path = Copyright;
+			sourceTree = "<group>";
+		};
+		94A814D82ED8525A00DC20D7 /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */,
+				94B6712F2ECF1820001E271D /* TimetableService.swift */,
+			);
+			path = Timetable;
+			sourceTree = "<group>";
+		};
 		94C4EBB82EC5F0A00086C35E = {
 			isa = PBXGroup;
 			children = (
@@ -157,25 +239,15 @@
 		94FBFF282ECB0D6400F2EBFB /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9461FF962ECF30EC0083B7D9 /* BaseSerivce.swift */,
-				94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */,
-				94A1FCF72ED58ACD009C8B0F /* StationsService.swift */,
-				9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */,
-				9461FFC12ED44B260083B7D9 /* CarrierService.swift */,
-				9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */,
-				9461FFB82ED42E710083B7D9 /* NearestSettlementService.swift */,
-				9461FFAF2ECF4A0C0083B7D9 /* ThreadServiceProtocol.swift */,
-				9461FFAD2ECF49EE0083B7D9 /* ThreadService.swift */,
-				9461FFA72ECF41430083B7D9 /* ScheduleServiceProtocol.swift */,
-				9461FFA52ECF41250083B7D9 /* ScheduleService.swift */,
-				9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */,
-				9461FF922ECF2D7B0083B7D9 /* SearchService.swift */,
-				94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */,
-				94B6712F2ECF1820001E271D /* TimetableService.swift */,
-				941B59492ECDB1A100B99489 /* CopyrightService.swift */,
-				941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */,
-				94FBFF2B2ECB0DCB00F2EBFB /* NearestStationsServiceProtocol.swift */,
-				94FBFF292ECB0D8400F2EBFB /* NearestStationsService.swift */,
+				94A814D82ED8525A00DC20D7 /* Timetable */,
+				94A814D62ED8520A00DC20D7 /* Copyright */,
+				94A814D52ED851F600DC20D7 /* Nearest */,
+				94A814D42ED851E800DC20D7 /* Carrier */,
+				94A814D32ED851D700DC20D7 /* Stations */,
+				94A814D22ED851C500DC20D7 /* Thread */,
+				94A814D12ED851B500DC20D7 /* Schedule */,
+				94A814D02ED8519300DC20D7 /* Search */,
+				94A814CF2ED8518600DC20D7 /* Base */,
 			);
 			path = Services;
 			sourceTree = "<group>";

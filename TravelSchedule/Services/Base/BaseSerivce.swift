@@ -10,10 +10,10 @@ import OpenAPIURLSession
 
 class BaseService {
     private(set) var client: Client
-    private(set) var apikey: String
+    private(set) var apiKey: String
     
-    init(client: Client, apikey: String) {
+    init(client: Client, apiKey: String) {
         self.client = client
-        self.apikey = apikey
+        self.apiKey = apiKey
     }
 }

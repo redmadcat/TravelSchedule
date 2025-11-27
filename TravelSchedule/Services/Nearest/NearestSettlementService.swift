@@ -9,7 +9,7 @@ class NearestSettlementService: BaseService, NearestSettlementServiceProtocol {
     // MARK: - NearestStationsServiceProtocol
     func getNearestCity(lat: Double, lng: Double) async throws -> NearestCityResponse {
         let response = try await client.getNearestCity(query: .init(
-            apikey: apikey,
+            apikey: apiKey,
             lat: lat,
             lng: lng
         ))
