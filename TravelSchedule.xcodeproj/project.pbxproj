@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */; };
 		941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59492ECDB1A100B99489 /* CopyrightService.swift */; };
+		9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */; };
 		945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */; };
 		9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF922ECF2D7B0083B7D9 /* SearchService.swift */; };
 		9461FF952ECF2DB40083B7D9 /* SearchServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightServiceProtocol.swift; sourceTree = "<group>"; };
 		941B59492ECDB1A100B99489 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
+		9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601Coder.swift; sourceTree = "<group>"; };
 		9461FF922ECF2D7B0083B7D9 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceProtocol.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				94FBFF212ECB03F800F2EBFB /* yaml */,
+				9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */,
 				94C4EBD42EC5F50D0086C35E /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -332,6 +335,7 @@
 				94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */,
 				94FBFF252ECB043F00F2EBFB /* openapi-generator-config.yaml in Resources */,
 				94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */,
+				9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */,
 				94FBFF232ECB040500F2EBFB /* openapi.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +516,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -542,6 +547,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
