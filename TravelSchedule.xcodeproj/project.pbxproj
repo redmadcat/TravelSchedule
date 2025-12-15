@@ -10,6 +10,10 @@
 		941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */; };
 		941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59492ECDB1A100B99489 /* CopyrightService.swift */; };
 		9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */; };
+		944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309CF2EF0154F00AA53FF /* ScheduleView.swift */; };
+		944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D32EF017A600AA53FF /* SettingsView.swift */; };
+		944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D82EF018AE00AA53FF /* RoutePickerView.swift */; };
+		944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309DA2EF0198A00AA53FF /* RouteFinderView.swift */; };
 		945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */; };
 		9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF922ECF2D7B0083B7D9 /* SearchService.swift */; };
 		9461FF952ECF2DB40083B7D9 /* SearchServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */; };
@@ -43,6 +47,10 @@
 		941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightServiceProtocol.swift; sourceTree = "<group>"; };
 		941B59492ECDB1A100B99489 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
 		9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		944309CF2EF0154F00AA53FF /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		944309D32EF017A600AA53FF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		944309D82EF018AE00AA53FF /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
+		944309DA2EF0198A00AA53FF /* RouteFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderView.swift; sourceTree = "<group>"; };
 		945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601Coder.swift; sourceTree = "<group>"; };
 		9461FF922ECF2D7B0083B7D9 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceProtocol.swift; sourceTree = "<group>"; };
@@ -84,6 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		944309CD2EF014B800AA53FF /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				944309D72EF0187F00AA53FF /* Route */,
+				944309CF2EF0154F00AA53FF /* ScheduleView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		944309CE2EF014C000AA53FF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				944309D32EF017A600AA53FF /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		944309D72EF0187F00AA53FF /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				944309DA2EF0198A00AA53FF /* RouteFinderView.swift */,
+				944309D82EF018AE00AA53FF /* RoutePickerView.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
 		949EA7732ED6CD0E00633E65 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +292,8 @@
 		94FBFF2F2ECB15DA00F2EBFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				944309CD2EF014B800AA53FF /* Schedule */,
+				944309CE2EF014C000AA53FF /* Settings */,
 				94C4EBD52EC5F50D0086C35E /* ContentView.swift */,
 			);
 			path = Views;
@@ -347,11 +383,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
 				9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */,
+				944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */,
 				9461FFBB2ED42E800083B7D9 /* NearestSettlementService.swift in Sources */,
 				94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */,
 				9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */,
+				944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */,
 				9461FFA82ECF414B0083B7D9 /* ScheduleServiceProtocol.swift in Sources */,
 				94FBFF2C2ECB0DDB00F2EBFB /* NearestStationsServiceProtocol.swift in Sources */,
 				9461FF952ECF2DB40083B7D9 /* SearchServiceProtocol.swift in Sources */,
@@ -361,6 +400,7 @@
 				94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */,
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
 				945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */,
+				944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
 				9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */,
 				941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */,

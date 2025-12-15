@@ -7,18 +7,26 @@
 
 import SwiftUI
 import OpenAPIURLSession
- 
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView() {
+            ScheduleView()
+            .tabItem {
+                Image("Schedule")
+                    .renderingMode(.template)
+            }
+            
+            SettingsView()
+            .tabItem {
+                Image("Settings")
+                    .renderingMode(.template)
+            }
         }
+        .tint(.ypBlackAD)
         .padding()
         .onAppear {
-            testTimetableService()
+//            testTimetableService()
         }
     }
     
