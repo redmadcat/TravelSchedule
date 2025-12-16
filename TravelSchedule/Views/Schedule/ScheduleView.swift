@@ -21,7 +21,6 @@ struct ScheduleView: View {
                     .font(.system(size: 17, weight: .bold))
                     .foregroundStyle(.ypWhiteAD)
                     .frame(width: 150, height: 60)
-                    .contentShape(Rectangle())
             }
             .background(RoundedRectangle(cornerRadius: 16).fill(.ypBlue))
             .padding(.top, 20)
