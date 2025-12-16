@@ -15,6 +15,7 @@ struct RoutePickerView: View {
     var body: some View {
         Button(action: action) {
             Text(direction)
+                .font(.system(size: 17, weight: .regular))
                 .foregroundStyle(isValid ? .ypBlack : .ypGray)
                 .lineLimit(1)
                 .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
