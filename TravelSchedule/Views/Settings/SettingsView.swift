@@ -11,9 +11,9 @@ struct SettingsView: View {
     var body: some View {
         VStack {
             Text("Settings")
+            Spacer()
+            Divider()
         }
-        Divider()
-            .frame(maxHeight: .infinity, alignment: .bottomTrailing)
     }
 }
 
