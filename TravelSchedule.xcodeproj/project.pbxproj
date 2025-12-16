@@ -27,6 +27,7 @@
 		9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */; };
 		9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC12ED44B260083B7D9 /* CarrierService.swift */; };
 		9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */; };
+		947156F52EF13D6B00C56B20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 947156F42EF13D6B00C56B20 /* Localizable.xcstrings */; };
 		949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949EA7742ED6CD1B00633E65 /* APIHelper.swift */; };
 		94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF72ED58ACD009C8B0F /* StationsService.swift */; };
 		94A1FCFA2ED58AE9009C8B0F /* StationsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */; };
@@ -65,6 +66,7 @@
 		9461FFBC2ED42E870083B7D9 /* NearestSettlementServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestSettlementServiceProtocol.swift; sourceTree = "<group>"; };
 		9461FFC12ED44B260083B7D9 /* CarrierService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierService.swift; sourceTree = "<group>"; };
 		9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierServiceProtocol.swift; sourceTree = "<group>"; };
+		947156F42EF13D6B00C56B20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		949EA7742ED6CD1B00633E65 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		94A1FCF72ED58ACD009C8B0F /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
 		94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsServiceProtocol.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				94FBFF212ECB03F800F2EBFB /* yaml */,
 				9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */,
 				94C4EBD42EC5F50D0086C35E /* Assets.xcassets */,
+				947156F42EF13D6B00C56B20 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 94C4EBB82EC5F0A00086C35E;
 			minimizedProjectReferenceProxies = 1;
@@ -373,6 +377,7 @@
 			files = (
 				94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */,
 				94FBFF252ECB043F00F2EBFB /* openapi-generator-config.yaml in Resources */,
+				947156F52EF13D6B00C56B20 /* Localizable.xcstrings in Resources */,
 				94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */,
 				9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */,
 				94FBFF232ECB040500F2EBFB /* openapi.yaml in Resources */,
@@ -486,6 +491,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -542,6 +548,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
