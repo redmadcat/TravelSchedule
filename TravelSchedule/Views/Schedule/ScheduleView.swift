@@ -12,11 +12,11 @@ struct ScheduleView: View {
         VStack {
             RouteFinderView()
                 .padding(.horizontal, 16)
-                .padding(.top, 20)
+                .padding(.top, 252)
             
             Spacer()
+            Divider()
         }
-        .padding(.vertical, 68)
         .background(.ypWhite)
         .ignoresSafeArea(edges: .top)
     }

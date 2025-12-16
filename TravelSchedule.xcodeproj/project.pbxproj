@@ -14,6 +14,7 @@
 		944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D32EF017A600AA53FF /* SettingsView.swift */; };
 		944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D82EF018AE00AA53FF /* RoutePickerView.swift */; };
 		944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309DA2EF0198A00AA53FF /* RouteFinderView.swift */; };
+		944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */; };
 		945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */; };
 		9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF922ECF2D7B0083B7D9 /* SearchService.swift */; };
 		9461FF952ECF2DB40083B7D9 /* SearchServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */; };
@@ -51,6 +52,7 @@
 		944309D32EF017A600AA53FF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		944309D82EF018AE00AA53FF /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
 		944309DA2EF0198A00AA53FF /* RouteFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderView.swift; sourceTree = "<group>"; };
+		944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStoriesView.swift; sourceTree = "<group>"; };
 		945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601Coder.swift; sourceTree = "<group>"; };
 		9461FF922ECF2D7B0083B7D9 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		9461FF942ECF2D980083B7D9 /* SearchServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceProtocol.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				944309D72EF0187F00AA53FF /* Route */,
+				944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */,
 				944309CF2EF0154F00AA53FF /* ScheduleView.swift */,
 			);
 			path = Schedule;
@@ -404,6 +407,7 @@
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
 				9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */,
 				941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */,
+				944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */,
 				9461FFAE2ECF49F70083B7D9 /* ThreadService.swift in Sources */,
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
 				9461FF972ECF30F40083B7D9 /* BaseSerivce.swift in Sources */,
