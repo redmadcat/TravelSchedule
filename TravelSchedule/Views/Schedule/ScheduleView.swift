@@ -14,6 +14,18 @@ struct ScheduleView: View {
                 .padding(.horizontal, 16)
                 .padding(.top, 252)
             
+            Button {
+                
+            } label: {
+                Text("Find")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundStyle(.ypWhiteAD)
+                    .frame(width: 150, height: 60)
+                    .contentShape(Rectangle())
+            }
+            .background(RoundedRectangle(cornerRadius: 16).fill(.ypBlue))
+            .padding(.top, 20)
+            
             Spacer()
             Divider()
         }
