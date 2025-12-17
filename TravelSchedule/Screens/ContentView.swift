@@ -8,22 +8,42 @@
 import SwiftUI
 import OpenAPIURLSession
 
+enum RouteEndpoint: String, Hashable, Identifiable {
+    case city
+    case station
+    
+    var id: String { self.rawValue }
+}
+
 struct ContentView: View {
+//    @Environment(RouterViewModel.self) private var router
+    @State var router = RouterViewModel.shared
+//    @State var path = [RouteEndpoint]()
+    
     var body: some View {
-        TabView() {
-            ScheduleView()
-            .tabItem {
-                Image("Schedule")
-                    .renderingMode(.template)
-            }
-            
-            SettingsView()
-            .tabItem {
-                Image("Settings")
-                    .renderingMode(.template)
+        NavigationStack(path: $router.endpoint) {
+            TabView() {
+                ScheduleView()
+                .tabItem {
+                    Image("Schedule")
+                        .renderingMode(.template)
+                }
+                SettingsView()
+                .tabItem {
+                    Image("Settings")
+                        .renderingMode(.template)
+                }
             }
         }
         .tint(.ypBlackAD)
+        .navigationDestination(for: RouteEndpoint.self) { endpoint in
+            switch endpoint {
+            case .city:
+                DetailsView()
+            case .station:
+                DetailsView()
+            }
+        }
         .onAppear {
 //            testTimetableService()
         }

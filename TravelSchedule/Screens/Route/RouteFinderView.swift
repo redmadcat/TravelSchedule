@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+struct DetailsView: View {
+    var body: some View {
+        Text("Detail view")
+    }
+}
+
 struct RouteFinderView: View {
     private var routeFromIsValid: Bool {
         return true
@@ -36,10 +42,28 @@ struct RouteFinderView: View {
                     RoutePickerView(direction: routeFrom, isValid: routeFromIsValid, action: {
                         // navigation action
                     })
-                    
+        
+        
                     RoutePickerView(direction: routeTo, isValid: routeToIsValid, action: {
                         // navigation action
                     })
+                    
+//                    NavigationLink(destination: DetailsView(), label: {
+//                        Text(routeFrom)
+//                    })
+//                    .font(.system(size: 17, weight: .regular))
+//                    .foregroundStyle(.ypGray)
+//                    .lineLimit(1)
+//                    .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+//                    .padding(.horizontal, 16)
+//                    .contentShape(Rectangle())
+                    
+//                    NavigationLink("Show detail view", value: "DetailView")
+//                        .navigationDestination(for: String.self) { destinationIdentifier in
+//                            if destinationIdentifier == "DetailView" {
+//                                DetailsView()
+//                            }
+//                        }
                 }
                 .frame(maxWidth: .infinity)
                 .background(
