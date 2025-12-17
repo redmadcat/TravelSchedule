@@ -9,11 +9,13 @@ import SwiftUI
 
 struct DetailsView: View {
     var body: some View {
-        Text("Detail view")
+        Spacer()
     }
 }
 
 struct RouteFinderView: View {
+    @State var context: ScheduleViewModel
+    
     private var routeFromIsValid: Bool {
         return true
     }
@@ -40,30 +42,13 @@ struct RouteFinderView: View {
             HStack(spacing: 16) {
                 VStack(spacing: 0) {
                     RoutePickerView(direction: routeFrom, isValid: routeFromIsValid, action: {
-                        // navigation action
+                        context.goCity()
                     })
         
         
                     RoutePickerView(direction: routeTo, isValid: routeToIsValid, action: {
-                        // navigation action
+                        context.goCity()
                     })
-                    
-//                    NavigationLink(destination: DetailsView(), label: {
-//                        Text(routeFrom)
-//                    })
-//                    .font(.system(size: 17, weight: .regular))
-//                    .foregroundStyle(.ypGray)
-//                    .lineLimit(1)
-//                    .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
-//                    .padding(.horizontal, 16)
-//                    .contentShape(Rectangle())
-                    
-//                    NavigationLink("Show detail view", value: "DetailView")
-//                        .navigationDestination(for: String.self) { destinationIdentifier in
-//                            if destinationIdentifier == "DetailView" {
-//                                DetailsView()
-//                            }
-//                        }
                 }
                 .frame(maxWidth: .infinity)
                 .background(
@@ -94,5 +79,5 @@ struct RouteFinderView: View {
 }
 
 #Preview {
-    RouteFinderView()
+    RouteFinderView(context: ScheduleViewModel(router: Router.shared))
 }
