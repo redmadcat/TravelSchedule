@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct DetailsView: View {
-    var body: some View {
-        Spacer()
-    }
-}
-
 struct RouteFinderView: View {
     @State var context: ScheduleViewModel
     
