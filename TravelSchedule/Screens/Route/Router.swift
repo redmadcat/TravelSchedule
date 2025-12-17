@@ -1,5 +1,5 @@
 //
-//  RouterViewModel.swift
+//  Router.swift
 //  TravelSchedule
 //
 //  Created by Roman Yaschenkov on 17.12.2025.
@@ -8,8 +8,8 @@
 import SwiftUI
 
 @Observable
-final class RouterViewModel {
-    static let shared = RouterViewModel()
+final class Router {
+    static let shared = Router()
     
     var endpoint: [RouteEndpoint] = []
     
