@@ -8,22 +8,13 @@
 import SwiftUI
 import OpenAPIURLSession
 
-enum RouteEndpoint: String, Hashable, Identifiable {
-    case city
-    case station
-    
-    var id: String { self.rawValue }
-}
-
 struct ContentView: View {
-//    @Environment(RouterViewModel.self) private var router
-    @State var router = RouterViewModel.shared
-//    @State var path = [RouteEndpoint]()
+    @State private var router = Router.shared
     
     var body: some View {
         NavigationStack(path: $router.endpoint) {
             TabView() {
-                ScheduleView()
+                ScheduleBuilder().build()
                 .tabItem {
                     Image("Schedule")
                         .renderingMode(.template)
@@ -39,9 +30,9 @@ struct ContentView: View {
         .navigationDestination(for: RouteEndpoint.self) { endpoint in
             switch endpoint {
             case .city:
-                DetailsView()
+                RouteListView()
             case .station:
-                DetailsView()
+                RouteListView()
             }
         }
         .onAppear {
