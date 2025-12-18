@@ -38,8 +38,7 @@ struct RouteFinderView: View {
                     RoutePickerView(direction: routeFrom, isValid: routeFromIsValid, action: {
                         context.goCity()
                     })
-        
-        
+                
                     RoutePickerView(direction: routeTo, isValid: routeToIsValid, action: {
                         context.goCity()
                     })
