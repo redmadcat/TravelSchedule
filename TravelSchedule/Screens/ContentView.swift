@@ -10,7 +10,6 @@ import OpenAPIURLSession
 
 struct ContentView: View {
     @State private var router = Router.shared
-    let title = "Settlements"
     
     var body: some View {
         NavigationStack(path: $router.endpoint) {
@@ -29,10 +28,9 @@ struct ContentView: View {
             .navigationDestination(for: RouteEndpoint.self) { endpoint in
                 switch endpoint {
                 case .city:
-                    RouteListView()
-                        .navigationTitle(title)
+                    SettlementView()
                 case .station:
-                    RouteListView()
+                    SettlementView()
                 }
             }
         }

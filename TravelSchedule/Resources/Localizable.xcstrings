@@ -11,6 +11,17 @@
           }
         }
       }
+    },
+    "SettlementSelection" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбор города"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
