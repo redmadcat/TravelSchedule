@@ -6,7 +6,7 @@
 //
 
 enum RouteEndpoint: String, Hashable, Identifiable {
-    case city
+    case settlement
     case station
     
     var id: String { self.rawValue }
