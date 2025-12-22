@@ -36,11 +36,11 @@ struct RouteFinderView: View {
             HStack(spacing: 16) {
                 VStack(spacing: 0) {
                     RoutePickerView(direction: routeFrom, isValid: routeFromIsValid, action: {
-                        context.goCity()
+                        context.toSettlements()
                     })
                 
                     RoutePickerView(direction: routeTo, isValid: routeToIsValid, action: {
-                        context.goCity()
+                        context.toSettlements()
                     })
                 }
                 .frame(maxWidth: .infinity)

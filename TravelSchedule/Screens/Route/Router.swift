@@ -13,7 +13,7 @@ final class Router {
     
     var endpoint: [RouteEndpoint] = []
     
-    func showCityList() {
-        endpoint.append(.city)
+    func toSettlements() {
+        endpoint.append(.settlement)
     }
 }

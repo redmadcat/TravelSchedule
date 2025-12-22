@@ -12,7 +12,7 @@ final class ScheduleViewModel {
         self.router = router
     }
     
-    func goCity() {
-        self.router.showCityList()
+    func toSettlements() {
+        self.router.toSettlements()
     }
 }
