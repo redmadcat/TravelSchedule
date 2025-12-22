@@ -9,10 +9,35 @@ import SwiftUI
 
 struct SettlementView: View {
     @Environment(\.dismiss) private var dismiss
+    @State private var request: String = ""
+    
+    let mockSettlements = ["Москва", "Санкт Петербург", "Сочи", "Пятигорск", "Саратов", "Казань", "Новосибирск", "Краснодар"]
+    
+    private var filteredResults: [String] {
+        request.isEmpty ? mockSettlements : mockSettlements.filter { $0.localizedCaseInsensitiveContains(request) }
+    }
     
     var body: some View {
         VStack {
-            Text(verbatim: "RouteList")
+            if filteredResults.isEmpty {
+                Spacer()
+                Text("SettlementNotFound")
+                    .foregroundColor(.ypBlack)
+                    .font(.system(size: 24, weight: .bold))
+                    .padding()
+                Spacer()
+            } else {
+                List(filteredResults, id: \.self) { settlement in
+                    Button(action: {
+                        
+                    }) {
+                        SettlementRowView(settlement: settlement)
+                    }
+                    .listRowSeparator(.hidden)
+                }
+                .listStyle(.inset)
+                .scrollContentBackground(.hidden)
+            }
         }
         .navigationTitle("SettlementSelection")
         .navigationBarBackButtonHidden(true)
@@ -27,6 +52,10 @@ struct SettlementView: View {
                 }
             }
         }
+        .safeAreaInset(edge: .top) {
+            SearchView(request: $request)
+        }
+        .backgroundStyle(.ypWhite)
     }
 }
 
