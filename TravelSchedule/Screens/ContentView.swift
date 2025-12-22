@@ -27,7 +27,7 @@ struct ContentView: View {
             }
             .navigationDestination(for: RouteEndpoint.self) { endpoint in
                 switch endpoint {
-                case .city:
+                case .settlement:
                     SettlementView()
                 case .station:
                     SettlementView()
