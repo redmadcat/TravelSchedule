@@ -11,6 +11,7 @@
 		941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59492ECDB1A100B99489 /* CopyrightService.swift */; };
 		941E92652EF918C500327652 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92632EF918B300327652 /* SearchView.swift */; };
 		941E92822EF92DC700327652 /* SettlementRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92802EF92DBB00327652 /* SettlementRowView.swift */; };
+		941E928B2EF936F300327652 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E928A2EF936EE00327652 /* StationView.swift */; };
 		9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */; };
 		944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309CF2EF0154F00AA53FF /* ScheduleView.swift */; };
 		944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D32EF017A600AA53FF /* SettingsView.swift */; };
@@ -57,6 +58,7 @@
 		941B59492ECDB1A100B99489 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
 		941E92632EF918B300327652 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		941E92802EF92DBB00327652 /* SettlementRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementRowView.swift; sourceTree = "<group>"; };
+		941E928A2EF936EE00327652 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
 		9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944309CF2EF0154F00AA53FF /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		944309D32EF017A600AA53FF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 				941E92632EF918B300327652 /* SearchView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		941E92892EF936DB00327652 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				941E928A2EF936EE00327652 /* StationView.swift */,
+			);
+			path = Station;
 			sourceTree = "<group>";
 		};
 		944309CE2EF014C000AA53FF /* Settings */ = {
@@ -229,6 +239,7 @@
 		94A94A7D2EF2B99500824913 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				941E92892EF936DB00327652 /* Station */,
 				941E92622EF918A300327652 /* Search */,
 				941E92552EF4897100327652 /* Settlement */,
 				94A94A7F2EF2B9C900824913 /* Route */,
@@ -429,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */,
+				941E928B2EF936F300327652 /* StationView.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
 				94A94A932EF2BC8500824913 /* ScheduleBuilder.swift in Sources */,
 				9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */,
