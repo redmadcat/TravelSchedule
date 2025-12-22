@@ -1,6 +1,17 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "EnterRequest" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите запрос"
+          }
+        }
+      }
+    },
     "Find" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,6 +19,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Найти"
+          }
+        }
+      }
+    },
+    "SettlementNotFound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Город не найден"
           }
         }
       }
