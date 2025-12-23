@@ -21,14 +21,11 @@ final class SettlementViewModel: RouterViewModel {
         Task { await load() }
     }
     
-    func load() async {
-        isBusy = true
-        
-        defer {
-            isBusy = false
-        }
+    private func load() async {
+        defer { isBusy = false }
         
         do {
+            isBusy = true
             let response = try await service.getAllStations()
             if let result = response.countries?.filter({ $0.title == country }).first {
                 if let regions = result.regions {
