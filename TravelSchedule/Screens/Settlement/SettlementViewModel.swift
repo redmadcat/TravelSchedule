@@ -5,9 +5,13 @@
 //  Created by Roman Yaschenkov on 22.12.2025.
 //
 
+import SwiftUI
+
+@Observable
 final class SettlementViewModel: RouterViewModel {
     private let country = "Россия"
     private let service: StationsServiceProtocol
+    var isBusy: Bool = false
     var settlements: [Settlement] = []
     
     init(router: Router, service: StationsServiceProtocol) {
@@ -18,6 +22,12 @@ final class SettlementViewModel: RouterViewModel {
     }
     
     func load() async {
+        isBusy = true
+        
+        defer {
+            isBusy = false
+        }
+        
         do {
             let response = try await service.getAllStations()
             if let result = response.countries?.filter({ $0.title == country }).first {

@@ -23,6 +23,20 @@
         }
       }
     },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Loading" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка…"
+          }
+        }
+      }
+    },
     "SettlementNotFound" : {
       "extractionState" : "manual",
       "localizations" : {

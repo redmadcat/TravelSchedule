@@ -18,24 +18,30 @@ struct SettlementView: View {
     
     var body: some View {
         VStack {
-            if filteredResults.isEmpty {
+            if context.isBusy {
                 Spacer()
-                Text("SettlementNotFound")
-                    .foregroundColor(.ypBlack)
-                    .font(.system(size: 24, weight: .bold))
-                    .padding()
+                ProgressView("Loading")
                 Spacer()
             } else {
-                List(filteredResults, id: \.self) { settlement in
-                    Button(action: {
-                        
-                    }) {
-                        SettlementRowView(settlement: settlement)
+                if filteredResults.isEmpty {
+                    Spacer()
+                    Text("SettlementNotFound")
+                        .foregroundColor(.ypBlack)
+                        .font(.system(size: 24, weight: .bold))
+                        .padding()
+                    Spacer()
+                } else {
+                    List(filteredResults, id: \.self) { settlement in
+                        Button(action: {
+                            
+                        }) {
+                            SettlementRowView(settlement: settlement)
+                        }
+                        .listRowSeparator(.hidden)
                     }
-                    .listRowSeparator(.hidden)
+                    .listStyle(.inset)
+                    .scrollContentBackground(.hidden)
                 }
-                .listStyle(.inset)
-                .scrollContentBackground(.hidden)
             }
         }
         .navigationTitle("SettlementSelection")
@@ -53,6 +59,8 @@ struct SettlementView: View {
         }
         .safeAreaInset(edge: .top) {
             SearchView(request: $request)
+                .disabled(context.isBusy)
+                .opacity(context.isBusy ? 0.5 : 1)
         }
         .backgroundStyle(.ypWhite)
     }
