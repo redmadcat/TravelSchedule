@@ -13,11 +13,17 @@ struct SettlementRowView: View {
     var body: some View {
         HStack {
             Text(verbatim: settlement.title ?? "")
+                .font(.system(size: 17, weight: .regular))
                 .foregroundColor(.ypBlack)
             Spacer()
             
             Image(systemName: "chevron.right")
                 .foregroundColor(.ypBlack)
         }
+        .frame(height: 60)
     }
+}
+
+#Preview {
+    SettlementRowView(settlement: Settlement(title: "Пятигорск", stations: [Station(title: "Лермонтовский вокзал")]))
 }

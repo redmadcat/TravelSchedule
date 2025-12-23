@@ -37,10 +37,11 @@ struct SettlementView: View {
                         }) {
                             SettlementRowView(settlement: settlement)
                         }
+                        .listRowInsets(.init(top: 0, leading: 16, bottom: 0, trailing: 16))
                         .listRowSeparator(.hidden)
                     }
                     .listStyle(.inset)
-                    .scrollContentBackground(.hidden)
+                    .scrollIndicators(.hidden)
                 }
             }
         }
