@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct SettlementRowView: View {
-    let settlement: String
+    let settlement: Settlement
     
     var body: some View {
         HStack {
-            Text(settlement)
+            Text(verbatim: settlement.title ?? "")
                 .foregroundColor(.ypBlack)
             Spacer()
             
