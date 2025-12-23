@@ -8,6 +8,9 @@
 import SwiftUI
 import OpenAPIURLSession
 
+typealias Settlement = Components.Schemas.Settlement
+typealias Station = Components.Schemas.Station
+
 struct ContentView: View {
     @State private var router = Router.shared
     
@@ -28,9 +31,9 @@ struct ContentView: View {
             .navigationDestination(for: RouteEndpoint.self) { endpoint in
                 switch endpoint {
                 case .settlement:
-                    SettlementView()
+                    SettlementBuilder().build()
                 case .station:
-                    SettlementView()
+                    Spacer()
                 }
             }
         }
