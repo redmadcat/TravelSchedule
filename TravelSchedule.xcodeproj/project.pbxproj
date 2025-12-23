@@ -16,6 +16,8 @@
 		941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E929A2EF93CDF00327652 /* SettlementBuilder.swift */; };
 		941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92C62EF97A1900327652 /* RouterViewModel.swift */; };
 		941E92E32EFA87FA00327652 /* SettlementStubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92E22EFA87FA00327652 /* SettlementStubView.swift */; };
+		941E92EA2EFA94C100327652 /* SettlementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92E92EFA94C100327652 /* SettlementListView.swift */; };
+		941E92FA2EFA9FE500327652 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */; };
 		9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */; };
 		944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309CF2EF0154F00AA53FF /* ScheduleView.swift */; };
 		944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D32EF017A600AA53FF /* SettingsView.swift */; };
@@ -67,6 +69,8 @@
 		941E929A2EF93CDF00327652 /* SettlementBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementBuilder.swift; sourceTree = "<group>"; };
 		941E92C62EF97A1900327652 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		941E92E22EFA87FA00327652 /* SettlementStubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementStubView.swift; sourceTree = "<group>"; };
+		941E92E92EFA94C100327652 /* SettlementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementListView.swift; sourceTree = "<group>"; };
+		941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 		9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944309CF2EF0154F00AA53FF /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		944309D32EF017A600AA53FF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				941E929A2EF93CDF00327652 /* SettlementBuilder.swift */,
 				941E92802EF92DBB00327652 /* SettlementRowView.swift */,
 				941E92E22EFA87FA00327652 /* SettlementStubView.swift */,
+				941E92E92EFA94C100327652 /* SettlementListView.swift */,
 			);
 			path = Settlement;
 			sourceTree = "<group>";
@@ -146,6 +151,14 @@
 				941E928A2EF936EE00327652 /* StationView.swift */,
 			);
 			path = Station;
+			sourceTree = "<group>";
+		};
+		941E92F72EFA9FB300327652 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 		944309CE2EF014C000AA53FF /* Settings */ = {
@@ -250,6 +263,7 @@
 		94A94A7D2EF2B99500824913 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				941E92F72EFA9FB300327652 /* ProgressView */,
 				941E92892EF936DB00327652 /* Station */,
 				941E92622EF918A300327652 /* Search */,
 				941E92552EF4897100327652 /* Settlement */,
@@ -475,8 +489,10 @@
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
 				945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */,
 				944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */,
+				941E92FA2EFA9FE500327652 /* ProgressLoadingView.swift in Sources */,
 				941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
+				941E92EA2EFA94C100327652 /* SettlementListView.swift in Sources */,
 				9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */,
 				941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */,
 				944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */,
