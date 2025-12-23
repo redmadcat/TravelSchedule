@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct RoutePickerView: View {
-    let direction: String
-    let isValid: Bool
+    @State var text: String = ""
+    let prompt: String
     let action: () -> Void
     
     var body: some View {
         Button(action: action) {
-            Text(direction)
+            TextField("", text: $text, prompt: Text(LocalizedStringKey(prompt)))
                 .font(.system(size: 17, weight: .regular))
-                .foregroundStyle(isValid ? .ypBlack : .ypGray)
+                .disabled(true)
                 .lineLimit(1)
-                .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+                .frame(maxWidth: .infinity, minHeight: 48)
                 .padding(.horizontal, 16)
-                .contentShape(Rectangle())
+                .multilineTextAlignment(.leading)
         }
     }
+}
+
+#Preview {
+    RoutePickerView(prompt: "From", action: {})
 }

@@ -23,6 +23,17 @@
         }
       }
     },
+    "From" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откуда"
+          }
+        }
+      }
+    },
     "Loading" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -52,6 +63,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выбор города"
+          }
+        }
+      }
+    },
+    "To" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Куда"
           }
         }
       }

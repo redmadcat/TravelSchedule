@@ -9,23 +9,7 @@ import SwiftUI
 
 struct RouteFinderView: View {
     @State var context: ScheduleViewModel
-    
-    private var routeFromIsValid: Bool {
-        return true
-    }
-    
-    private var routeToIsValid: Bool {
-        return true
-    }
-    
-    private var routeFrom: String {
-        return "From"
-    }
-    
-    private var routeTo: String {
-        return "To"
-    }
-        
+                
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
@@ -35,11 +19,11 @@ struct RouteFinderView: View {
             
             HStack(spacing: 16) {
                 VStack(spacing: 0) {
-                    RoutePickerView(direction: routeFrom, isValid: routeFromIsValid, action: {
+                    RoutePickerView(prompt: "From", action: {
                         context.toSettlements()
                     })
                 
-                    RoutePickerView(direction: routeTo, isValid: routeToIsValid, action: {
+                    RoutePickerView(prompt: "To", action: {
                         context.toSettlements()
                     })
                 }
