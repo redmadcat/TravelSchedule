@@ -23,9 +23,6 @@
         }
       }
     },
-    "Key" : {
-      "extractionState" : "manual"
-    },
     "Loading" : {
       "extractionState" : "manual",
       "localizations" : {

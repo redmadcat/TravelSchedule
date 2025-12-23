@@ -13,7 +13,12 @@ struct SettlementView: View {
     @State private var request: String = ""
     
     private var filteredResults: [Settlement] {
-        request.isEmpty ? context.settlements : context.settlements.filter { $0.title!.localizedCaseInsensitiveContains(request) }
+        request.isEmpty ?
+            context.settlements :
+            context.settlements.filter { $0.title!.localizedCaseInsensitiveContains(request) }
+        /*
+         * $0.title! will never be empty here, it is guaranteed by the first context filter.
+         */
     }
     
     var body: some View {
