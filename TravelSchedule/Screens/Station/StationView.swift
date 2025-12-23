@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-typealias Settlement = Components.Schemas.Settlement
-typealias Station = Components.Schemas.Station
-
 struct StationView: View {
     let settlement: Settlement
     
