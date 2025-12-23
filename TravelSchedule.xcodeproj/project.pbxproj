@@ -15,6 +15,7 @@
 		941E92992EF93C7700327652 /* SettlementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92972EF93C6F00327652 /* SettlementViewModel.swift */; };
 		941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E929A2EF93CDF00327652 /* SettlementBuilder.swift */; };
 		941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92C62EF97A1900327652 /* RouterViewModel.swift */; };
+		941E92E32EFA87FA00327652 /* SettlementStubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92E22EFA87FA00327652 /* SettlementStubView.swift */; };
 		9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */; };
 		944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309CF2EF0154F00AA53FF /* ScheduleView.swift */; };
 		944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D32EF017A600AA53FF /* SettingsView.swift */; };
@@ -65,6 +66,7 @@
 		941E92972EF93C6F00327652 /* SettlementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementViewModel.swift; sourceTree = "<group>"; };
 		941E929A2EF93CDF00327652 /* SettlementBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementBuilder.swift; sourceTree = "<group>"; };
 		941E92C62EF97A1900327652 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
+		941E92E22EFA87FA00327652 /* SettlementStubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementStubView.swift; sourceTree = "<group>"; };
 		9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944309CF2EF0154F00AA53FF /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		944309D32EF017A600AA53FF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				94A94ABB2EF2D3D600824913 /* SettlementView.swift */,
 				941E929A2EF93CDF00327652 /* SettlementBuilder.swift */,
 				941E92802EF92DBB00327652 /* SettlementRowView.swift */,
+				941E92E22EFA87FA00327652 /* SettlementStubView.swift */,
 			);
 			path = Settlement;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				941E92822EF92DC700327652 /* SettlementRowView.swift in Sources */,
 				94A94ABC2EF2D3E000824913 /* SettlementView.swift in Sources */,
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
+				941E92E32EFA87FA00327652 /* SettlementStubView.swift in Sources */,
 				9461FF972ECF30F40083B7D9 /* BaseSerivce.swift in Sources */,
 				94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */,
 				949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */,

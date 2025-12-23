@@ -29,12 +29,7 @@ struct SettlementView: View {
                 Spacer()
             } else {
                 if filteredResults.isEmpty {
-                    Spacer()
-                    Text("SettlementNotFound")
-                        .foregroundColor(.ypBlack)
-                        .font(.system(size: 24, weight: .bold))
-                        .padding()
-                    Spacer()
+                    SettlementStubView()
                 } else {
                     List(filteredResults, id: \.self) { settlement in
                         Button(action: {
