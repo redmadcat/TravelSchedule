@@ -9,12 +9,11 @@ import SwiftUI
 
 struct SettlementView: View {
     @Environment(\.dismiss) private var dismiss
+    @State var context: SettlementViewModel
     @State private var request: String = ""
     
-    let mockSettlements = ["Москва", "Санкт Петербург", "Сочи", "Пятигорск", "Саратов", "Казань", "Новосибирск", "Краснодар"]
-    
-    private var filteredResults: [String] {
-        request.isEmpty ? mockSettlements : mockSettlements.filter { $0.localizedCaseInsensitiveContains(request) }
+    private var filteredResults: [Settlement] {
+        request.isEmpty ? context.settlements : context.settlements.filter { $0.title!.localizedCaseInsensitiveContains(request) }
     }
     
     var body: some View {
@@ -60,5 +59,5 @@ struct SettlementView: View {
 }
 
 #Preview {
-    SettlementView()
+    SettlementBuilder().build()
 }
