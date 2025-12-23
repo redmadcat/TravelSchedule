@@ -12,7 +12,7 @@ struct SettlementView: View {
     @State var context: SettlementViewModel
     @State private var request: String = ""
     
-    private var filteredResults: [Settlement] {
+    private var settlements: [Settlement] {
         request.isEmpty ?
             context.settlements :
             context.settlements.filter { $0.title!.localizedCaseInsensitiveContains(request) }
@@ -23,27 +23,9 @@ struct SettlementView: View {
     
     var body: some View {
         VStack {
-            if context.isBusy {
-                Spacer()
-                ProgressView("Loading")
-                Spacer()
-            } else {
-                if filteredResults.isEmpty {
-                    SettlementStubView()
-                } else {
-                    List(filteredResults, id: \.self) { settlement in
-                        Button(action: {
-                            
-                        }) {
-                            SettlementRowView(settlement: settlement)
-                        }
-                        .listRowInsets(.init(top: 0, leading: 16, bottom: 0, trailing: 16))
-                        .listRowSeparator(.hidden)
-                    }
-                    .listStyle(.inset)
-                    .scrollIndicators(.hidden)
-                }
-            }
+            context.isBusy ? AnyView(ProgressLoadingView()) : settlements.isEmpty ?
+                AnyView(SettlementStubView()) :
+                AnyView(SettlementListView(settlements: settlements))
         }
         .navigationTitle("SettlementSelection")
         .navigationBarBackButtonHidden(true)
