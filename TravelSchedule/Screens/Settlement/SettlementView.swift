@@ -25,7 +25,7 @@ struct SettlementView: View {
         VStack {
             context.isBusy ? AnyView(ProgressLoadingView()) : settlements.isEmpty ?
                 AnyView(SettlementStubView()) :
-                AnyView(SettlementListView(settlements: settlements))
+                AnyView(SettlementListView(settlements: settlements, picker: context.picker))
         }
         .navigationTitle("SettlementSelection")
         .navigationBarBackButtonHidden(true)
@@ -50,5 +50,5 @@ struct SettlementView: View {
 }
 
 #Preview {
-    SettlementBuilder().build()
+    SettlementBuilder().build(picker: RoutePickerViewModel())
 }
