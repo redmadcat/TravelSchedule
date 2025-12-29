@@ -15,10 +15,10 @@ struct SettlementView: View {
     private var settlements: [Settlement] {
         request.isEmpty ?
             context.settlements :
-            context.settlements.filter { $0.title!.localizedCaseInsensitiveContains(request) }
-        /*
-         * $0.title! will never be empty here, it is guaranteed by the first context filter.
-         */
+            context.settlements.filter {
+                guard let title = $0.title else { return false }
+                return title.localizedCaseInsensitiveContains(request)
+            }
     }
     
     var body: some View {

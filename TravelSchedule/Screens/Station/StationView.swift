@@ -16,7 +16,10 @@ struct StationView: View {
     private var stations: [Station] {
         request.isEmpty ?
             settlement.stations ?? [] :
-            settlement.stations?.filter { $0.title!.localizedCaseInsensitiveContains(request) } ?? []
+            settlement.stations?.filter {
+                guard let title = $0.title else { return false }
+                return title.localizedCaseInsensitiveContains(request)
+            } ?? []
     }
     
     var body: some View {
