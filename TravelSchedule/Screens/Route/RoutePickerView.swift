@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct RoutePickerView: View {
-    @State var text: String = ""
+    @State var context: RoutePickerViewModel
     let prompt: String
     let action: () -> Void
     
     var body: some View {
         Button(action: action) {
-            TextField("", text: $text, prompt: Text(LocalizedStringKey(prompt)))
+            TextField("", text: $context.text, prompt: Text(LocalizedStringKey(prompt)))
                 .font(.system(size: 17, weight: .regular))
                 .disabled(true)
                 .lineLimit(1)
@@ -26,5 +26,5 @@ struct RoutePickerView: View {
 }
 
 #Preview {
-    RoutePickerView(prompt: "From", action: {})
+    RoutePickerView(context: RoutePickerViewModel(), prompt: "From", action: {})
 }
