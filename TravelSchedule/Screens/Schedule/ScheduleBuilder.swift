@@ -8,9 +8,8 @@
 import SwiftUI
 
 final class ScheduleBuilder {
-    func build() -> ScheduleView {
-        let router = Router.shared
-        let context = ScheduleViewModel(router: router)
+    func build(settlement: Settlement?, station: Station?) -> ScheduleView {
+        let context = ScheduleViewModel(route: RouteFinderViewModel(router: Router.shared), settlement: settlement, station: station)
         return ScheduleView(context: context)
     }
 }
