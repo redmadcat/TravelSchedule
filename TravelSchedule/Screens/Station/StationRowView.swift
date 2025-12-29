@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct StationRowView: View {
+    let station: Station
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(verbatim: station.title ?? "")
+                .font(.system(size: 17, weight: .regular))
+                .foregroundColor(.ypBlack)
+            Spacer()
+            
+            Image(systemName: "chevron.right")
+                .foregroundColor(.ypBlack)
+        }
+        .frame(height: 60)
     }
 }
 
 #Preview {
-    StationRowView()
+    StationRowView(station: Station())
 }
