@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ScheduleView: View {
     @State var context: ScheduleViewModel
-    
+
     var body: some View {
         VStack {
-            RouteFinderView(context: context)
+            RouteFinderView(context: context.route)
                 .padding(.horizontal, 16)
                 .padding(.top, 252)
             
@@ -36,5 +36,5 @@ struct ScheduleView: View {
 }
 
 #Preview {
-    ScheduleView(context: ScheduleViewModel(router: Router.shared))
+    ScheduleView(context: ScheduleViewModel(route: RouteFinderViewModel(router: Router.shared), settlement: nil, station: nil))
 }
