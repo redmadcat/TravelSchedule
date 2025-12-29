@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack(path: $router.endpoint) {
             TabView() {
-                ScheduleBuilder().build()
+                ScheduleBuilder().build(settlement: nil, station: nil)
                 .tabItem {
                     Image("Schedule")
                         .renderingMode(.template)
@@ -30,10 +30,10 @@ struct ContentView: View {
             }
             .navigationDestination(for: RouteEndpoint.self) { endpoint in
                 switch endpoint {
-                case .settlement:
-                    SettlementBuilder().build()
-                case .station:
-                    Spacer()
+                case .settlement(let context):
+                    SettlementBuilder().build(picker: context)
+                case .station(let settlement, let picker):
+                    StationView(context: StationViewModel(router: Router.shared, picker: picker), settlement: settlement)
                 }
             }
         }
