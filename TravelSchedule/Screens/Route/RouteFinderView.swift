@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RouteFinderView: View {
-    @State var context: ScheduleViewModel
+    @State var context: RouteFinderViewModel
                 
     var body: some View {
         ZStack {
@@ -19,12 +19,12 @@ struct RouteFinderView: View {
             
             HStack(spacing: 16) {
                 VStack(spacing: 0) {
-                    RoutePickerView(prompt: "From", action: {
-                        context.toSettlements()
+                    RoutePickerView(context: context.from, prompt: "From", action: {
+                        context.toSettlements(context: context.from)
                     })
                 
-                    RoutePickerView(prompt: "To", action: {
-                        context.toSettlements()
+                    RoutePickerView(context: context.to, prompt: "To", action: {
+                        context.toSettlements(context: context.to)
                     })
                 }
                 .frame(maxWidth: .infinity)
@@ -56,5 +56,5 @@ struct RouteFinderView: View {
 }
 
 #Preview {
-    RouteFinderView(context: ScheduleViewModel(router: Router.shared))
+    RouteFinderView(context: RouteFinderViewModel(router: Router.shared))
 }
