@@ -9,11 +9,12 @@ import SwiftUI
 
 struct SettlementListView: View {
     var settlements: [Settlement]
+    var picker: RoutePickerViewModel
     
     var body: some View {
         List(settlements, id: \.self) { settlement in
             Button(action: {
-                
+                Router.shared.toStations(settlement: settlement, context: picker)
             }) {
                 SettlementRowView(settlement: settlement)
             }
@@ -25,6 +26,6 @@ struct SettlementListView: View {
     }
 }
 
-#Preview {
-    SettlementListView(settlements: [])
-}
+//#Preview {
+//    SettlementListView(settlements: [], picker: RoutePickerViewModel())
+//}
