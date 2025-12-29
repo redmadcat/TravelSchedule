@@ -13,7 +13,15 @@ final class Router {
     
     var endpoint: [RouteEndpoint] = []
     
-    func toSettlements() {
-        endpoint.append(.settlement)
+    func toSettlements(context: RoutePickerViewModel) {
+        endpoint.append(.settlement(context: context))
+    }
+    
+    func toStations(settlement: Settlement, context: RoutePickerViewModel) {
+        endpoint.append(.station(settlement: settlement, context: context))
+    }
+    
+    func toSchedule(settlement: Settlement, station: Station) {
+        endpoint.removeAll()
     }
 }
