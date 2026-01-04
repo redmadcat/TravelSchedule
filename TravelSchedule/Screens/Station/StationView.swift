@@ -10,7 +10,6 @@ import SwiftUI
 struct StationView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var request: String = ""
-    @State var context: StationViewModel
     let settlement: Settlement
     var direction: Route.Direction
     
@@ -49,6 +48,6 @@ struct StationView: View {
     }
 }
 
-//#Preview {
-//    StationView(settlement: nil)
-//}
+#Preview {
+    StationView(settlement: Settlement(title: "Пятигорск", stations: [Station(title: "Лермонтовский вокзал")]), direction: Route.Direction())
+}
