@@ -6,6 +6,6 @@
 //
 
 enum RouteEndpoint: Hashable {
-    case settlement(context: RoutePickerViewModel)
-    case station(settlement: Settlement, context: RoutePickerViewModel)
+    case settlement(direction: Route.Direction)
+    case station(settlement: Settlement, direction: Route.Direction)
 }
