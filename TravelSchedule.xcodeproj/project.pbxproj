@@ -25,9 +25,6 @@
 		944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D82EF018AE00AA53FF /* RoutePickerView.swift */; };
 		944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309DA2EF0198A00AA53FF /* RouteFinderView.swift */; };
 		944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */; };
-		945CFE842EFBD4DB00930390 /* RouteFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE832EFBD4D400930390 /* RouteFinderViewModel.swift */; };
-		945CFE862EFBD51B00930390 /* RoutePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE852EFBD51500930390 /* RoutePickerViewModel.swift */; };
-		945CFE902EFBF84900930390 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE8F2EFBF83F00930390 /* StationViewModel.swift */; };
 		945CFE9A2EFC01F800930390 /* StationStubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE992EFC01F800930390 /* StationStubView.swift */; };
 		945CFE9C2EFC027800930390 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE9B2EFC027800930390 /* StationListView.swift */; };
 		945CFE9E2EFC02F400930390 /* StationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE9D2EFC02F400930390 /* StationRowView.swift */; };
@@ -85,9 +82,6 @@
 		944309D82EF018AE00AA53FF /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
 		944309DA2EF0198A00AA53FF /* RouteFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderView.swift; sourceTree = "<group>"; };
 		944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStoriesView.swift; sourceTree = "<group>"; };
-		945CFE832EFBD4D400930390 /* RouteFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderViewModel.swift; sourceTree = "<group>"; };
-		945CFE852EFBD51500930390 /* RoutePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerViewModel.swift; sourceTree = "<group>"; };
-		945CFE8F2EFBF83F00930390 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
 		945CFE992EFC01F800930390 /* StationStubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStubView.swift; sourceTree = "<group>"; };
 		945CFE9B2EFC027800930390 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
 		945CFE9D2EFC02F400930390 /* StationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRowView.swift; sourceTree = "<group>"; };
@@ -162,7 +156,6 @@
 		941E92892EF936DB00327652 /* Station */ = {
 			isa = PBXGroup;
 			children = (
-				945CFE8F2EFBF83F00930390 /* StationViewModel.swift */,
 				941E928A2EF936EE00327652 /* StationView.swift */,
 				945CFE992EFC01F800930390 /* StationStubView.swift */,
 				945CFE9B2EFC027800930390 /* StationListView.swift */,
@@ -308,9 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				9407EA382F03F934006BFADF /* Route.swift */,
-				945CFE852EFBD51500930390 /* RoutePickerViewModel.swift */,
 				944309D82EF018AE00AA53FF /* RoutePickerView.swift */,
-				945CFE832EFBD4D400930390 /* RouteFinderViewModel.swift */,
 				944309DA2EF0198A00AA53FF /* RouteFinderView.swift */,
 				94A94AB92EF2D2C900824913 /* RouteEndpoint.swift */,
 				941E92C62EF97A1900327652 /* RouterViewModel.swift */,
@@ -487,10 +478,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				945CFE9C2EFC027800930390 /* StationListView.swift in Sources */,
-				945CFE902EFBF84900930390 /* StationViewModel.swift in Sources */,
 				944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */,
 				941E928B2EF936F300327652 /* StationView.swift in Sources */,
-				945CFE862EFBD51B00930390 /* RoutePickerViewModel.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
 				94A94A932EF2BC8500824913 /* ScheduleBuilder.swift in Sources */,
 				941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */,
@@ -509,7 +498,6 @@
 				945CFE9E2EFC02F400930390 /* StationRowView.swift in Sources */,
 				94A1FCFA2ED58AE9009C8B0F /* StationsServiceProtocol.swift in Sources */,
 				94A94A6A2EF2AF7C00824913 /* Router.swift in Sources */,
-				945CFE842EFBD4DB00930390 /* RouteFinderViewModel.swift in Sources */,
 				94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */,
 				94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */,
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
