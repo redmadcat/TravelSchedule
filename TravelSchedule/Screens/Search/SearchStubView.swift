@@ -1,16 +1,18 @@
 //
-//  StationStubView.swift
+//  SearchStubView.swift
 //  TravelSchedule
 //
-//  Created by Roman Yaschenkov on 24.12.2025.
+//  Created by Roman Yaschenkov on 05.01.2026.
 //
 
 import SwiftUI
 
-struct StationStubView: View {
+struct SearchStubView: View {
+    let text: String
+    
     var body: some View {
         Spacer()
-        Text("StationNotFound")
+        Text(LocalizedStringKey(text))
             .foregroundColor(.ypBlack)
             .font(.system(size: 24, weight: .bold))
             .padding()
@@ -19,5 +21,5 @@ struct StationStubView: View {
 }
 
 #Preview {
-    StationStubView()
+    SearchStubView(text: "StationNotFound")
 }

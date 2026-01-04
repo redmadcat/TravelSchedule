@@ -25,7 +25,7 @@ struct StationView: View {
     var body: some View {
         VStack {
             stations.isEmpty ?
-                AnyView(StationStubView()) :
+                AnyView(SearchStubView(text: "StationNotFound")) :
                 AnyView(StationListView(direction: direction, stations: stations, settlement: settlement))
         }
         .navigationTitle("StationSelection")

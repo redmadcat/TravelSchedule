@@ -25,7 +25,7 @@ struct SettlementView: View {
     var body: some View {
         VStack {
             context.isBusy ? AnyView(ProgressLoadingView()) : settlements.isEmpty ?
-                AnyView(SettlementStubView()) :
+                AnyView(SearchStubView(text: "SettlementNotFound")) :
                 AnyView(SettlementListView(settlements: settlements, direction: direction))
         }
         .navigationTitle("SettlementSelection")

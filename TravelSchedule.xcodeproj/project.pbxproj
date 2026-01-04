@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9407EA392F03F93C006BFADF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EA382F03F934006BFADF /* Route.swift */; };
+		9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EADC2F0B0D36006BFADF /* SearchStubView.swift */; };
 		941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */; };
 		941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59492ECDB1A100B99489 /* CopyrightService.swift */; };
 		941E92652EF918C500327652 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92632EF918B300327652 /* SearchView.swift */; };
@@ -16,7 +17,6 @@
 		941E92992EF93C7700327652 /* SettlementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92972EF93C6F00327652 /* SettlementViewModel.swift */; };
 		941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E929A2EF93CDF00327652 /* SettlementBuilder.swift */; };
 		941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92C62EF97A1900327652 /* RouterViewModel.swift */; };
-		941E92E32EFA87FA00327652 /* SettlementStubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92E22EFA87FA00327652 /* SettlementStubView.swift */; };
 		941E92EA2EFA94C100327652 /* SettlementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92E92EFA94C100327652 /* SettlementListView.swift */; };
 		941E92FA2EFA9FE500327652 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */; };
 		9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */; };
@@ -25,7 +25,6 @@
 		944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D82EF018AE00AA53FF /* RoutePickerView.swift */; };
 		944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309DA2EF0198A00AA53FF /* RouteFinderView.swift */; };
 		944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */; };
-		945CFE9A2EFC01F800930390 /* StationStubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE992EFC01F800930390 /* StationStubView.swift */; };
 		945CFE9C2EFC027800930390 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE9B2EFC027800930390 /* StationListView.swift */; };
 		945CFE9E2EFC02F400930390 /* StationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE9D2EFC02F400930390 /* StationRowView.swift */; };
 		945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */; };
@@ -65,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		9407EA382F03F934006BFADF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		9407EADC2F0B0D36006BFADF /* SearchStubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStubView.swift; sourceTree = "<group>"; };
 		941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightServiceProtocol.swift; sourceTree = "<group>"; };
 		941B59492ECDB1A100B99489 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
 		941E92632EF918B300327652 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 		941E92972EF93C6F00327652 /* SettlementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementViewModel.swift; sourceTree = "<group>"; };
 		941E929A2EF93CDF00327652 /* SettlementBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementBuilder.swift; sourceTree = "<group>"; };
 		941E92C62EF97A1900327652 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
-		941E92E22EFA87FA00327652 /* SettlementStubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementStubView.swift; sourceTree = "<group>"; };
 		941E92E92EFA94C100327652 /* SettlementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementListView.swift; sourceTree = "<group>"; };
 		941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 		9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,7 +81,6 @@
 		944309D82EF018AE00AA53FF /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
 		944309DA2EF0198A00AA53FF /* RouteFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderView.swift; sourceTree = "<group>"; };
 		944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStoriesView.swift; sourceTree = "<group>"; };
-		945CFE992EFC01F800930390 /* StationStubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStubView.swift; sourceTree = "<group>"; };
 		945CFE9B2EFC027800930390 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
 		945CFE9D2EFC02F400930390 /* StationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRowView.swift; sourceTree = "<group>"; };
 		945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601Coder.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				94A94ABB2EF2D3D600824913 /* SettlementView.swift */,
 				941E929A2EF93CDF00327652 /* SettlementBuilder.swift */,
 				941E92802EF92DBB00327652 /* SettlementRowView.swift */,
-				941E92E22EFA87FA00327652 /* SettlementStubView.swift */,
 				941E92E92EFA94C100327652 /* SettlementListView.swift */,
 			);
 			path = Settlement;
@@ -149,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				941E92632EF918B300327652 /* SearchView.swift */,
+				9407EADC2F0B0D36006BFADF /* SearchStubView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -157,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				941E928A2EF936EE00327652 /* StationView.swift */,
-				945CFE992EFC01F800930390 /* StationStubView.swift */,
 				945CFE9B2EFC027800930390 /* StationListView.swift */,
 				945CFE9D2EFC02F400930390 /* StationRowView.swift */,
 			);
@@ -511,12 +508,11 @@
 				941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */,
 				944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */,
 				9461FFAE2ECF49F70083B7D9 /* ThreadService.swift in Sources */,
-				945CFE9A2EFC01F800930390 /* StationStubView.swift in Sources */,
 				941E92822EF92DC700327652 /* SettlementRowView.swift in Sources */,
 				94A94ABC2EF2D3E000824913 /* SettlementView.swift in Sources */,
+				9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */,
 				9407EA392F03F93C006BFADF /* Route.swift in Sources */,
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
-				941E92E32EFA87FA00327652 /* SettlementStubView.swift in Sources */,
 				9461FF972ECF30F40083B7D9 /* BaseSerivce.swift in Sources */,
 				94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */,
 				949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */,
