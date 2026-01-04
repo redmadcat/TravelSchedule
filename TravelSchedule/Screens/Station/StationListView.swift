@@ -28,6 +28,6 @@ struct StationListView: View {
     }
 }
 
-//#Preview {
-//    StationListView(stations: [], settlement: Settlement(title: "Пятигорск", stations: [Station(title: "Лермонтовский вокзал")]))
-//}
+#Preview {
+    StationListView(direction: Route.Direction(), stations: [], settlement: Settlement(title: "Пятигорск", stations: [Station(title: "Лермонтовский вокзал")]))
+}
