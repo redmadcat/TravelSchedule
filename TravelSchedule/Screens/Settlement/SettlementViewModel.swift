@@ -13,11 +13,9 @@ final class SettlementViewModel: RouterViewModel {
     private let service: StationsServiceProtocol
     var isBusy: Bool = false
     var settlements: [Settlement] = []
-    var picker: RoutePickerViewModel
     
-    init(router: Router, service: StationsServiceProtocol, picker: RoutePickerViewModel) {
+    init(router: Router, service: StationsServiceProtocol) {
         self.service = service
-        self.picker = picker
         super.init(router: router)
         
         Task { await load() }
