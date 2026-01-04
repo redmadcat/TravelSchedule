@@ -12,6 +12,7 @@ struct StationView: View {
     @State private var request: String = ""
     @State var context: StationViewModel
     let settlement: Settlement
+    var direction: Route.Direction
     
     private var stations: [Station] {
         request.isEmpty ?
@@ -26,7 +27,7 @@ struct StationView: View {
         VStack {
             stations.isEmpty ?
                 AnyView(StationStubView()) :
-                AnyView(StationListView(stations: stations, settlement: settlement, picker: context.picker))
+                AnyView(StationListView(direction: direction, stations: stations, settlement: settlement))
         }
         .navigationTitle("StationSelection")
         .navigationBarBackButtonHidden(true)
