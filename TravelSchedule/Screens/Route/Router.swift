@@ -12,16 +12,16 @@ final class Router {
     static let shared = Router()
     
     var endpoint: [RouteEndpoint] = []
-    
-    func toSettlements(context: RoutePickerViewModel) {
-        endpoint.append(.settlement(context: context))
+        
+    func toSettlements(direction: Route.Direction) {
+        endpoint.append(.settlement(direction: direction))
     }
     
-    func toStations(settlement: Settlement, context: RoutePickerViewModel) {
-        endpoint.append(.station(settlement: settlement, context: context))
+    func toStations(settlement: Settlement, direction: Route.Direction) {
+        endpoint.append(.station(settlement: settlement, direction: direction))
     }
     
-    func toSchedule(settlement: Settlement, station: Station) {
+    func toRoot() {
         endpoint.removeAll()
     }
 }
