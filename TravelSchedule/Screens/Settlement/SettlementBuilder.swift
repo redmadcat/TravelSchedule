@@ -9,7 +9,7 @@ import SwiftUI
 import OpenAPIURLSession
 
 final class SettlementBuilder {
-    func build(picker: RoutePickerViewModel) -> SettlementView {
+    func build(direction: Route.Direction) -> SettlementView {
         let client = Client(
             serverURL: try! Servers.Server1.url(),
             configuration: .init(dateTranscoder: ISO8601Coder()),
@@ -18,7 +18,7 @@ final class SettlementBuilder {
         
         let router = Router.shared
         let service = TimetableService(client: client, apiKey: Auth.apiKey)
-        let context = SettlementViewModel(router: router, service: service, picker: picker)
-        return SettlementView(context: context)
+        let context = SettlementViewModel(router: router, service: service)
+        return SettlementView(context: context, direction: direction)
     }
 }
