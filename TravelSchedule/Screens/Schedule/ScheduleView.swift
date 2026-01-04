@@ -12,13 +12,14 @@ struct ScheduleView: View {
 
     var body: some View {
         VStack {
-            RouteFinderView(context: context.route)
+            RouteFinderView(route: context.route)
                 .padding(.horizontal, 16)
                 .padding(.top, 252)
             
             Button {
                 
-            } label: {
+            }
+            label: {
                 Text("Find")
                     .font(.system(size: 17, weight: .bold))
                     .foregroundStyle(.ypWhiteAD)
@@ -26,15 +27,19 @@ struct ScheduleView: View {
             }
             .background(RoundedRectangle(cornerRadius: 16).fill(.ypBlue))
             .padding(.top, 20)
+            .opacity(context.route.isValid ? 1 : 0)
             
             Spacer()
             Divider()
         }
         .background(.ypWhite)
         .ignoresSafeArea(edges: .top)
+        .onAppear {
+            context.route.validation()
+        }
     }
 }
 
 #Preview {
-    ScheduleView(context: ScheduleViewModel(route: RouteFinderViewModel(router: Router.shared), settlement: nil, station: nil))
+    ScheduleView(context: ScheduleViewModel(route: Route()))
 }

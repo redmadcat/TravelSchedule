@@ -6,13 +6,10 @@
 //
 
 final class ScheduleViewModel {
-    var route: RouteFinderViewModel
+    var route: Route
     
-    init(route: RouteFinderViewModel, settlement: Settlement?, station: Station?) {
+    init(route: Route) {
         self.route = route
-        
-        guard let settlementTitle = settlement?.title, let stationTitle = station?.title else { return }
-        self.route.from.text = settlementTitle + " (" + stationTitle + ")"
     }
 }
 
