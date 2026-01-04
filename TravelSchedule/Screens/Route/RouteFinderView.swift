@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RouteFinderView: View {
-    @State var context: RouteFinderViewModel
+    @State var route: Route
                 
     var body: some View {
         ZStack {
@@ -19,12 +19,12 @@ struct RouteFinderView: View {
             
             HStack(spacing: 16) {
                 VStack(spacing: 0) {
-                    RoutePickerView(context: context.from, prompt: "From", action: {
-                        context.toSettlements(context: context.from)
+                    RoutePickerView(route: route.from, prompt: "From", action: {
+                        Router.shared.toSettlements(direction: route.from)
                     })
                 
-                    RoutePickerView(context: context.to, prompt: "To", action: {
-                        context.toSettlements(context: context.to)
+                    RoutePickerView(route: route.to, prompt: "To", action: {
+                        Router.shared.toSettlements(direction: route.to)
                     })
                 }
                 .frame(maxWidth: .infinity)
@@ -34,7 +34,7 @@ struct RouteFinderView: View {
                 )
                 
                 Button {
-                    
+                    route.versa()
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 18)
@@ -49,12 +49,16 @@ struct RouteFinderView: View {
                     }
                 }
                 .padding(.trailing, 16)
+                .opacity(route.isValid ? 1 : 0.5)
             }
             .padding(.leading, 18)
+            .onAppear {
+                route.validation()
+            }
         }
     }
 }
 
 #Preview {
-    RouteFinderView(context: RouteFinderViewModel(router: Router.shared))
+    RouteFinderView(route: Route())
 }
