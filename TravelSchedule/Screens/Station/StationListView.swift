@@ -8,21 +8,15 @@
 import SwiftUI
 
 struct StationListView: View {
+    var direction: Route.Direction
     var stations: [Station]
     var settlement: Settlement
-    var picker: RoutePickerViewModel
     
     var body: some View {
         List(stations, id: \.self) { station in
             Button(action: {
-                guard let settlementTitle = settlement.title, let stationTitle = station.title else {
-                    print("exit before route")
-                    return
-                }
-                
-                picker.text = settlementTitle + " (" + stationTitle + ")"
-                
-                Router.shared.toSchedule(settlement: settlement, station: station)
+                direction.setRoute(settlement: settlement, station: station)
+                Router.shared.toRoot()
             }) {
                 StationRowView(station: station)
             }
