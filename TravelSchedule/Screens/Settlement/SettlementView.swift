@@ -11,6 +11,7 @@ struct SettlementView: View {
     @Environment(\.dismiss) private var dismiss
     @State var context: SettlementViewModel
     @State private var request: String = ""
+    var direction: Route.Direction
     
     private var settlements: [Settlement] {
         request.isEmpty ?
@@ -25,7 +26,7 @@ struct SettlementView: View {
         VStack {
             context.isBusy ? AnyView(ProgressLoadingView()) : settlements.isEmpty ?
                 AnyView(SettlementStubView()) :
-                AnyView(SettlementListView(settlements: settlements, picker: context.picker))
+                AnyView(SettlementListView(settlements: settlements, direction: direction))
         }
         .navigationTitle("SettlementSelection")
         .navigationBarBackButtonHidden(true)
@@ -50,5 +51,5 @@ struct SettlementView: View {
 }
 
 #Preview {
-    SettlementBuilder().build(picker: RoutePickerViewModel())
+    SettlementBuilder().build(direction: Route.Direction())
 }
