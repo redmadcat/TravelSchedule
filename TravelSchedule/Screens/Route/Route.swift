@@ -14,19 +14,11 @@ final class Route {
     private(set) var to = Direction()
     
     @Observable
-    final class Direction: Hashable {
+    final class Direction {
         private(set) var settlement: Settlement?
         private(set) var station: Station?
         var text: String = ""
-                
-        static func == (lhs: Direction, rhs: Direction) -> Bool {
-            ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
-        }
-        
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(ObjectIdentifier(self))
-        }
-        
+                        
         func setRoute(settlement: Settlement, station: Station) {
             self.settlement = settlement
             self.station = station

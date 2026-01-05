@@ -21,6 +21,10 @@ final class Router {
         endpoint.append(.station(settlement: settlement, direction: direction))
     }
     
+    func toCarrier(route: Route) {
+        endpoint.append(.carrier(route: route))
+    }
+    
     func toRoot() {
         endpoint.removeAll()
     }
