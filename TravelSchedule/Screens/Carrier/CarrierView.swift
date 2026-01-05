@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct CarrierView: View {
+    let route: Route
+    
     var body: some View {
         Text(verbatim: "CarrierView")
     }
 }
 
 #Preview {
-    CarrierView()
+    CarrierView(route: Route())
 }

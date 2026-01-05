@@ -310,8 +310,8 @@
 		94A94A7F2EF2B9C900824913 /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				9407EAE62F0BD5BA006BFADF /* RouteExtension.swift */,
 				9407EA382F03F934006BFADF /* Route.swift */,
+				9407EAE62F0BD5BA006BFADF /* RouteExtension.swift */,
 				944309D82EF018AE00AA53FF /* RoutePickerView.swift */,
 				944309DA2EF0198A00AA53FF /* RouteFinderView.swift */,
 				94A94AB92EF2D2C900824913 /* RouteEndpoint.swift */,
