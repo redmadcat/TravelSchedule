@@ -13,8 +13,9 @@ struct RoutePickerView: View {
     let action: () -> Void
     var body: some View {
         Button(action: action) {            
-            TextField("", text: $route.text, prompt: Text(LocalizedStringKey(prompt)))
+            TextField("", text: $route.text, prompt: Text(LocalizedStringKey(prompt)).foregroundColor(.ypGray))
                 .font(.system(size: 17, weight: .regular))
+                .foregroundColor(.ypBlack)
                 .disabled(true)
                 .lineLimit(1)
                 .frame(maxWidth: .infinity, minHeight: 48)

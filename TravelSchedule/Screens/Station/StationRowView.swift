@@ -14,11 +14,11 @@ struct StationRowView: View {
         HStack {
             Text(verbatim: station.title ?? "")
                 .font(.system(size: 17, weight: .regular))
-                .foregroundColor(.ypBlack)
+                .foregroundColor(.ypBlackAD)
             Spacer()
             
             Image(systemName: "chevron.right")
-                .foregroundColor(.ypBlack)
+                .foregroundColor(.ypBlackAD)
         }
         .frame(height: 60)
     }

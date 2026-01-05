@@ -13,7 +13,10 @@ struct SettingsView: View {
             Text(verbatim: "Settings")
             Spacer()
             Divider()
+                .overlay(.ypGrayAD)
+                .frame(minHeight: 1)
         }
+        .background(.ypWhiteAD)
     }
 }
 

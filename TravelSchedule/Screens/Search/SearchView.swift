@@ -17,7 +17,7 @@ struct SearchView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 22)
                 .padding(.leading, 8)
-                .foregroundColor(request.isEmpty ? .ypGray : .ypBlack)
+                .foregroundColor(request.isEmpty ? .ypGray : .ypBlackAD)
             
             TextField(
                 "",
@@ -26,7 +26,7 @@ struct SearchView: View {
                     .foregroundStyle(.ypGray)
             )
             .autocorrectionDisabled()
-            .foregroundStyle(.ypBlack)
+            .foregroundStyle(.ypBlackAD)
             
             if !request.isEmpty {
                 Button(action: {
@@ -43,7 +43,7 @@ struct SearchView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 36)
-        .background(.ypLightGray)
+        .background(.ypLightGrayAD)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .padding(.horizontal)
     }

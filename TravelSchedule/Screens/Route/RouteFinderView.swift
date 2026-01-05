@@ -30,7 +30,7 @@ struct RouteFinderView: View {
                 .frame(maxWidth: .infinity)
                 .background(
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(.ypWhiteAD)
+                        .fill(.ypWhite)
                 )
                 
                 Button {
@@ -38,7 +38,7 @@ struct RouteFinderView: View {
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 18)
-                            .fill(.ypWhiteAD)
+                            .fill(.ypWhite)
                             .frame(width: 36, height: 36)
                         
                         Image(systemName: "arrow.2.squarepath")

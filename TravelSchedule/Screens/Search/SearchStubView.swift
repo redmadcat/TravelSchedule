@@ -13,7 +13,7 @@ struct SearchStubView: View {
     var body: some View {
         Spacer()
         Text(LocalizedStringKey(text))
-            .foregroundColor(.ypBlack)
+            .foregroundColor(.ypBlackAD)
             .font(.system(size: 24, weight: .bold))
             .padding()
         Spacer()

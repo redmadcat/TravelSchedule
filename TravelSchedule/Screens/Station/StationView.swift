@@ -37,7 +37,7 @@ struct StationView: View {
                     dismiss()
                 }) {
                     Image(systemName: "chevron.left")
-                        .foregroundColor(.ypBlack)
+                        .foregroundColor(.ypBlackAD)
                 }
             }
         }

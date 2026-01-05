@@ -22,7 +22,7 @@ struct ScheduleView: View {
             label: {
                 Text("Find")
                     .font(.system(size: 17, weight: .bold))
-                    .foregroundStyle(.ypWhiteAD)
+                    .foregroundStyle(.ypWhite)
                     .frame(width: 150, height: 60)
             }
             .background(RoundedRectangle(cornerRadius: 16).fill(.ypBlue))
@@ -31,8 +31,10 @@ struct ScheduleView: View {
             
             Spacer()
             Divider()
+                .overlay(.ypGrayAD)
+                .frame(minHeight: 1)
         }
-        .background(.ypWhite)
+        .background(.ypWhiteAD)
         .ignoresSafeArea(edges: .top)
         .onAppear {
             context.route.validation()

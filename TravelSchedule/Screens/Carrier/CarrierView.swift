@@ -11,7 +11,11 @@ struct CarrierView: View {
     let route: Route
     
     var body: some View {
-        Text(verbatim: "CarrierView")
+        VStack {
+            Text(verbatim: "CarrierView")
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+        .background(.ypWhiteAD)
     }
 }
 
