@@ -161,12 +161,12 @@
 			path = Station;
 			sourceTree = "<group>";
 		};
-		941E92F72EFA9FB300327652 /* ProgressView */ = {
+		941E92F72EFA9FB300327652 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
 				941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */,
 			);
-			path = ProgressView;
+			path = Progress;
 			sourceTree = "<group>";
 		};
 		944309CE2EF014C000AA53FF /* Settings */ = {
@@ -271,7 +271,7 @@
 		94A94A7D2EF2B99500824913 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				941E92F72EFA9FB300327652 /* ProgressView */,
+				941E92F72EFA9FB300327652 /* Progress */,
 				941E92892EF936DB00327652 /* Station */,
 				941E92622EF918A300327652 /* Search */,
 				941E92552EF4897100327652 /* Settlement */,
