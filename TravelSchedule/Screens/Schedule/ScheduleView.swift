@@ -17,7 +17,7 @@ struct ScheduleView: View {
                 .padding(.top, 252)
             
             Button {
-                
+                Router.shared.toCarrier(route: context.route)
             }
             label: {
                 Text("Find")
