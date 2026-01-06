@@ -45,6 +45,28 @@
         }
       }
     },
+    "NoInternet" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет интернета"
+          }
+        }
+      }
+    },
+    "ServerError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка сервера"
+          }
+        }
+      }
+    },
     "SettlementNotFound" : {
       "extractionState" : "manual",
       "localizations" : {
