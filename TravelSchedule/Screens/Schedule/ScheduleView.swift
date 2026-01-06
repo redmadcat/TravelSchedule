@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ScheduleView: View {
-    @State var context: ScheduleViewModel
+    @State var route: Route
 
     var body: some View {
         VStack {
-            RouteFinderView(route: context.route)
+            RouteFinderView(route: route)
                 .padding(.horizontal, 16)
                 .padding(.top, 252)
             
             Button {
-                Router.shared.toCarrier(route: context.route)
+                Router.shared.toCarrier(route: route)
             }
             label: {
                 Text("Find")
@@ -27,7 +27,7 @@ struct ScheduleView: View {
             }
             .background(RoundedRectangle(cornerRadius: 16).fill(.ypBlue))
             .padding(.top, 20)
-            .opacity(context.route.isValid ? 1 : 0)
+            .opacity(route.isValid ? 1 : 0)
             
             Spacer()
             Divider()
@@ -37,11 +37,11 @@ struct ScheduleView: View {
         .background(.ypWhiteAD)
         .ignoresSafeArea(edges: .top)
         .onAppear {
-            context.route.validation()
+            route.validation()
         }
     }
 }
 
 #Preview {
-    ScheduleView(context: ScheduleViewModel(route: Route()))
+    ScheduleView(route: Route())
 }

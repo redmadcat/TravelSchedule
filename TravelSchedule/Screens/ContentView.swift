@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack(path: $router.endpoint) {
             TabView() {
-                ScheduleBuilder().build()
+                ScheduleView(route: Route())
                 .tabItem {
                     Image("Schedule")
                         .renderingMode(.template)
