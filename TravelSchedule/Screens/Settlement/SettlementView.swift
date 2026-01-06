@@ -24,9 +24,16 @@ struct SettlementView: View {
     
     var body: some View {
         VStack {
-            context.isBusy ? AnyView(ProgressLoadingView()) : settlements.isEmpty ?
-                AnyView(SearchStubView(text: "SettlementNotFound")) :
-                AnyView(SettlementListView(settlements: settlements, direction: direction))
+            switch context.status {
+            case .loading:
+                ProgressLoadingView()
+            case .success, .default:
+                settlements.isEmpty ?
+                    AnyView(SearchStubView(text: "SettlementNotFound")) :
+                    AnyView(SettlementListView(settlements: settlements, direction: direction))
+            case .failure(let error):
+                error == .network ? ErrorView(text: "NoInternet") : ErrorView(text: "ServerError")
+            }
         }
         .navigationTitle("SettlementSelection")
         .navigationBarBackButtonHidden(true)
@@ -46,7 +53,6 @@ struct SettlementView: View {
                 .disabled(context.isBusy)
                 .opacity(context.isBusy ? 0.5 : 1)
         }
-        .backgroundStyle(.ypWhite)
     }
 }
 

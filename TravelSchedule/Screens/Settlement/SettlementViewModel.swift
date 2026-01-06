@@ -13,6 +13,7 @@ final class SettlementViewModel: RouterViewModel {
     private let service: StationsServiceProtocol
     var isBusy: Bool = false
     var settlements: [Settlement] = []
+    var status: APIResponseStatus = .default
     
     init(router: Router, service: StationsServiceProtocol) {
         self.service = service
@@ -23,8 +24,9 @@ final class SettlementViewModel: RouterViewModel {
     
     private func load() async {
         defer { isBusy = false }
-        
+                
         do {
+            status = .loading
             isBusy = true
             let response = try await service.getAllStations()
             if let result = response.countries?.filter({ $0.title == country }).first {
@@ -38,8 +40,9 @@ final class SettlementViewModel: RouterViewModel {
                         }
                 }
             }
+            status = .success
         } catch {
-            print(error)
+            status = error is URLError ? .failure(.network) : .failure(.server)
         }
     }
 }
