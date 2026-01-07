@@ -53,6 +53,7 @@ struct SettlementView: View {
                 .disabled(context.isBusy)
                 .opacity(context.isBusy ? 0.5 : 1)
         }
+        .background(.ypWhiteAD)
     }
 }
 

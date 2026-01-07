@@ -44,7 +44,7 @@ struct StationView: View {
         .safeAreaInset(edge: .top) {
             SearchView(request: $request)
         }
-        .backgroundStyle(.ypWhite)
+        .background(.ypWhiteAD)
     }
 }
 

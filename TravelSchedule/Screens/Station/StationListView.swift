@@ -21,10 +21,14 @@ struct StationListView: View {
                 StationRowView(station: station)
             }
             .listRowInsets(.init(top: 0, leading: 16, bottom: 0, trailing: 16))
+            .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
         }
+        .scrollDismissesKeyboard(.interactively)
         .listStyle(.inset)
         .scrollIndicators(.hidden)
+        .scrollContentBackground(.hidden)
+        .background(.ypWhiteAD)
     }
 }
 
