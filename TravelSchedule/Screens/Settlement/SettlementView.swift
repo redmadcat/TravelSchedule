@@ -28,9 +28,14 @@ struct SettlementView: View {
             case .loading:
                 ProgressLoadingView()
             case .success, .default:
-                settlements.isEmpty ?
-                    AnyView(SearchStubView(text: "SettlementNotFound")) :
-                    AnyView(SettlementListView(settlements: settlements, direction: direction))
+                VStack {
+                    settlements.isEmpty ?
+                        AnyView(SearchStubView(text: "SettlementNotFound")) :
+                        AnyView(SettlementListView(settlements: settlements, direction: direction))
+                }
+                .safeAreaInset(edge: .top) {
+                    SearchView(request: $request)
+                }
             case .failure(let error):
                 error == .network ? ErrorView(text: "NoInternet") : ErrorView(text: "ServerError")
             }
@@ -47,11 +52,6 @@ struct SettlementView: View {
                         .foregroundColor(.ypBlackAD)
                 }
             }
-        }
-        .safeAreaInset(edge: .top) {
-            SearchView(request: $request)
-                .disabled(context.isBusy)
-                .opacity(context.isBusy ? 0.5 : 1)
         }
         .background(.ypWhiteAD)
     }
