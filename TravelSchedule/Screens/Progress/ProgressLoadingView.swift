@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ProgressLoadingView: View {
     var body: some View {
-        Spacer()
-        ProgressView("Loading")
-        Spacer()
+        ZStack {
+            Color.ypWhiteAD
+            
+            Spacer()
+            ProgressView("Loading")
+            Spacer()
+        }
     }
 }
 

@@ -12,6 +12,8 @@ struct ErrorView: View {
     
     var body: some View {
         ZStack {
+            Color.ypWhiteAD
+            
             VStack {
                 Spacer()
                 Image(text)
@@ -25,7 +27,6 @@ struct ErrorView: View {
                 Spacer()
             }            
         }
-        .backgroundStyle(.ypWhiteAD)
     }
 }
 
