@@ -54,4 +54,8 @@ final class Route {
         from.setRoute(settlement: toSettlement, station: toStation)
         to.setRoute(settlement: fromSettlement, station: fromStation)
     }
+    
+    func description() -> String {
+        return from.text + " -> " + to.text
+    }
 }
