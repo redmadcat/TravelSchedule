@@ -56,6 +56,17 @@
         }
       }
     },
+    "NoOptions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вариантов нет"
+          }
+        }
+      }
+    },
     "ServerError" : {
       "extractionState" : "manual",
       "localizations" : {
