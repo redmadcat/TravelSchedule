@@ -14,6 +14,8 @@
 		9407EB082F0C5726006BFADF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EB072F0C5726006BFADF /* ErrorView.swift */; };
 		9407EB232F0D3B3E006BFADF /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EB222F0D3B37006BFADF /* ErrorType.swift */; };
 		9407EB262F0D3E30006BFADF /* APIResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EB252F0D3E27006BFADF /* APIResponseStatus.swift */; };
+		94121AFF2F11772E00726955 /* CarrierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94121AFD2F11772300726955 /* CarrierViewModel.swift */; };
+		94121B0C2F1191C100726955 /* CarrierBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94121B0B2F1191B900726955 /* CarrierBuilder.swift */; };
 		941B59472ECDB02300B99489 /* CopyrightServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */; };
 		941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B59492ECDB1A100B99489 /* CopyrightService.swift */; };
 		941E92652EF918C500327652 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92632EF918B300327652 /* SearchView.swift */; };
@@ -73,6 +75,8 @@
 		9407EB072F0C5726006BFADF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		9407EB222F0D3B37006BFADF /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		9407EB252F0D3E27006BFADF /* APIResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseStatus.swift; sourceTree = "<group>"; };
+		94121AFD2F11772300726955 /* CarrierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierViewModel.swift; sourceTree = "<group>"; };
+		94121B0B2F1191B900726955 /* CarrierBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierBuilder.swift; sourceTree = "<group>"; };
 		941B59462ECDB01300B99489 /* CopyrightServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightServiceProtocol.swift; sourceTree = "<group>"; };
 		941B59492ECDB1A100B99489 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
 		941E92632EF918B300327652 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 		9407EAE22F0BD31B006BFADF /* Carrier */ = {
 			isa = PBXGroup;
 			children = (
+				94121B0B2F1191B900726955 /* CarrierBuilder.swift */,
+				94121AFD2F11772300726955 /* CarrierViewModel.swift */,
 				9407EAE42F0BD341006BFADF /* CarrierView.swift */,
 			);
 			path = Carrier;
@@ -501,6 +507,7 @@
 			files = (
 				945CFE9C2EFC027800930390 /* StationListView.swift in Sources */,
 				944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */,
+				94121B0C2F1191C100726955 /* CarrierBuilder.swift in Sources */,
 				941E928B2EF936F300327652 /* StationView.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
 				941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */,
@@ -542,6 +549,7 @@
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
 				9461FF972ECF30F40083B7D9 /* BaseSerivce.swift in Sources */,
 				94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */,
+				94121AFF2F11772E00726955 /* CarrierViewModel.swift in Sources */,
 				9407EB232F0D3B3E006BFADF /* ErrorType.swift in Sources */,
 				9407EAE52F0BD341006BFADF /* CarrierView.swift in Sources */,
 				949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */,
