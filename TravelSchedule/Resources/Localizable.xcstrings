@@ -56,6 +56,17 @@
         }
       }
     },
+    "NoName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Без названия"
+          }
+        }
+      }
+    },
     "NoOptions" : {
       "extractionState" : "manual",
       "localizations" : {
