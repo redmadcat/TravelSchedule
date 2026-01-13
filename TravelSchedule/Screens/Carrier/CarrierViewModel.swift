@@ -35,7 +35,6 @@ final class CarrierViewModel {
             let segments = response.segments ?? []
             
             self.segments = segments.sorted { lhs, rhs in
-                
                 if let lhsDate = lhs.departure, let rhsDate = rhs.departure {
                     if lhsDate != rhsDate {
                         return lhsDate < rhsDate
@@ -44,7 +43,6 @@ final class CarrierViewModel {
                 return false
             }
             status = .success
-            print(segments)
         } catch {
             status = error is URLError ? .failure(.network) : .failure(.server)
         }
