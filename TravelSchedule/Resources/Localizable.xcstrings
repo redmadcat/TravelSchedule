@@ -34,6 +34,28 @@
         }
       }
     },
+    "h" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ч"
+          }
+        }
+      }
+    },
+    "HasTransfer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С пересадками"
+          }
+        }
+      }
+    },
     "Loading" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -41,6 +63,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Загрузка…"
+          }
+        }
+      }
+    },
+    "min" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "мин"
           }
         }
       }
