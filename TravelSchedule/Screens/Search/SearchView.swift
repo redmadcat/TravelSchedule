@@ -20,7 +20,7 @@ struct SearchView: View {
                 .foregroundColor(request.isEmpty ? .ypGray : .ypBlackAD)
             
             TextField(
-                "",
+                String.empty,
                 text: $request,
                 prompt: Text("EnterRequest")
                     .foregroundStyle(.ypGray)
