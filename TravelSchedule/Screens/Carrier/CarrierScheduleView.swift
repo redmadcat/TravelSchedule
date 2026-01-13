@@ -14,17 +14,18 @@ struct CarrierScheduleView: View {
         HStack(spacing: 5) {
             Text(segment.fakeDepartureTime)
                 .font(.system(size: 17, weight: .regular))
-                .foregroundStyle(.ypBlackAD)
+                .foregroundStyle(.ypBlack)
             Rectangle()
                 .frame(height: 1)
                 .foregroundStyle(.ypGray)
             Text(segment.durationFromFakeDeparture)
                 .font(.system(size: 12, weight: .regular))
-                .foregroundStyle(.ypBlackAD)
+                .foregroundStyle(.ypBlack)
             Rectangle()
                 .frame(height: 1)
                 .foregroundStyle(.ypGray)
             Text(segment.arrivalText)
+                .foregroundStyle(.ypBlack)
         }
     }
 }
