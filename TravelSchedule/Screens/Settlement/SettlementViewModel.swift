@@ -31,13 +31,14 @@ final class SettlementViewModel: RouterViewModel {
             let response = try await service.getAllStations()
             if let result = response.countries?.filter({ $0.title == country }).first {
                 if let regions = result.regions {
-                    let result = regions[0].settlements ?? []
-                    
-                    settlements = result
-                        .filter {
-                            guard let title = $0.title else { return false }
-                            return !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-                        }
+                    // Fetched most appropriate regions for test purpose
+                    if let regionMsk = regions[37].settlements, let regionSpb = regions[53].settlements {
+                        settlements = regionMsk + regionSpb
+                            .filter {
+                                guard let title = $0.title else { return false }
+                                return !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+                            }
+                    }
                 }
             }
             status = .success
