@@ -11,18 +11,22 @@ struct CarrierListView: View {
     var segments: [Segment]
     
     var body: some View {
-        LazyVStack {
-            ForEach(segments, id: \.self) { segment in
-                if let carrier = segment.thread?.carrier {
-                    Button {
-                        // carrier info navigation
-                    } label: {
-                        CarrierRowView(segment: segment)
+        ScrollView {
+            LazyVStack {
+                ForEach(segments, id: \.self) { segment in
+                    if let carrier = segment.thread?.carrier {
+                        Button {
+                            Router.shared.toContacts(carrier: carrier)
+                        } label: {
+                            CarrierRowView(segment: segment)
+                        }
+                        .buttonStyle(.plain)
                     }
-                    .buttonStyle(.plain)
                 }
             }
         }
+        .scrollIndicators(.hidden)
+        .scrollContentBackground(.hidden)
     }
 }
 

@@ -10,6 +10,8 @@ import OpenAPIURLSession
 
 typealias Settlement = Components.Schemas.Settlement
 typealias Station = Components.Schemas.Station
+typealias Segment = Components.Schemas.Segment
+typealias Carrier = Components.Schemas.Carrier
 
 struct ContentView: View {
     @State private var router = Router.shared
@@ -35,7 +37,9 @@ struct ContentView: View {
                 case .station(let settlement, let direction):
                     StationView(settlement: settlement, direction: direction)
                 case .carrier(let route):
-                    CarrierView(route: route)
+                    CarrierBuilder().build(route: route)
+                case .contacts(let carrier):
+                    CarrierContactsView(carrier: carrier)
                 }
             }
         }

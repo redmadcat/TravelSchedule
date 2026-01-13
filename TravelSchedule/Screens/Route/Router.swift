@@ -25,6 +25,10 @@ final class Router {
         endpoint.append(.carrier(route: route))
     }
     
+    func toContacts(carrier: Carrier) {
+        endpoint.append(.contacts(carrier: carrier))
+    }
+    
     func toRoot() {
         endpoint.removeAll()
     }

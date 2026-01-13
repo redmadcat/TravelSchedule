@@ -59,6 +59,7 @@
 		94AB36DA2F16686A0047F09A /* CarrierImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB36D92F16686A0047F09A /* CarrierImageView.swift */; };
 		94AB36DE2F1669580047F09A /* CarrierScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB36DD2F1669580047F09A /* CarrierScheduleView.swift */; };
 		94AB36E42F1669F10047F09A /* CarrierDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB36E32F1669F10047F09A /* CarrierDetailsView.swift */; };
+		94AB36F12F166E300047F09A /* CarrierContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB36F02F166E300047F09A /* CarrierContactsView.swift */; };
 		94B671302ECF182B001E271D /* TimetableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6712F2ECF1820001E271D /* TimetableService.swift */; };
 		94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */; };
 		94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */; };
@@ -129,6 +130,7 @@
 		94AB36D92F16686A0047F09A /* CarrierImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierImageView.swift; sourceTree = "<group>"; };
 		94AB36DD2F1669580047F09A /* CarrierScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierScheduleView.swift; sourceTree = "<group>"; };
 		94AB36E32F1669F10047F09A /* CarrierDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierDetailsView.swift; sourceTree = "<group>"; };
+		94AB36F02F166E300047F09A /* CarrierContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierContactsView.swift; sourceTree = "<group>"; };
 		94B6712F2ECF1820001E271D /* TimetableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableService.swift; sourceTree = "<group>"; };
 		94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableServiceProtocol.swift; sourceTree = "<group>"; };
 		94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 				94AB36DD2F1669580047F09A /* CarrierScheduleView.swift */,
 				94AB36E32F1669F10047F09A /* CarrierDetailsView.swift */,
 				94AB36D32F165F300047F09A /* CarrierPlaceholderView.swift */,
+				94AB36F02F166E300047F09A /* CarrierContactsView.swift */,
 			);
 			path = Carrier;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 				94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */,
 				9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */,
 				944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */,
+				94AB36F12F166E300047F09A /* CarrierContactsView.swift in Sources */,
 				9461FFA82ECF414B0083B7D9 /* ScheduleServiceProtocol.swift in Sources */,
 				94FBFF2C2ECB0DDB00F2EBFB /* NearestStationsServiceProtocol.swift in Sources */,
 				941E92992EF93C7700327652 /* SettlementViewModel.swift in Sources */,

@@ -9,4 +9,5 @@ enum RouteEndpoint: Hashable {
     case settlement(direction: Route.Direction)
     case station(settlement: Settlement, direction: Route.Direction)
     case carrier(route: Route)
+    case contacts(carrier: Carrier)
 }
