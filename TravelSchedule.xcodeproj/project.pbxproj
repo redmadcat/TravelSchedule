@@ -69,7 +69,6 @@
 		94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD42EC5F50D0086C35E /* Assets.xcassets */; };
 		94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD52EC5F50D0086C35E /* ContentView.swift */; };
 		94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD62EC5F50D0086C35E /* TravelScheduleApp.swift */; };
-		94E0059D2F1617EE00F576F1 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0059C2F1617E400F576F1 /* ExtensionDate.swift */; };
 		94E005A12F16210C00F576F1 /* ExtensionSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E005A02F1620FD00F576F1 /* ExtensionSegment.swift */; };
 		94E005BD2F16388600F576F1 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E005BB2F16387D00F576F1 /* ExtensionString.swift */; };
 		94FBFF1D2ECB02DE00F2EBFB /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 94FBFF1C2ECB02DE00F2EBFB /* OpenAPIRuntime */; };
@@ -144,7 +143,6 @@
 		94C4EBD42EC5F50D0086C35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C4EBD52EC5F50D0086C35E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94C4EBD62EC5F50D0086C35E /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
-		94E0059C2F1617E400F576F1 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		94E005A02F1620FD00F576F1 /* ExtensionSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSegment.swift; sourceTree = "<group>"; };
 		94E005BB2F16387D00F576F1 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		94FBFF222ECB040500F2EBFB /* openapi.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
@@ -436,7 +434,6 @@
 			children = (
 				94E005BB2F16387D00F576F1 /* ExtensionString.swift */,
 				94E005A02F1620FD00F576F1 /* ExtensionSegment.swift */,
-				94E0059C2F1617E400F576F1 /* ExtensionDate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -600,7 +597,6 @@
 				9461FFAE2ECF49F70083B7D9 /* ThreadService.swift in Sources */,
 				94E005BD2F16388600F576F1 /* ExtensionString.swift in Sources */,
 				941E92822EF92DC700327652 /* SettlementRowView.swift in Sources */,
-				94E0059D2F1617EE00F576F1 /* ExtensionDate.swift in Sources */,
 				94A94ABC2EF2D3E000824913 /* SettlementView.swift in Sources */,
 				9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */,
 				9407EA392F03F93C006BFADF /* Route.swift in Sources */,
