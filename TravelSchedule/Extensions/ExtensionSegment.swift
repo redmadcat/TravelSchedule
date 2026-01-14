@@ -9,7 +9,8 @@ import Foundation
 
 extension Segment {
     var departureDate: Date {
-        Date()
+        let time = getRandomTime()
+        return Calendar.current.date(bySettingHour: time.hour, minute: time.minute, second: 00, of: Date())!
     }
     
     var fakeHasTransfers: Bool {
@@ -47,5 +48,19 @@ extension Segment {
         formatter.locale = Locale(identifier: "ru_RU")
         formatter.dateFormat = "HH:mm"
         return formatter.string(from: arrival)
+    }
+    
+    func getRandomTime() -> (hour: Int, minute: Int) {
+        let array = [
+            (22, 30),
+            (21, 45),
+            (01, 15),
+            (05, 50),
+            (13, 30),
+            (13, 45),
+            (19, 45)
+        ]
+        
+        return array.randomElement()!
     }
 }
