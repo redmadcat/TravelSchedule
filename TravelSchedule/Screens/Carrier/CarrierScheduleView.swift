@@ -18,13 +18,13 @@ struct CarrierScheduleView: View {
             Rectangle()
                 .frame(height: 1)
                 .foregroundStyle(.ypGray)
-            Text(segment.durationFromFakeDeparture)
+            Text("\(segment.durationFromFakeDeparture) hours")
                 .font(.system(size: 12, weight: .regular))
                 .foregroundStyle(.ypBlack)
             Rectangle()
                 .frame(height: 1)
                 .foregroundStyle(.ypGray)
-            Text(segment.arrivalText)
+            Text(segment.arrivalTime)
                 .foregroundStyle(.ypBlack)
         }
     }
