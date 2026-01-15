@@ -35,6 +35,7 @@ struct SettlementView: View {
                 }
                 .safeAreaInset(edge: .top) {
                     SearchView(request: $request)
+                        .background(.ypWhiteAD)
                 }
             case .failure(let error):
                 error == .network ? ErrorView(text: "NoInternet") : ErrorView(text: "ServerError")
