@@ -18,6 +18,7 @@ final class CarrierBuilder {
         
         let service = TimetableService(client: client, apiKey: Auth.apiKey)
         let context = CarrierViewModel(service: service)
-        return CarrierView(context: context, route: route)
+        let filter = CarrierFilter()
+        return CarrierView(context: context, filter: filter, route: route)
     }
 }
