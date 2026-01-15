@@ -34,7 +34,7 @@ struct CarrierRowView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 104)
-        .background(RoundedRectangle(cornerRadius: 20).fill(.ypLightGray))
+        .background(RoundedRectangle(cornerRadius: 24).fill(.ypLightGray))
     }
 }
 
