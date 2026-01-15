@@ -40,6 +40,8 @@ struct ContentView: View {
                     CarrierBuilder().build(route: route)
                 case .contacts(let carrier):
                     CarrierContactsView(carrier: carrier)
+                case .filter(let filter):
+                    CarrierFilterView(filter: filter)
                 }
             }
         }

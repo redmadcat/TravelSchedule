@@ -10,4 +10,5 @@ enum RouteEndpoint: Hashable {
     case station(settlement: Settlement, direction: Route.Direction)
     case carrier(route: Route)
     case contacts(carrier: Carrier)
+    case filter(filter: CarrierFilter)
 }
