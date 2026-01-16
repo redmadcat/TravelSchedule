@@ -18,7 +18,7 @@ struct CarrierFilterButtonView: View {
                 Text("SpecifyTime")
                     .font(.system(size: 17, weight: .bold))
                     .foregroundStyle(.ypWhite)
-                Circle().frame(width: 10, height: 10, alignment: .leading)
+                Circle().frame(width: 8, height: 8, alignment: .leading)
                     .padding(.top, 3)
                     .foregroundColor(filter.isApplied ? .ypRed : .clear)
             }
