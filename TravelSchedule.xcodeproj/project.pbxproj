@@ -73,6 +73,7 @@
 		94BB4CBF2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CBE2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift */; };
 		94BB4CC22F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CC12F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift */; };
 		94BB4CD12F1A2717007EA2A8 /* NavigationBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CD02F1A2717007EA2A8 /* NavigationBackButtonView.swift */; };
+		94BB4CDB2F1A324F007EA2A8 /* RouteVersaButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CDA2F1A324F007EA2A8 /* RouteVersaButtonView.swift */; };
 		94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */; };
 		94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD42EC5F50D0086C35E /* Assets.xcassets */; };
 		94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD52EC5F50D0086C35E /* ContentView.swift */; };
@@ -154,6 +155,7 @@
 		94BB4CBE2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierFilterTransferView.swift; sourceTree = "<group>"; };
 		94BB4CC12F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierFilterButtonApplyView.swift; sourceTree = "<group>"; };
 		94BB4CD02F1A2717007EA2A8 /* NavigationBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackButtonView.swift; sourceTree = "<group>"; };
+		94BB4CDA2F1A324F007EA2A8 /* RouteVersaButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteVersaButtonView.swift; sourceTree = "<group>"; };
 		94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94C4EBD42EC5F50D0086C35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 			children = (
 				9407EA382F03F934006BFADF /* Route.swift */,
 				9407EAE62F0BD5BA006BFADF /* RouteExtension.swift */,
+				94BB4CDA2F1A324F007EA2A8 /* RouteVersaButtonView.swift */,
 				944309D82EF018AE00AA53FF /* RoutePickerView.swift */,
 				944309DA2EF0198A00AA53FF /* RouteFinderView.swift */,
 				94A94AB92EF2D2C900824913 /* RouteEndpoint.swift */,
@@ -642,6 +645,7 @@
 				9407EA392F03F93C006BFADF /* Route.swift in Sources */,
 				94AB36E42F1669F10047F09A /* CarrierDetailsView.swift in Sources */,
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
+				94BB4CDB2F1A324F007EA2A8 /* RouteVersaButtonView.swift in Sources */,
 				9461FF972ECF30F40083B7D9 /* BaseSerivce.swift in Sources */,
 				94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */,
 				94121AFF2F11772E00726955 /* CarrierViewModel.swift in Sources */,

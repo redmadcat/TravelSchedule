@@ -33,23 +33,24 @@ struct RouteFinderView: View {
                         .fill(.ypWhite)
                 )
                 
-                Button {
-                    route.versa()
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 18)
-                            .fill(.ypWhite)
-                            .frame(width: 36, height: 36)
-                        
-                        Image(systemName: "arrow.2.squarepath")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 16)
-                            .foregroundStyle(.ypBlue)
-                    }
-                }
-                .padding(.trailing, 16)
-                .opacity(route.isValid ? 1 : 0.5)
+                RouteVersaButtonView(route: route)
+//                Button {
+//                    route.versa()
+//                } label: {
+//                    ZStack {
+//                        RoundedRectangle(cornerRadius: 18)
+//                            .fill(.ypWhite)
+//                            .frame(width: 36, height: 36)
+//                        
+//                        Image(systemName: "arrow.2.squarepath")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(height: 16)
+//                            .foregroundStyle(.ypBlue)
+//                    }
+//                }
+//                .padding(.trailing, 16)
+//                .opacity(route.isValid ? 1 : 0.5)
             }
             .padding(.leading, 18)
             .onAppear {
