@@ -33,14 +33,11 @@ final class Route {
     }
     
     func validation() {
-        if let _ = from.settlement,
-           let _ = from.station,
-           let _ = to.settlement,
-           let _ = to.station {
-            isValid = true
-        } else {
-            isValid = false
-        }
+        isValid =
+            from.settlement != nil &&
+            from.station != nil &&
+            to.settlement != nil &&
+            to.station != nil
     }
     
     func versa() {
