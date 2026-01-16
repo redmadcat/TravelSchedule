@@ -69,6 +69,9 @@
 		94BB4CB42F1A1093007EA2A8 /* MockDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CB32F1A1089007EA2A8 /* MockDataConverter.swift */; };
 		94BB4CB72F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CB62F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift */; };
 		94BB4CBA2F1A18AA007EA2A8 /* CarrierFilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CB92F1A18AA007EA2A8 /* CarrierFilterButtonView.swift */; };
+		94BB4CBD2F1A1D1E007EA2A8 /* CarrierFilterDepartureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CBC2F1A1D1E007EA2A8 /* CarrierFilterDepartureView.swift */; };
+		94BB4CBF2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CBE2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift */; };
+		94BB4CC22F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CC12F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift */; };
 		94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */; };
 		94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD42EC5F50D0086C35E /* Assets.xcassets */; };
 		94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD52EC5F50D0086C35E /* ContentView.swift */; };
@@ -146,6 +149,9 @@
 		94BB4CB32F1A1089007EA2A8 /* MockDataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataConverter.swift; sourceTree = "<group>"; };
 		94BB4CB62F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierRouteHeaderView.swift; sourceTree = "<group>"; };
 		94BB4CB92F1A18AA007EA2A8 /* CarrierFilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierFilterButtonView.swift; sourceTree = "<group>"; };
+		94BB4CBC2F1A1D1E007EA2A8 /* CarrierFilterDepartureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierFilterDepartureView.swift; sourceTree = "<group>"; };
+		94BB4CBE2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierFilterTransferView.swift; sourceTree = "<group>"; };
+		94BB4CC12F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierFilterButtonApplyView.swift; sourceTree = "<group>"; };
 		94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94C4EBD42EC5F50D0086C35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,6 +195,9 @@
 				94AB36FC2F167FDF0047F09A /* CarrierFilterView.swift */,
 				94BB4CB62F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift */,
 				94BB4CB92F1A18AA007EA2A8 /* CarrierFilterButtonView.swift */,
+				94BB4CC12F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift */,
+				94BB4CBC2F1A1D1E007EA2A8 /* CarrierFilterDepartureView.swift */,
+				94BB4CBE2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift */,
 			);
 			path = Carrier;
 			sourceTree = "<group>";
@@ -565,12 +574,14 @@
 				94121B132F1196A900726955 /* CarrierListView.swift in Sources */,
 				944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */,
 				94121B0C2F1191C100726955 /* CarrierBuilder.swift in Sources */,
+				94BB4CBF2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift in Sources */,
 				941E928B2EF936F300327652 /* StationView.swift in Sources */,
 				94BB4CB72F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
 				941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */,
 				9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */,
 				944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */,
+				94BB4CBD2F1A1D1E007EA2A8 /* CarrierFilterDepartureView.swift in Sources */,
 				9461FFBB2ED42E800083B7D9 /* NearestSettlementService.swift in Sources */,
 				941E92652EF918C500327652 /* SearchView.swift in Sources */,
 				94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */,
@@ -613,6 +624,7 @@
 				9461FFAE2ECF49F70083B7D9 /* ThreadService.swift in Sources */,
 				94E005BD2F16388600F576F1 /* ExtensionString.swift in Sources */,
 				941E92822EF92DC700327652 /* SettlementRowView.swift in Sources */,
+				94BB4CC22F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift in Sources */,
 				94A94ABC2EF2D3E000824913 /* SettlementView.swift in Sources */,
 				9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */,
 				9407EA392F03F93C006BFADF /* Route.swift in Sources */,
