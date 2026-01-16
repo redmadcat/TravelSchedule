@@ -18,11 +18,9 @@ final class SettlementViewModel: RouterViewModel {
     init(router: Router, service: StationsServiceProtocol) {
         self.service = service
         super.init(router: router)
-        
-        Task { await load() }
     }
     
-    private func load() async {
+    func load() async {
         defer { isBusy = false }
                 
         do {

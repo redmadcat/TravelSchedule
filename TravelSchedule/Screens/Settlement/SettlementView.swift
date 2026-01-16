@@ -55,6 +55,9 @@ struct SettlementView: View {
             }
         }
         .background(.ypWhiteAD)
+        .task {
+            await context.load()
+        }
     }
 }
 
