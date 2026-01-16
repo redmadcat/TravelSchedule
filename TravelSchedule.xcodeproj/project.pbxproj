@@ -67,6 +67,8 @@
 		94B671302ECF182B001E271D /* TimetableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6712F2ECF1820001E271D /* TimetableService.swift */; };
 		94B671322ECF1892001E271D /* TimetableServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */; };
 		94BB4CB42F1A1093007EA2A8 /* MockDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CB32F1A1089007EA2A8 /* MockDataConverter.swift */; };
+		94BB4CB72F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CB62F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift */; };
+		94BB4CBA2F1A18AA007EA2A8 /* CarrierFilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB4CB92F1A18AA007EA2A8 /* CarrierFilterButtonView.swift */; };
 		94C4EBD82EC5F50E0086C35E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */; };
 		94C4EBD92EC5F50E0086C35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C4EBD42EC5F50D0086C35E /* Assets.xcassets */; };
 		94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C4EBD52EC5F50D0086C35E /* ContentView.swift */; };
@@ -142,6 +144,8 @@
 		94B6712F2ECF1820001E271D /* TimetableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableService.swift; sourceTree = "<group>"; };
 		94B671312ECF1884001E271D /* TimetableServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableServiceProtocol.swift; sourceTree = "<group>"; };
 		94BB4CB32F1A1089007EA2A8 /* MockDataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataConverter.swift; sourceTree = "<group>"; };
+		94BB4CB62F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierRouteHeaderView.swift; sourceTree = "<group>"; };
+		94BB4CB92F1A18AA007EA2A8 /* CarrierFilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierFilterButtonView.swift; sourceTree = "<group>"; };
 		94C4EBC12EC5F0A00086C35E /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C4EBD22EC5F50D0086C35E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94C4EBD42EC5F50D0086C35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				94AB36D32F165F300047F09A /* CarrierPlaceholderView.swift */,
 				94AB36F02F166E300047F09A /* CarrierContactsView.swift */,
 				94AB36FC2F167FDF0047F09A /* CarrierFilterView.swift */,
+				94BB4CB62F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift */,
+				94BB4CB92F1A18AA007EA2A8 /* CarrierFilterButtonView.swift */,
 			);
 			path = Carrier;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */,
 				94121B0C2F1191C100726955 /* CarrierBuilder.swift in Sources */,
 				941E928B2EF936F300327652 /* StationView.swift in Sources */,
+				94BB4CB72F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
 				941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */,
 				9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */,
@@ -591,6 +598,7 @@
 				945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */,
 				944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */,
 				941E92FA2EFA9FE500327652 /* ProgressLoadingView.swift in Sources */,
+				94BB4CBA2F1A18AA007EA2A8 /* CarrierFilterButtonView.swift in Sources */,
 				941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
 				941E92EA2EFA94C100327652 /* SettlementListView.swift in Sources */,

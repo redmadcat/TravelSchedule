@@ -37,31 +37,10 @@ struct CarrierView: View {
                 }
             }
             .safeAreaInset(edge: .bottom) {
-                Button {
-                    Router.shared.toFilter(filter: filter)
-                } label: {
-                    HStack {
-                        Text("SpecifyTime")
-                            .font(.system(size: 17, weight: .bold))
-                            .foregroundStyle(.ypWhite)
-                        Circle().frame(width: 10, height: 10, alignment: .leading)
-                            .padding(.top, 3)
-                            .foregroundColor(filter.isApplied ? .ypRed : .clear)
-                    }
-                    .frame(maxWidth: .infinity, minHeight: 60)
-                }
-                .background(RoundedRectangle(cornerRadius: 16).fill(.ypBlue))
-                .padding(.bottom, 24)
+                CarrierFilterButtonView(filter: filter)
             }
             .safeAreaInset(edge: .top) {
-                VStack {
-                    Text(route.description())
-                        .padding(.top, 10)
-                        .font(.system(size: 24, weight: .bold))
-                        .foregroundColor(.ypBlackAD)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                .background(.ypWhiteAD)
+                CarrierRouteHeaderView(route: route)
             }
             .padding(.horizontal, 16)
         }
