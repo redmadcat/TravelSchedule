@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct StationView: View {
-    @Environment(\.dismiss) private var dismiss
     @State private var request: String = ""
     let settlement: Settlement
     var direction: Route.Direction
@@ -33,12 +32,7 @@ struct StationView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    dismiss()
-                }) {
-                    Image(systemName: "chevron.left")
-                        .foregroundColor(.ypBlackAD)
-                }
+                NavigationBackButtonView()
             }
         }
         .safeAreaInset(edge: .top) {

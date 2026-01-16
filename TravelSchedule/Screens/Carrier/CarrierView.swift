@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CarrierView: View {
-    @Environment(\.dismiss) private var dismiss
     @State var context: CarrierViewModel
     @State var filter: CarrierFilter
     let route: Route
@@ -46,13 +45,9 @@ struct CarrierView: View {
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
+                NavigationBackButtonView(action: {
                     filter.isApplied = false
-                    dismiss()
-                }) {
-                    Image(systemName: "chevron.left")
-                        .foregroundColor(.ypBlackAD)
-                }
+                })
             }
         }
         .navigationBarBackButtonHidden(true)

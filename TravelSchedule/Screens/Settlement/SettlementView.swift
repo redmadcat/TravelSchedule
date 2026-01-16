@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SettlementView: View {
-    @Environment(\.dismiss) private var dismiss
     @State var context: SettlementViewModel
     @State private var request: String = ""
     var direction: Route.Direction
@@ -46,12 +45,7 @@ struct SettlementView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    dismiss()
-                }) {
-                    Image(systemName: "chevron.left")
-                        .foregroundColor(.ypBlackAD)
-                }
+                NavigationBackButtonView()
             }
         }
         .background(.ypWhiteAD)
