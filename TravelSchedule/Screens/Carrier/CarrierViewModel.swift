@@ -33,20 +33,14 @@ final class CarrierViewModel {
             let response = try await service.search(from: fromStationCode, to: toStationCode)
                         
             for segment in response.segments ?? [] {
-                let result = Segment(from: segment.from,
-                                     to: segment.to,
-                                     departure: getRandomTime(),
-                                     arrival: Date(),
-                                     thread: segment.thread,
-                                     tickets_info: getRandomInfo(),
-                                     duration: segment.duration)
+                let result = MockDataConverter.convert(segment: segment)
                 segments.append(result)
             }
             
             self.segments = segments.sorted { lhs, rhs in
-                if let lhsDate = lhs.departure, let rhsDate = rhs.departure {
-                    if lhsDate != rhsDate {
-                        return lhsDate < rhsDate
+                if let ldep = lhs.departure, let rdep = rhs.departure {
+                    if ldep != rdep {
+                        return ldep < rdep
                     }
                 }
                 return false
@@ -55,28 +49,5 @@ final class CarrierViewModel {
         } catch {
             status = error is URLError ? .failure(.network) : .failure(.server)
         }
-    }
-    
-    func getRandomInfo() -> TicketsInfo? {
-        let array = [
-            TicketsInfo(),
-            nil
-        ]
-        return array.randomElement()!
-    }
-    
-    func getRandomTime() -> Date {
-        let array = [
-            (22, 30),
-            (21, 45),
-            (01, 15),
-            (05, 50),
-            (13, 30),
-            (13, 45),
-            (19, 45)
-        ]
-        
-        let time = array.randomElement()!
-        return Calendar.current.date(bySettingHour: time.0, minute: time.1, second: 00, of: Date())!
     }
 }
