@@ -46,6 +46,17 @@
         }
       }
     },
+    "CarrierInfo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация о перевозчике"
+          }
+        }
+      }
+    },
     "Day" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -64,6 +75,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Время отправления"
+          }
+        }
+      }
+    },
+    "Email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-mail"
           }
         }
       }
@@ -218,6 +240,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вариантов нет"
+          }
+        }
+      }
+    },
+    "PhoneNumber" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Телефон"
           }
         }
       }
