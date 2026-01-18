@@ -49,6 +49,8 @@
 		9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */; };
 		947156F52EF13D6B00C56B20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 947156F42EF13D6B00C56B20 /* Localizable.xcstrings */; };
 		948C3F992F1C61B6008B9C89 /* CarrierContactsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */; };
+		948C3FBD2F1D5C54008B9C89 /* UserAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */; };
+		948C3FD12F1D69B3008B9C89 /* UserAgreementTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */; };
 		949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949EA7742ED6CD1B00633E65 /* APIHelper.swift */; };
 		94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF72ED58ACD009C8B0F /* StationsService.swift */; };
 		94A1FCFA2ED58AE9009C8B0F /* StationsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */; };
@@ -132,6 +134,8 @@
 		9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierServiceProtocol.swift; sourceTree = "<group>"; };
 		947156F42EF13D6B00C56B20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierContactsInfoView.swift; sourceTree = "<group>"; };
+		948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementView.swift; sourceTree = "<group>"; };
+		948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementTextView.swift; sourceTree = "<group>"; };
 		949EA7742ED6CD1B00633E65 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		94A1FCF72ED58ACD009C8B0F /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
 		94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsServiceProtocol.swift; sourceTree = "<group>"; };
@@ -265,6 +269,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		948C3FB92F1D5C1D008B9C89 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */,
+				948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		949EA7732ED6CD0E00633E65 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +376,7 @@
 		94A94A7D2EF2B99500824913 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				948C3FB92F1D5C1D008B9C89 /* User */,
 				94BB4CCF2F1A26F1007EA2A8 /* Navigation */,
 				9407EB052F0C56CE006BFADF /* Error */,
 				941E92F72EFA9FB300327652 /* Progress */,
@@ -625,6 +639,7 @@
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
 				94A523532F14D04700E53B62 /* CarrierRowView.swift in Sources */,
 				945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */,
+				948C3FBD2F1D5C54008B9C89 /* UserAgreementView.swift in Sources */,
 				944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */,
 				941E92FA2EFA9FE500327652 /* ProgressLoadingView.swift in Sources */,
 				94BB4CBA2F1A18AA007EA2A8 /* CarrierFilterButtonView.swift in Sources */,
@@ -647,6 +662,7 @@
 				94A94ABC2EF2D3E000824913 /* SettlementView.swift in Sources */,
 				9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */,
 				9407EA392F03F93C006BFADF /* Route.swift in Sources */,
+				948C3FD12F1D69B3008B9C89 /* UserAgreementTextView.swift in Sources */,
 				94AB36E42F1669F10047F09A /* CarrierDetailsView.swift in Sources */,
 				94FBFF2A2ECB0D9100F2EBFB /* NearestStationsService.swift in Sources */,
 				94BB4CDB2F1A324F007EA2A8 /* RouteVersaButtonView.swift in Sources */,
