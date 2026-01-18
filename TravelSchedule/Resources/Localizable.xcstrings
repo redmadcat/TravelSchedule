@@ -35,6 +35,50 @@
         }
       }
     },
+    "AgreementBody" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Понятия, используемые в Оферте, означают следующее:  Авторизованные адреса — адреса электронной почты каждой Стороны. Авторизованным адресом Исполнителя является адрес электронной почты, указанный в разделе 11 Оферты. Авторизованным адресом Студента является адрес электронной почты, указанный Студентом в Личном кабинете.  Вводный курс — начальный Курс обучения по представленным на Сервисе Программам обучения в рамках выбранной Студентом Профессии или Курсу, рассчитанный на определенное количество часов самостоятельного обучения, который предоставляется Студенту единожды при регистрации на Сервисе на безвозмездной основе. В процессе обучения в рамках Вводного курса Студенту предоставляется возможность ознакомления с работой Сервиса и определения возможности Студента продолжить обучение в рамках Полного курса по выбранной Студентом Программе обучения. Точное количество часов обучения в рамках Вводного курса зависит от выбранной Студентом Профессии или Курса и определяется в Программе обучения, размещенной на Сервисе. Максимальный срок освоения Вводного курса составляет 1 (один) год с даты начала обучения."
+          }
+        }
+      }
+    },
+    "AgreementHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оферта на оказание образовательных услуг дополнительного образования Яндекс.Практикум  для физических лиц"
+          }
+        }
+      }
+    },
+    "AgreementLegalInfo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данный документ является действующим, если расположен по адресу: https://yandex.ru/legal/practicum_offer\n\nРоссийская Федерация, город Москва"
+          }
+        }
+      }
+    },
+    "AgreementTerms" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. ТЕРМИНЫ"
+          }
+        }
+      }
+    },
     "Apply" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -53,6 +97,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Информация о перевозчике"
+          }
+        }
+      }
+    },
+    "DarkTheme" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Темная тема"
           }
         }
       }
@@ -152,6 +207,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "С пересадками"
+          }
+        }
+      }
+    },
+    "LegalInfo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приложение использует API «Яндекс.Расписания»"
           }
         }
       }
@@ -339,6 +405,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Куда"
+          }
+        }
+      }
+    },
+    "UserAgreement" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользовательское соглашение"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия 1.0 (beta)"
           }
         }
       }
