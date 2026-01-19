@@ -12,6 +12,9 @@ struct TravelScheduleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    ThemeManager.shared.overrideDisplayMode()
+                }
         }
     }
 }
