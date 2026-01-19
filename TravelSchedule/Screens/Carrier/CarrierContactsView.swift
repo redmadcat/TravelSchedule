@@ -12,6 +12,8 @@ struct CarrierContactsView: View {
     
     var body: some View {
         ZStack {
+            Color.ypWhiteAD.ignoresSafeArea()
+            
             VStack(alignment: .leading, spacing: 0) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 24)
@@ -46,8 +48,8 @@ struct CarrierContactsView: View {
                                 
                 Spacer()
             }
+            .padding(.horizontal, 16)
         }
-        .padding(.horizontal, 16)
         .navigationTitle("CarrierInfo")
         .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
@@ -55,12 +57,6 @@ struct CarrierContactsView: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 NavigationBackButtonView()
             }
-        }
-    }
-    
-    var carrierLogo: some View {
-        ZStack {
-            
         }
     }
 }
