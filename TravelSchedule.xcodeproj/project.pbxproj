@@ -51,6 +51,9 @@
 		948C3F992F1C61B6008B9C89 /* CarrierContactsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */; };
 		948C3FBD2F1D5C54008B9C89 /* UserAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */; };
 		948C3FD12F1D69B3008B9C89 /* UserAgreementTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */; };
+		948C40282F1E1471008B9C89 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40272F1E1468008B9C89 /* ThemeManager.swift */; };
+		948C40422F1E2FE0008B9C89 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40412F1E2FD6008B9C89 /* Appearance.swift */; };
+		948C40442F1E3001008B9C89 /* ExtensionAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40432F1E2FF9008B9C89 /* ExtensionAppearance.swift */; };
 		949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949EA7742ED6CD1B00633E65 /* APIHelper.swift */; };
 		94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF72ED58ACD009C8B0F /* StationsService.swift */; };
 		94A1FCFA2ED58AE9009C8B0F /* StationsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */; };
@@ -136,6 +139,9 @@
 		948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierContactsInfoView.swift; sourceTree = "<group>"; };
 		948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementView.swift; sourceTree = "<group>"; };
 		948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementTextView.swift; sourceTree = "<group>"; };
+		948C40272F1E1468008B9C89 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		948C40412F1E2FD6008B9C89 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		948C40432F1E2FF9008B9C89 /* ExtensionAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAppearance.swift; sourceTree = "<group>"; };
 		949EA7742ED6CD1B00633E65 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		94A1FCF72ED58ACD009C8B0F /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
 		94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsServiceProtocol.swift; sourceTree = "<group>"; };
@@ -281,9 +287,11 @@
 		949EA7732ED6CD0E00633E65 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				948C40272F1E1468008B9C89 /* ThemeManager.swift */,
 				94BB4CB32F1A1089007EA2A8 /* MockDataConverter.swift */,
 				94AB370F2F1780D70047F09A /* Transfer.swift */,
 				94AB370D2F1780BF0047F09A /* Departure.swift */,
+				948C40412F1E2FD6008B9C89 /* Appearance.swift */,
 				945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */,
 				9407EB252F0D3E27006BFADF /* APIResponseStatus.swift */,
 				949EA7742ED6CD1B00633E65 /* APIHelper.swift */,
@@ -484,6 +492,7 @@
 		94E0059B2F1617B300F576F1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				948C40432F1E2FF9008B9C89 /* ExtensionAppearance.swift */,
 				94E005BB2F16387D00F576F1 /* ExtensionString.swift */,
 				94E005A02F1620FD00F576F1 /* ExtensionSegment.swift */,
 			);
@@ -616,6 +625,7 @@
 				9461FFBB2ED42E800083B7D9 /* NearestSettlementService.swift in Sources */,
 				941E92652EF918C500327652 /* SearchView.swift in Sources */,
 				94C4EBDA2EC5F50E0086C35E /* ContentView.swift in Sources */,
+				948C40422F1E2FE0008B9C89 /* Appearance.swift in Sources */,
 				9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */,
 				944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */,
 				94AB36F12F166E300047F09A /* CarrierContactsView.swift in Sources */,
@@ -633,10 +643,12 @@
 				94AB36DE2F1669580047F09A /* CarrierScheduleView.swift in Sources */,
 				948C3F992F1C61B6008B9C89 /* CarrierContactsInfoView.swift in Sources */,
 				94AB37602F18F58B0047F09A /* CarrierFilter.swift in Sources */,
+				948C40282F1E1471008B9C89 /* ThemeManager.swift in Sources */,
 				94AB36DA2F16686A0047F09A /* CarrierImageView.swift in Sources */,
 				94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */,
 				94E005A12F16210C00F576F1 /* ExtensionSegment.swift in Sources */,
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
+				948C40442F1E3001008B9C89 /* ExtensionAppearance.swift in Sources */,
 				94A523532F14D04700E53B62 /* CarrierRowView.swift in Sources */,
 				945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */,
 				948C3FBD2F1D5C54008B9C89 /* UserAgreementView.swift in Sources */,
