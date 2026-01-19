@@ -42,6 +42,8 @@ struct ContentView: View {
                     CarrierContactsView(carrier: carrier)
                 case .filter(let filter):
                     CarrierFilterView(filter: filter)
+                case .agreement:
+                    UserAgreementView()
                 }
             }
         }

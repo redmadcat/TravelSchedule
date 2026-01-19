@@ -33,6 +33,10 @@ final class Router {
         endpoint.append(.filter(filter: filter))
     }
     
+    func toAgreement() {
+        endpoint.append(.agreement)
+    }
+    
     func toRoot() {
         endpoint.removeAll()
     }

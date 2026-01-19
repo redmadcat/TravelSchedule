@@ -11,4 +11,5 @@ enum RouteEndpoint: Hashable {
     case carrier(route: Route)
     case contacts(carrier: Carrier)
     case filter(filter: CarrierFilter)
+    case agreement
 }
