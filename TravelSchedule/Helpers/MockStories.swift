@@ -27,41 +27,41 @@ final class MockStories {
     private static let title9 = "Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 Text9 "
         
     static let stories = [
-        Story(viewed: false, image: Image("Preview1"), title: title1, stories: [
-            Story(viewed: false, image: Image("Story1"), title: title1, stories: []),
-            Story(viewed: false, image: Image("Story2"), title: title1, stories: [])
+        Story(visited: false, image: Image("Preview1"), title: title1, stories: [
+            Story(visited: false, image: Image("Story1"), title: title1, stories: []),
+            Story(visited: false, image: Image("Story2"), title: title1, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview2"), title: title2, stories: [
-            Story(viewed: false, image: Image("Story3"), title: title2, stories: []),
-            Story(viewed: false, image: Image("Story4"), title: title2, stories: [])
+        Story(visited: false, image: Image("Preview2"), title: title2, stories: [
+            Story(visited: false, image: Image("Story3"), title: title2, stories: []),
+            Story(visited: false, image: Image("Story4"), title: title2, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview3"), title: title3, stories: [
-            Story(viewed: false, image: Image("Story5"), title: title3, stories: []),
-            Story(viewed: false, image: Image("Story6"), title: title3, stories: [])
+        Story(visited: false, image: Image("Preview3"), title: title3, stories: [
+            Story(visited: false, image: Image("Story5"), title: title3, stories: []),
+            Story(visited: false, image: Image("Story6"), title: title3, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview4"), title: title4, stories: [
-            Story(viewed: false, image: Image("Story7"), title: title4, stories: []),
-            Story(viewed: false, image: Image("Story8"), title: title4, stories: [])
+        Story(visited: false, image: Image("Preview4"), title: title4, stories: [
+            Story(visited: false, image: Image("Story7"), title: title4, stories: []),
+            Story(visited: false, image: Image("Story8"), title: title4, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview5"), title: title5, stories: [
-            Story(viewed: false, image: Image("Story9"), title: title5, stories: []),
-            Story(viewed: false, image: Image("Story10"), title: title5, stories: [])
+        Story(visited: false, image: Image("Preview5"), title: title5, stories: [
+            Story(visited: false, image: Image("Story9"), title: title5, stories: []),
+            Story(visited: false, image: Image("Story10"), title: title5, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview6"), title: title6, stories: [
-            Story(viewed: false, image: Image("Story11"), title: title6, stories: []),
-            Story(viewed: false, image: Image("Story12"), title: title6, stories: [])
+        Story(visited: false, image: Image("Preview6"), title: title6, stories: [
+            Story(visited: false, image: Image("Story11"), title: title6, stories: []),
+            Story(visited: false, image: Image("Story12"), title: title6, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview7"), title: title7, stories: [
-            Story(viewed: false, image: Image("Story13"), title: title7, stories: []),
-            Story(viewed: false, image: Image("Story14"), title: title7, stories: [])
+        Story(visited: false, image: Image("Preview7"), title: title7, stories: [
+            Story(visited: false, image: Image("Story13"), title: title7, stories: []),
+            Story(visited: false, image: Image("Story14"), title: title7, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview8"), title: title8, stories: [
-            Story(viewed: false, image: Image("Story15"), title: title8, stories: []),
-            Story(viewed: false, image: Image("Story16"), title: title8, stories: [])
+        Story(visited: false, image: Image("Preview8"), title: title8, stories: [
+            Story(visited: false, image: Image("Story15"), title: title8, stories: []),
+            Story(visited: false, image: Image("Story16"), title: title8, stories: [])
         ]),
-        Story(viewed: false, image: Image("Preview9"), title: title9, stories: [
-            Story(viewed: false, image: Image("Story17"), title: title9, stories: []),
-            Story(viewed: false, image: Image("Story18"), title: title9, stories: [])
+        Story(visited: false, image: Image("Preview9"), title: title9, stories: [
+            Story(visited: false, image: Image("Story17"), title: title9, stories: []),
+            Story(visited: false, image: Image("Story18"), title: title9, stories: [])
         ])
     ]
 }
