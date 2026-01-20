@@ -9,12 +9,17 @@ import SwiftUI
 
 struct ScheduleView: View {
     @State var route: Route
-
+    
     var body: some View {
         VStack {
+            StoriesRibbonView()
+                .padding(.top, 112)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 24)
+            
             RouteFinderView(route: route)
                 .padding(.horizontal, 16)
-                .padding(.top, 252)
+                .padding(.top, 10)
             
             Button {
                 Router.shared.toCarrier(route: route)
