@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Story: Identifiable {
     let id: UUID = UUID()
-    let viewed: Bool
+    var visited: Bool
     let image: Image
     let title: String
     let stories: [Story]
