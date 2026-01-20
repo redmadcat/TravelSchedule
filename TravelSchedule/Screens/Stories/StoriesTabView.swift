@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct StoriesTabView: View {
+    let stories: [Story]
+    @Binding var currentStoryIndex: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: $currentStoryIndex) {
+            ForEach(stories.indices, id: \.self) { index in
+                StoryView(story: stories[index])
+                    .tag(index)
+                    .onTapGesture {
+                        didTapStory()
+                    }
+            }
+        }
+        .ignoresSafeArea()
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
-}
-
-#Preview {
-    StoriesTabView()
+    
+    func didTapStory() {
+        currentStoryIndex = min(currentStoryIndex + 1, stories.count - 1)
+    }
 }

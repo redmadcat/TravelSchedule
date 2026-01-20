@@ -8,11 +8,38 @@
 import SwiftUI
 
 struct StoryView: View {
+    let story: Story
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            ZStack(alignment: .bottomLeading) {
+                story.image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                VStack(alignment: .leading, spacing: 16) {
+                    Text(story.title)
+                        .font(.system(size: 34, weight: .bold))
+                        .foregroundStyle(.ypWhite)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
+                    
+                    Text(story.title)
+                        .font(.system(size: 20, weight: .regular))
+                        .foregroundStyle(.ypWhite)
+                        .lineLimit(3)
+                        .multilineTextAlignment(.leading)
+                    
+                }
+                .padding(.horizontal, 16)
+                .padding(.bottom, 40)
+            }
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 40))
+        .background(.ypBlack)
     }
 }
 
 #Preview {
-    StoryView()
+    StoryView(story: MockStories.stories[0])
 }
