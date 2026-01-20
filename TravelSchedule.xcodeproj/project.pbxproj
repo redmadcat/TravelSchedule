@@ -32,7 +32,6 @@
 		944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D32EF017A600AA53FF /* SettingsView.swift */; };
 		944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309D82EF018AE00AA53FF /* RoutePickerView.swift */; };
 		944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309DA2EF0198A00AA53FF /* RouteFinderView.swift */; };
-		944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */; };
 		945CFE9C2EFC027800930390 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE9B2EFC027800930390 /* StationListView.swift */; };
 		945CFE9E2EFC02F400930390 /* StationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945CFE9D2EFC02F400930390 /* StationRowView.swift */; };
 		945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */; };
@@ -48,12 +47,23 @@
 		9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC12ED44B260083B7D9 /* CarrierService.swift */; };
 		9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */; };
 		947156F52EF13D6B00C56B20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 947156F42EF13D6B00C56B20 /* Localizable.xcstrings */; };
+		94847B8B2F1F8E6A00265BAD /* StoriesRibbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94847B8A2F1F8E6A00265BAD /* StoriesRibbonView.swift */; };
 		948C3F992F1C61B6008B9C89 /* CarrierContactsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */; };
 		948C3FBD2F1D5C54008B9C89 /* UserAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */; };
 		948C3FD12F1D69B3008B9C89 /* UserAgreementTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */; };
 		948C40282F1E1471008B9C89 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40272F1E1468008B9C89 /* ThemeManager.swift */; };
 		948C40422F1E2FE0008B9C89 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40412F1E2FD6008B9C89 /* Appearance.swift */; };
 		948C40442F1E3001008B9C89 /* ExtensionAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40432F1E2FF9008B9C89 /* ExtensionAppearance.swift */; };
+		948C40482F1E3C67008B9C89 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40472F1E3C63008B9C89 /* Story.swift */; };
+		948C404A2F1E3D09008B9C89 /* MockStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40492F1E3D02008B9C89 /* MockStories.swift */; };
+		948C404C2F1E3FB6008B9C89 /* StoryPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C404B2F1E3FB6008B9C89 /* StoryPreviewView.swift */; };
+		948C40582F1E4D5D008B9C89 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40572F1E4D5D008B9C89 /* StoriesView.swift */; };
+		948C40652F1E5175008B9C89 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40642F1E5175008B9C89 /* StoryView.swift */; };
+		948C406C2F1E59B6008B9C89 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C406B2F1E59B6008B9C89 /* ProgressBarView.swift */; };
+		948C40832F1E6788008B9C89 /* StoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40822F1E6788008B9C89 /* StoriesTabView.swift */; };
+		948C40882F1E68BB008B9C89 /* TimerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40872F1E68B2008B9C89 /* TimerConfiguration.swift */; };
+		948C408A2F1E6986008B9C89 /* TimerConfiguration+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C40892F1E6975008B9C89 /* TimerConfiguration+Calculations.swift */; };
+		948C408C2F1E80EF008B9C89 /* StoriesProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C408B2F1E80DB008B9C89 /* StoriesProgressBar.swift */; };
 		949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949EA7742ED6CD1B00633E65 /* APIHelper.swift */; };
 		94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF72ED58ACD009C8B0F /* StationsService.swift */; };
 		94A1FCFA2ED58AE9009C8B0F /* StationsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */; };
@@ -120,7 +130,6 @@
 		944309D32EF017A600AA53FF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		944309D82EF018AE00AA53FF /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
 		944309DA2EF0198A00AA53FF /* RouteFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFinderView.swift; sourceTree = "<group>"; };
-		944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStoriesView.swift; sourceTree = "<group>"; };
 		945CFE9B2EFC027800930390 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
 		945CFE9D2EFC02F400930390 /* StationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRowView.swift; sourceTree = "<group>"; };
 		945F7AE42ED6E8E00009DB67 /* ISO8601Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601Coder.swift; sourceTree = "<group>"; };
@@ -136,12 +145,23 @@
 		9461FFC12ED44B260083B7D9 /* CarrierService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierService.swift; sourceTree = "<group>"; };
 		9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierServiceProtocol.swift; sourceTree = "<group>"; };
 		947156F42EF13D6B00C56B20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		94847B8A2F1F8E6A00265BAD /* StoriesRibbonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesRibbonView.swift; sourceTree = "<group>"; };
 		948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierContactsInfoView.swift; sourceTree = "<group>"; };
 		948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementView.swift; sourceTree = "<group>"; };
 		948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementTextView.swift; sourceTree = "<group>"; };
 		948C40272F1E1468008B9C89 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		948C40412F1E2FD6008B9C89 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		948C40432F1E2FF9008B9C89 /* ExtensionAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAppearance.swift; sourceTree = "<group>"; };
+		948C40472F1E3C63008B9C89 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		948C40492F1E3D02008B9C89 /* MockStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStories.swift; sourceTree = "<group>"; };
+		948C404B2F1E3FB6008B9C89 /* StoryPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPreviewView.swift; sourceTree = "<group>"; };
+		948C40572F1E4D5D008B9C89 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		948C40642F1E5175008B9C89 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		948C406B2F1E59B6008B9C89 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		948C40822F1E6788008B9C89 /* StoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTabView.swift; sourceTree = "<group>"; };
+		948C40872F1E68B2008B9C89 /* TimerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerConfiguration.swift; sourceTree = "<group>"; };
+		948C40892F1E6975008B9C89 /* TimerConfiguration+Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerConfiguration+Calculations.swift"; sourceTree = "<group>"; };
+		948C408B2F1E80DB008B9C89 /* StoriesProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesProgressBar.swift; sourceTree = "<group>"; };
 		949EA7742ED6CD1B00633E65 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		94A1FCF72ED58ACD009C8B0F /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
 		94A1FCF92ED58ADB009C8B0F /* StationsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsServiceProtocol.swift; sourceTree = "<group>"; };
@@ -263,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */,
+				948C406B2F1E59B6008B9C89 /* ProgressBarView.swift */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -284,10 +305,34 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		948C40462F1E3C12008B9C89 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				94847B8A2F1F8E6A00265BAD /* StoriesRibbonView.swift */,
+				948C408B2F1E80DB008B9C89 /* StoriesProgressBar.swift */,
+				948C40822F1E6788008B9C89 /* StoriesTabView.swift */,
+				948C40572F1E4D5D008B9C89 /* StoriesView.swift */,
+				948C40472F1E3C63008B9C89 /* Story.swift */,
+				948C40642F1E5175008B9C89 /* StoryView.swift */,
+				948C404B2F1E3FB6008B9C89 /* StoryPreviewView.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		948C40842F1E6860008B9C89 /* Algo */ = {
+			isa = PBXGroup;
+			children = (
+				948C40872F1E68B2008B9C89 /* TimerConfiguration.swift */,
+				948C40892F1E6975008B9C89 /* TimerConfiguration+Calculations.swift */,
+			);
+			path = Algo;
+			sourceTree = "<group>";
+		};
 		949EA7732ED6CD0E00633E65 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				948C40272F1E1468008B9C89 /* ThemeManager.swift */,
+				948C40492F1E3D02008B9C89 /* MockStories.swift */,
 				94BB4CB32F1A1089007EA2A8 /* MockDataConverter.swift */,
 				94AB370F2F1780D70047F09A /* Transfer.swift */,
 				94AB370D2F1780BF0047F09A /* Departure.swift */,
@@ -385,6 +430,7 @@
 			isa = PBXGroup;
 			children = (
 				948C3FB92F1D5C1D008B9C89 /* User */,
+				948C40462F1E3C12008B9C89 /* Stories */,
 				94BB4CCF2F1A26F1007EA2A8 /* Navigation */,
 				9407EB052F0C56CE006BFADF /* Error */,
 				941E92F72EFA9FB300327652 /* Progress */,
@@ -404,7 +450,6 @@
 			isa = PBXGroup;
 			children = (
 				944309CF2EF0154F00AA53FF /* ScheduleView.swift */,
-				944309E12EF0272100AA53FF /* ScheduleStoriesView.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -460,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				94C4EBDC2EC5F7260086C35E /* App */,
+				948C40842F1E6860008B9C89 /* Algo */,
 				94E0059B2F1617B300F576F1 /* Extensions */,
 				949EA7732ED6CD0E00633E65 /* Helpers */,
 				94A94A7D2EF2B99500824913 /* Screens */,
@@ -630,6 +676,7 @@
 				944309D02EF0155600AA53FF /* ScheduleView.swift in Sources */,
 				94AB36F12F166E300047F09A /* CarrierContactsView.swift in Sources */,
 				9461FFA82ECF414B0083B7D9 /* ScheduleServiceProtocol.swift in Sources */,
+				948C40882F1E68BB008B9C89 /* TimerConfiguration.swift in Sources */,
 				94FBFF2C2ECB0DDB00F2EBFB /* NearestStationsServiceProtocol.swift in Sources */,
 				94AB36FD2F167FE00047F09A /* CarrierFilterView.swift in Sources */,
 				941E92992EF93C7700327652 /* SettlementViewModel.swift in Sources */,
@@ -644,6 +691,7 @@
 				948C3F992F1C61B6008B9C89 /* CarrierContactsInfoView.swift in Sources */,
 				94AB37602F18F58B0047F09A /* CarrierFilter.swift in Sources */,
 				948C40282F1E1471008B9C89 /* ThemeManager.swift in Sources */,
+				948C40652F1E5175008B9C89 /* StoryView.swift in Sources */,
 				94AB36DA2F16686A0047F09A /* CarrierImageView.swift in Sources */,
 				94A1FCF82ED58AD4009C8B0F /* StationsService.swift in Sources */,
 				94E005A12F16210C00F576F1 /* ExtensionSegment.swift in Sources */,
@@ -657,6 +705,7 @@
 				94BB4CBA2F1A18AA007EA2A8 /* CarrierFilterButtonView.swift in Sources */,
 				941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
+				948C40482F1E3C67008B9C89 /* Story.swift in Sources */,
 				941E92EA2EFA94C100327652 /* SettlementListView.swift in Sources */,
 				9461FFBD2ED42E910083B7D9 /* NearestSettlementServiceProtocol.swift in Sources */,
 				9407EB082F0C5726006BFADF /* ErrorView.swift in Sources */,
@@ -664,15 +713,19 @@
 				94AB36D42F165F300047F09A /* CarrierPlaceholderView.swift in Sources */,
 				9407EAE72F0BD5C2006BFADF /* RouteExtension.swift in Sources */,
 				94AB37102F1780DD0047F09A /* Transfer.swift in Sources */,
+				948C404A2F1E3D09008B9C89 /* MockStories.swift in Sources */,
+				948C408A2F1E6986008B9C89 /* TimerConfiguration+Calculations.swift in Sources */,
 				94BB4CD12F1A2717007EA2A8 /* NavigationBackButtonView.swift in Sources */,
-				944309E22EF0272900AA53FF /* ScheduleStoriesView.swift in Sources */,
+				948C40832F1E6788008B9C89 /* StoriesTabView.swift in Sources */,
 				94BB4CB42F1A1093007EA2A8 /* MockDataConverter.swift in Sources */,
 				9461FFAE2ECF49F70083B7D9 /* ThreadService.swift in Sources */,
 				94E005BD2F16388600F576F1 /* ExtensionString.swift in Sources */,
 				941E92822EF92DC700327652 /* SettlementRowView.swift in Sources */,
 				94BB4CC22F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift in Sources */,
+				948C408C2F1E80EF008B9C89 /* StoriesProgressBar.swift in Sources */,
 				94A94ABC2EF2D3E000824913 /* SettlementView.swift in Sources */,
 				9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */,
+				94847B8B2F1F8E6A00265BAD /* StoriesRibbonView.swift in Sources */,
 				9407EA392F03F93C006BFADF /* Route.swift in Sources */,
 				948C3FD12F1D69B3008B9C89 /* UserAgreementTextView.swift in Sources */,
 				94AB36E42F1669F10047F09A /* CarrierDetailsView.swift in Sources */,
@@ -682,11 +735,14 @@
 				94C4EBDB2EC5F50E0086C35E /* TravelScheduleApp.swift in Sources */,
 				94121AFF2F11772E00726955 /* CarrierViewModel.swift in Sources */,
 				9407EB232F0D3B3E006BFADF /* ErrorType.swift in Sources */,
+				948C40582F1E4D5D008B9C89 /* StoriesView.swift in Sources */,
 				9407EAE52F0BD341006BFADF /* CarrierView.swift in Sources */,
+				948C406C2F1E59B6008B9C89 /* ProgressBarView.swift in Sources */,
 				949EA7752ED6CD3800633E65 /* APIHelper.swift in Sources */,
 				941B594A2ECDB1AD00B99489 /* CopyrightService.swift in Sources */,
 				94AB370E2F1780C50047F09A /* Departure.swift in Sources */,
 				94A94ABA2EF2D2D200824913 /* RouteEndpoint.swift in Sources */,
+				948C404C2F1E3FB6008B9C89 /* StoryPreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
