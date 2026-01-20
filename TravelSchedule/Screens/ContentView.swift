@@ -21,12 +21,12 @@ struct ContentView: View {
             TabView() {
                 ScheduleView(route: Route())
                 .tabItem {
-                    Image("Schedule")
+                    Image(.schedule)
                         .renderingMode(.template)
                 }
                 SettingsView()
                 .tabItem {
-                    Image("Settings")
+                    Image(.settings)
                         .renderingMode(.template)
                 }
             }
