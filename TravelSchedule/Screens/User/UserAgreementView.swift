@@ -27,6 +27,7 @@ struct UserAgreementView: View {
         .navigationTitle("UserAgreement")
         .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
+        .ignoresSafeArea(edges: .bottom)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 NavigationBackButtonView()
