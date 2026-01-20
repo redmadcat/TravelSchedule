@@ -13,13 +13,11 @@ struct ScheduleView: View {
     var body: some View {
         VStack {
             StoriesRibbonView()
-                .padding(.top, 112)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 24)
+                .padding(.init(top: 24, leading: 0, bottom: 24, trailing: 0))
             
             RouteFinderView(route: route)
                 .padding(.horizontal, 16)
-                .padding(.top, 10)
+                .padding(.top, 20)
             
             Button {
                 Router.shared.toCarrier(route: route)
@@ -40,7 +38,6 @@ struct ScheduleView: View {
                 .frame(minHeight: 1)
         }
         .background(.ypWhiteAD)
-        .ignoresSafeArea(edges: .top)
         .onAppear {
             route.validation()
         }
