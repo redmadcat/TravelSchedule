@@ -35,7 +35,7 @@ struct ContentView: View {
                 case .settlement(let direction):
                     SettlementBuilder().build(direction: direction)
                 case .station(let settlement, let direction):
-                    StationView(settlement: settlement, direction: direction)
+                    StationBuilder().build(settlement: settlement, direction: direction)
                 case .carrier(let route):
                     CarrierBuilder().build(route: route)
                 case .contacts(let carrier):
