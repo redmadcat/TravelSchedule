@@ -16,9 +16,8 @@ final class SettlementBuilder {
             transport: URLSessionTransport()
         )
         
-        let router = Router.shared
         let service = TimetableService(client: client, apiKey: Auth.apiKey)
-        let context = SettlementViewModel(router: router, service: service)
+        let context = SettlementViewModel(service: service)
         return SettlementView(context: context, direction: direction)
     }
 }
