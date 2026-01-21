@@ -17,7 +17,7 @@ final class SettlementBuilder {
         )
         
         let service = TimetableService(client: client, apiKey: Auth.apiKey)
-        let context = SettlementViewModel(service: service)
-        return SettlementView(context: context, direction: direction)
+        let context = SettlementViewModel(direction: direction, service: service)
+        return SettlementView(context: context)
     }
 }
