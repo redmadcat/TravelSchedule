@@ -10,6 +10,8 @@ import SwiftUI
 final class ThemeManager {
     static let shared = ThemeManager()
     
+    private init() {}
+    
     @AppStorage("selectedAppearance") var selectedAppearance: Appearance = .system
     
     func overrideDisplayMode() {
