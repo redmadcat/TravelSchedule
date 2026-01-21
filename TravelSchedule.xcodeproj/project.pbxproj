@@ -48,6 +48,8 @@
 		9461FFC42ED44B3F0083B7D9 /* CarrierServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */; };
 		947156F52EF13D6B00C56B20 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 947156F42EF13D6B00C56B20 /* Localizable.xcstrings */; };
 		94847B8B2F1F8E6A00265BAD /* StoriesRibbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94847B8A2F1F8E6A00265BAD /* StoriesRibbonView.swift */; };
+		948B3F0D2F20D06F007DB64F /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B3F0C2F20D067007DB64F /* StationViewModel.swift */; };
+		948B3F0F2F20D1F2007DB64F /* StationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B3F0E2F20D1ED007DB64F /* StationBuilder.swift */; };
 		948C3F992F1C61B6008B9C89 /* CarrierContactsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */; };
 		948C3FBD2F1D5C54008B9C89 /* UserAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */; };
 		948C3FD12F1D69B3008B9C89 /* UserAgreementTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */; };
@@ -146,6 +148,8 @@
 		9461FFC32ED44B350083B7D9 /* CarrierServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierServiceProtocol.swift; sourceTree = "<group>"; };
 		947156F42EF13D6B00C56B20 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		94847B8A2F1F8E6A00265BAD /* StoriesRibbonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesRibbonView.swift; sourceTree = "<group>"; };
+		948B3F0C2F20D067007DB64F /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		948B3F0E2F20D1ED007DB64F /* StationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationBuilder.swift; sourceTree = "<group>"; };
 		948C3F982F1C61B5008B9C89 /* CarrierContactsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierContactsInfoView.swift; sourceTree = "<group>"; };
 		948C3FBC2F1D5C54008B9C89 /* UserAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementView.swift; sourceTree = "<group>"; };
 		948C3FD02F1D69B3008B9C89 /* UserAgreementTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementTextView.swift; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 		941E92892EF936DB00327652 /* Station */ = {
 			isa = PBXGroup;
 			children = (
+				948B3F0E2F20D1ED007DB64F /* StationBuilder.swift */,
+				948B3F0C2F20D067007DB64F /* StationViewModel.swift */,
 				941E928A2EF936EE00327652 /* StationView.swift */,
 				945CFE9B2EFC027800930390 /* StationListView.swift */,
 				945CFE9D2EFC02F400930390 /* StationRowView.swift */,
@@ -658,11 +664,13 @@
 			files = (
 				945CFE9C2EFC027800930390 /* StationListView.swift in Sources */,
 				94121B132F1196A900726955 /* CarrierListView.swift in Sources */,
+				948B3F0F2F20D1F2007DB64F /* StationBuilder.swift in Sources */,
 				944309D92EF018C200AA53FF /* RoutePickerView.swift in Sources */,
 				94121B0C2F1191C100726955 /* CarrierBuilder.swift in Sources */,
 				94BB4CBF2F1A1DAA007EA2A8 /* CarrierFilterTransferView.swift in Sources */,
 				941E928B2EF936F300327652 /* StationView.swift in Sources */,
 				94BB4CB72F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift in Sources */,
+				948B3F0D2F20D06F007DB64F /* StationViewModel.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
 				941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */,
 				9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */,

@@ -8,24 +8,13 @@
 import SwiftUI
 
 struct StationView: View {
-    @State private var request: String = ""
-    let settlement: Settlement
-    var direction: Route.Direction
-    
-    private var stations: [Station] {
-        request.isEmpty ?
-            settlement.stations ?? [] :
-            settlement.stations?.filter {
-                guard let title = $0.title else { return false }
-                return title.localizedCaseInsensitiveContains(request)
-            } ?? []
-    }
-    
+    @State var context: StationViewModel
+        
     var body: some View {
         VStack {
-            stations.isEmpty ?
+            context.stations.isEmpty ?
                 AnyView(SearchStubView(text: "StationNotFound")) :
-                AnyView(StationListView(direction: direction, stations: stations, settlement: settlement))
+                AnyView(StationListView(direction: context.direction, stations: context.stations, settlement: context.settlement))
         }
         .navigationTitle("StationSelection")
         .navigationBarBackButtonHidden(true)
@@ -36,7 +25,7 @@ struct StationView: View {
             }
         }
         .safeAreaInset(edge: .top) {
-            SearchView(request: $request)
+            SearchView(request: $context.request)
                 .background(.ypWhiteAD)
         }
         .background(.ypWhiteAD)
@@ -44,5 +33,5 @@ struct StationView: View {
 }
 
 #Preview {
-    StationView(settlement: Settlement(title: "Пятигорск", stations: [Station(title: "Лермонтовский вокзал")]), direction: Route.Direction())
+    StationView(context: StationViewModel(settlement: Settlement(title: "Пятигорск", stations: [Station(title: "Лермонтовский вокзал")]), direction: Route.Direction()))
 }
