@@ -9,10 +9,10 @@ import SwiftUI
 
 struct StoriesRibbonView: View {
     @State private var stories: [Story] = MockStories.stories
-    @State private var selectedStory: Story? = nil
+    @State private var selectedStory: Story?
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
+        ScrollView(.horizontal) {
             LazyHStack(spacing: 12) {
                 ForEach(stories) { story in
                     StoryPreviewView(story: story)
@@ -37,6 +37,7 @@ struct StoriesRibbonView: View {
             .padding(.init(top: 0, leading: 16, bottom: 0, trailing: 0))
             .frame(height: 140)
         }
+        .scrollIndicators(.hidden)
     }
 }
 

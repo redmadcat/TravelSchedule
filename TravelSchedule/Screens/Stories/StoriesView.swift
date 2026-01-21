@@ -10,8 +10,8 @@ import SwiftUI
 struct StoriesView: View {
     let stories: [Story]
     private var timerConfiguration: TimerConfiguration { .init(storiesCount: stories.count) }
-    @State var currentStoryIndex: Int = 0
-    @State var currentProgress: CGFloat = 0
+    @State private var currentStoryIndex: Int = 0
+    @State private var currentProgress: CGFloat = 0
 
     var body: some View {
         ZStack(alignment: .topTrailing) {
