@@ -10,15 +10,24 @@ import SwiftUI
 @Observable
 final class CarrierViewModel {
     private let service: SearchServiceProtocol
+    private var segmentsRaw: [Segment] = []
+    let route: Route
     var isBusy: Bool = false
-    var segments: [Segment] = []
     var status: APIResponseStatus = .default
+    var filter: CarrierFilter
+    var segments: [Segment] {
+        filter.isApplied ?
+        segmentsRaw.filter { filter.apply($0) } :
+        segmentsRaw
+    }
         
-    init(service: SearchServiceProtocol) {
+    init(route: Route, filter: CarrierFilter, service: SearchServiceProtocol) {
+        self.route = route
+        self.filter = filter
         self.service = service
     }
     
-    func load(route: Route) async  {
+    func load() async  {
         defer { isBusy = false }
         
         guard let fromStationCode = route.from.station?.codes?.yandex_code,
@@ -34,10 +43,10 @@ final class CarrierViewModel {
                         
             for segment in response.segments ?? [] {
                 let result = MockDataConverter.convert(segment: segment)
-                segments.append(result)
+                segmentsRaw.append(result)
             }
             
-            self.segments = segments.sorted { lhs, rhs in
+            self.segmentsRaw = segments.sorted { lhs, rhs in
                 if let ldep = lhs.departure, let rdep = rhs.departure {
                     if ldep != rdep {
                         return ldep < rdep

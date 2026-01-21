@@ -9,13 +9,6 @@ import SwiftUI
 
 struct CarrierView: View {
     @State var context: CarrierViewModel
-    @State var filter: CarrierFilter
-    let route: Route
-    private var segments: [Segment] {
-        filter.isApplied ?
-        context.segments.filter { filter.apply($0) } :
-        context.segments
-    }
     
     var body: some View {
         ZStack {
@@ -27,33 +20,33 @@ struct CarrierView: View {
                     ProgressLoadingView()
                 case .success, .default:
                     VStack {
-                        segments.isEmpty ?
+                        context.segments.isEmpty ?
                             AnyView(SearchStubView(text: "NoOptions")) :
-                            AnyView(CarrierListView(segments: segments))
+                            AnyView(CarrierListView(segments: context.segments))
                     }
                 case .failure(let error):
                     error == .network ? ErrorView(text: "NoInternet") : ErrorView(text: "ServerError")
                 }
             }
             .safeAreaInset(edge: .bottom) {
-                CarrierFilterButtonView(filter: filter)
+                CarrierFilterButtonView(filter: context.filter)
             }
             .safeAreaInset(edge: .top) {
-                CarrierRouteHeaderView(route: route)
+                CarrierRouteHeaderView(route: context.route)
             }
             .padding(.horizontal, 16)
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 NavigationBackButtonView(action: {
-                    filter.isApplied = false
+                    context.filter.isApplied = false
                 })
             }
         }
         .navigationBarBackButtonHidden(true)
         .task {
-            if !filter.isApplied {
-                await context.load(route: route)
+            if !context.filter.isApplied {
+                await context.load()
             }
         }
     }
