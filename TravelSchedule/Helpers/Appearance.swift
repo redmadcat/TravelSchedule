@@ -7,6 +7,6 @@
 
 enum Appearance: Int, CaseIterable {
     case system = 0
-    case light = 1
-    case dark = 2
+    case light
+    case dark
 }
