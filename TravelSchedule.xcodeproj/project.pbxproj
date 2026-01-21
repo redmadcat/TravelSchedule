@@ -24,7 +24,6 @@
 		941E928B2EF936F300327652 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E928A2EF936EE00327652 /* StationView.swift */; };
 		941E92992EF93C7700327652 /* SettlementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92972EF93C6F00327652 /* SettlementViewModel.swift */; };
 		941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E929A2EF93CDF00327652 /* SettlementBuilder.swift */; };
-		941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92C62EF97A1900327652 /* RouterViewModel.swift */; };
 		941E92EA2EFA94C100327652 /* SettlementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92E92EFA94C100327652 /* SettlementListView.swift */; };
 		941E92FA2EFA9FE500327652 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */; };
 		9428D1622EE9EA3700D197E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */; };
@@ -124,7 +123,6 @@
 		941E928A2EF936EE00327652 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
 		941E92972EF93C6F00327652 /* SettlementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementViewModel.swift; sourceTree = "<group>"; };
 		941E929A2EF93CDF00327652 /* SettlementBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementBuilder.swift; sourceTree = "<group>"; };
-		941E92C62EF97A1900327652 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		941E92E92EFA94C100327652 /* SettlementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementListView.swift; sourceTree = "<group>"; };
 		941E92F92EFA9FE500327652 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 		9428D1612EE9EA3700D197E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -469,7 +467,6 @@
 				944309D82EF018AE00AA53FF /* RoutePickerView.swift */,
 				944309DA2EF0198A00AA53FF /* RouteFinderView.swift */,
 				94A94AB92EF2D2C900824913 /* RouteEndpoint.swift */,
-				941E92C62EF97A1900327652 /* RouterViewModel.swift */,
 				94A94A672EF2AF7000824913 /* Router.swift */,
 			);
 			path = Route;
@@ -711,7 +708,6 @@
 				944309D52EF017AF00AA53FF /* SettingsView.swift in Sources */,
 				941E92FA2EFA9FE500327652 /* ProgressLoadingView.swift in Sources */,
 				94BB4CBA2F1A18AA007EA2A8 /* CarrierFilterButtonView.swift in Sources */,
-				941E92C72EF97A2000327652 /* RouterViewModel.swift in Sources */,
 				9461FFB02ECF4A190083B7D9 /* ThreadServiceProtocol.swift in Sources */,
 				948C40482F1E3C67008B9C89 /* Story.swift in Sources */,
 				941E92EA2EFA94C100327652 /* SettlementListView.swift in Sources */,
