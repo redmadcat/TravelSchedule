@@ -14,7 +14,7 @@ struct CarrierPlaceholderView: View {
     var body: some View {
         Image(systemName: "train.side.front.car")
             .resizable()
-            .padding(.all, 3)
+            .padding(3)
             .scaledToFit()
             .foregroundStyle(.ypGray)
             .frame(width: width, height: height)
