@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScheduleView: View {
-    @State var route: Route
+    @State private var route = Route()
     
     var body: some View {
         VStack {
@@ -45,5 +45,5 @@ struct ScheduleView: View {
 }
 
 #Preview {
-    ScheduleView(route: Route())
+    ScheduleView()
 }
