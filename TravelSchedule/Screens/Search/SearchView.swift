@@ -30,7 +30,7 @@ struct SearchView: View {
             
             if !request.isEmpty {
                 Button(action: {
-                    request = ""
+                    request = .empty
                 }) {
                     Image(systemName: "xmark.circle.fill")
                         .resizable()
