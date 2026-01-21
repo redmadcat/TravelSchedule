@@ -12,7 +12,7 @@ struct SettingsView: View {
     @State var themeSelector = false
     
     init() {
-        _themeSelector = .init(initialValue: themeManager.selectedAppearance == .dark ? true : false)
+        _themeSelector = .init(initialValue: themeManager.selectedAppearance == .dark)
     }
     
     var body: some View {
