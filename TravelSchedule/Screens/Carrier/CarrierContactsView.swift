@@ -42,9 +42,11 @@ struct CarrierContactsView: View {
                     .padding(.top, 16)
                     .padding(.bottom, 16)
                          
-                CarrierContactsInfoView(type: "Email", contact: carrier.email ?? .dash, url: URL(string: "mailto:\(String(describing: carrier.email))")!)
+                CarrierContactsInfoView(type: "Email", contact: carrier.email ?? .dash,
+                                        url: URL(string: "mailto:\(String(describing: carrier.email))")!)
                 
-                CarrierContactsInfoView(type: "PhoneNumber", contact: carrier.phone ?? .dash, url: URL(string: "tel:\(String(describing: carrier.phone))")!)
+                CarrierContactsInfoView(type: "PhoneNumber", contact: carrier.phone ?? .dash,
+                                        url: URL(string: "tel:\(String(describing: carrier.phone))")!)
                                 
                 Spacer()
             }
