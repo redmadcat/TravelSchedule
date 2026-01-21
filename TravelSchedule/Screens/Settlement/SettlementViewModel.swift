@@ -8,16 +8,26 @@
 import SwiftUI
 
 @Observable
-final class SettlementViewModel: RouterViewModel {
+final class SettlementViewModel {
     private let country = "Россия"
     private let service: StationsServiceProtocol
+    private var settlementsRaw: [Settlement] = []
     var isBusy: Bool = false
-    var settlements: [Settlement] = []
+    var request: String = .empty
+    var direction: Route.Direction
     var status: APIResponseStatus = .default
-    
-    init(router: Router, service: StationsServiceProtocol) {
+    var settlements: [Settlement] {
+        request.isEmpty ?
+            settlementsRaw :
+            settlementsRaw.filter {
+                guard let title = $0.title else { return false }
+                return title.localizedCaseInsensitiveContains(request)
+            }
+    }
+            
+    init(direction: Route.Direction, service: StationsServiceProtocol) {
         self.service = service
-        super.init(router: router)
+        self.direction = direction
     }
     
     func load() async {
@@ -31,7 +41,7 @@ final class SettlementViewModel: RouterViewModel {
                 if let regions = result.regions {
                     // Fetched most appropriate regions for test purpose
                     if let regionMsk = regions[37].settlements, let regionSpb = regions[53].settlements {
-                        settlements = regionMsk + regionSpb
+                        settlementsRaw = regionMsk + regionSpb
                             .filter {
                                 guard let title = $0.title else { return false }
                                 return !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty

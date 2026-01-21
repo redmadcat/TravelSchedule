@@ -9,17 +9,6 @@ import SwiftUI
 
 struct SettlementView: View {
     @State var context: SettlementViewModel
-    @State private var request: String = ""
-    var direction: Route.Direction
-    
-    private var settlements: [Settlement] {
-        request.isEmpty ?
-            context.settlements :
-            context.settlements.filter {
-                guard let title = $0.title else { return false }
-                return title.localizedCaseInsensitiveContains(request)
-            }
-    }
     
     var body: some View {
         VStack {
@@ -28,12 +17,12 @@ struct SettlementView: View {
                 ProgressLoadingView()
             case .success, .default:
                 VStack {
-                    settlements.isEmpty ?
+                    context.settlements.isEmpty ?
                         AnyView(SearchStubView(text: "SettlementNotFound")) :
-                        AnyView(SettlementListView(settlements: settlements, direction: direction))
+                        AnyView(SettlementListView(settlements: context.settlements, direction: context.direction))
                 }
                 .safeAreaInset(edge: .top) {
-                    SearchView(request: $request)
+                    SearchView(request: $context.request)
                         .background(.ypWhiteAD)
                 }
             case .failure(let error):
