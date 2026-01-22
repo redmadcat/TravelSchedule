@@ -5,7 +5,15 @@
 //  Created by Roman Yaschenkov on 20.11.2025.
 //
 
-final class SearchService: BaseService, SearchServiceProtocol {
+final class SearchService: SearchServiceProtocol {
+    let client: Client
+    let apiKey: String
+    
+    init(client: Client, apiKey: String) {
+        self.client = client
+        self.apiKey = apiKey
+    }
+    
     // MARK: - SearchServiceProtocol
     func search(from: String, to: String) async throws -> [Segment] {
         var segments: [Segment] = []

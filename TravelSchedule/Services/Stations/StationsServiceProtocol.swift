@@ -7,6 +7,6 @@
 
 typealias AllStationsResponse = Components.Schemas.AllStationsResponse
 
-protocol StationsServiceProtocol {
+protocol StationsServiceProtocol: Sendable {
     func getAllStations() async throws -> [Settlement]
 }

@@ -7,8 +7,15 @@
 
 import Foundation
 
-final class StationsService: BaseService, StationsServiceProtocol {
+final class StationsService: StationsServiceProtocol {
+    let client: Client
+    let apiKey: String
     private let country = "Россия"
+    
+    init(client: Client, apiKey: String) {
+        self.client = client
+        self.apiKey = apiKey
+    }
     
     func getAllStations() async throws -> [Settlement] {
         let response = try await client.getAllStations(query: .init(apikey: apiKey))

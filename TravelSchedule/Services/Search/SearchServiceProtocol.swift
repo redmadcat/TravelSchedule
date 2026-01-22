@@ -7,6 +7,6 @@
 
 typealias Segments = Components.Schemas.Segments
 
-protocol SearchServiceProtocol {
+protocol SearchServiceProtocol: Sendable {
     func search(from: String, to: String) async throws -> [Segment]
 }
