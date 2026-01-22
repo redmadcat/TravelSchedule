@@ -23,9 +23,9 @@ actor TimetableService: TimetableServiceProtocol {
             .getNearestStations(lat: lat, lng: lng, distance: distance)
     }
     
-    func search(from: String, to: String) async throws -> [Segment] {
+    func search(from: String, to: String, date: String?, transfers: Bool? = true) async throws -> [Segment] {
         try await SearchService(client: client, apiKey: apiKey)
-            .search(from: from, to: to)
+            .search(from: from, to: to, date: date, transfers: transfers)
     }
     
     func getStationSchedule(station: String) async throws -> ScheduleResponse {
