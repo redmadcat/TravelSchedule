@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94047D272F21ED890017481C /* StoriesRibbonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94047D262F21ED820017481C /* StoriesRibbonViewModel.swift */; };
+		94047D2D2F21F9080017481C /* StoriesProgressBar+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94047D2C2F21F8F40017481C /* StoriesProgressBar+Timer.swift */; };
+		94047D342F21FB520017481C /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94047D332F21FB4D0017481C /* StoriesViewModel.swift */; };
 		9407EA392F03F93C006BFADF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EA382F03F934006BFADF /* Route.swift */; };
 		9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EADC2F0B0D36006BFADF /* SearchStubView.swift */; };
 		9407EAE52F0BD341006BFADF /* CarrierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407EAE42F0BD341006BFADF /* CarrierView.swift */; };
@@ -106,6 +109,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94047D262F21ED820017481C /* StoriesRibbonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesRibbonViewModel.swift; sourceTree = "<group>"; };
+		94047D2C2F21F8F40017481C /* StoriesProgressBar+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoriesProgressBar+Timer.swift"; sourceTree = "<group>"; };
+		94047D332F21FB4D0017481C /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
 		9407EA382F03F934006BFADF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		9407EADC2F0B0D36006BFADF /* SearchStubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStubView.swift; sourceTree = "<group>"; };
 		9407EAE42F0BD341006BFADF /* CarrierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierView.swift; sourceTree = "<group>"; };
@@ -312,9 +318,12 @@
 		948C40462F1E3C12008B9C89 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				94047D262F21ED820017481C /* StoriesRibbonViewModel.swift */,
 				94847B8A2F1F8E6A00265BAD /* StoriesRibbonView.swift */,
 				948C408B2F1E80DB008B9C89 /* StoriesProgressBar.swift */,
+				94047D2C2F21F8F40017481C /* StoriesProgressBar+Timer.swift */,
 				948C40822F1E6788008B9C89 /* StoriesTabView.swift */,
+				94047D332F21FB4D0017481C /* StoriesViewModel.swift */,
 				948C40572F1E4D5D008B9C89 /* StoriesView.swift */,
 				948C40472F1E3C63008B9C89 /* Story.swift */,
 				948C40642F1E5175008B9C89 /* StoryView.swift */,
@@ -669,6 +678,7 @@
 				94BB4CB72F1A14F7007EA2A8 /* CarrierRouteHeaderView.swift in Sources */,
 				948B3F0D2F20D06F007DB64F /* StationViewModel.swift in Sources */,
 				9461FFC22ED44B2F0083B7D9 /* CarrierService.swift in Sources */,
+				94047D342F21FB520017481C /* StoriesViewModel.swift in Sources */,
 				941E929B2EF93CE600327652 /* SettlementBuilder.swift in Sources */,
 				9461FF932ECF2D840083B7D9 /* SearchService.swift in Sources */,
 				944309DB2EF0199200AA53FF /* RouteFinderView.swift in Sources */,
@@ -702,6 +712,7 @@
 				94E005A12F16210C00F576F1 /* ExtensionSegment.swift in Sources */,
 				9461FFA62ECF41300083B7D9 /* ScheduleService.swift in Sources */,
 				948C40442F1E3001008B9C89 /* ExtensionAppearance.swift in Sources */,
+				94047D272F21ED890017481C /* StoriesRibbonViewModel.swift in Sources */,
 				94A523532F14D04700E53B62 /* CarrierRowView.swift in Sources */,
 				945F7AE52ED6E8E90009DB67 /* ISO8601Coder.swift in Sources */,
 				948C3FBD2F1D5C54008B9C89 /* UserAgreementView.swift in Sources */,
@@ -726,6 +737,7 @@
 				94E005BD2F16388600F576F1 /* ExtensionString.swift in Sources */,
 				941E92822EF92DC700327652 /* SettlementRowView.swift in Sources */,
 				94BB4CC22F1A1F14007EA2A8 /* CarrierFilterButtonApplyView.swift in Sources */,
+				94047D2D2F21F9080017481C /* StoriesProgressBar+Timer.swift in Sources */,
 				948C408C2F1E80EF008B9C89 /* StoriesProgressBar.swift in Sources */,
 				94A94ABC2EF2D3E000824913 /* SettlementView.swift in Sources */,
 				9407EADD2F0B0D36006BFADF /* SearchStubView.swift in Sources */,
