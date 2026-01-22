@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 @Observable
 final class SettlementViewModel {
     private let service: StationsServiceProtocol

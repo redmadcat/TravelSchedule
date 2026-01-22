@@ -6,6 +6,7 @@
 //
 
 final class StationBuilder {
+    @MainActor
     func build(settlement: Settlement, direction: Route.Direction) -> StationView {
         let context = StationViewModel(settlement: settlement, direction: direction)
         return StationView(context: context)

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 @Observable
 final class StoriesViewModel {
     let stories: [Story]

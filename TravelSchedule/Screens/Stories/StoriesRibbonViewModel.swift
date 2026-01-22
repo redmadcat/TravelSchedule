@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 @Observable
 final class StoriesRibbonViewModel {
     var stories: [Story] = MockStories.stories

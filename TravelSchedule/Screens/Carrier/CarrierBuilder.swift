@@ -9,6 +9,7 @@ import SwiftUI
 import OpenAPIURLSession
 
 final class CarrierBuilder {
+    @MainActor
     func build(route: Route) -> CarrierView {
         let client = Client(
             serverURL: try! Servers.Server1.url(),

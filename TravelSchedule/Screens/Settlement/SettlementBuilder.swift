@@ -9,6 +9,7 @@ import SwiftUI
 import OpenAPIURLSession
 
 final class SettlementBuilder {
+    @MainActor 
     func build(direction: Route.Direction) -> SettlementView {
         let client = Client(
             serverURL: try! Servers.Server1.url(),

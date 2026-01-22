@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 @Observable
 final class CarrierViewModel {
     private let service: SearchServiceProtocol
