@@ -8,7 +8,7 @@
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-actor TimetableService:  TimetableServiceProtocol {
+actor TimetableService: TimetableServiceProtocol {
     private(set) var client: Client
     private(set) var apiKey: String
     
