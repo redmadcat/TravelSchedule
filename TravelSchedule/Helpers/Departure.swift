@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Departure: String, CaseIterable, Identifiable {
+enum Departure: String, CaseIterable, Identifiable, Sendable {
     case morning = "Morning"
     case day = "Day"
     case evening = "Evening"

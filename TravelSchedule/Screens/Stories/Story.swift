@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Story: Identifiable {
+struct Story: Identifiable, Sendable {
     let id: UUID = UUID()
     var visited: Bool
     let image: Image
