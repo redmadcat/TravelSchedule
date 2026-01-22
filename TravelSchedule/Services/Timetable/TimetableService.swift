@@ -23,7 +23,7 @@ actor TimetableService:  TimetableServiceProtocol {
             .getNearestStations(lat: lat, lng: lng, distance: distance)
     }
     
-    func search(from: String, to: String) async throws -> Segments {
+    func search(from: String, to: String) async throws -> [Segment] {
         try await SearchService(client: client, apiKey: apiKey)
             .search(from: from, to: to)
     }
