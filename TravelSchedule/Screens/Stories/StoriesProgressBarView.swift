@@ -1,5 +1,5 @@
 //
-//  StoriesProgressBar.swift
+//  StoriesProgressBarView.swift
 //  TravelSchedule
 //
 //  Created by Roman Yaschenkov on 19.01.2026.
@@ -8,12 +8,12 @@
 import SwiftUI
 import Combine
 
-struct StoriesProgressBar: View {
-    let storiesCount: Int
-    let timerConfiguration: TimerConfiguration
-    @Binding var currentProgress: CGFloat
+struct StoriesProgressBarView: View {
+    @Binding private var currentProgress: CGFloat
     @State private var timer: Timer.TimerPublisher
     @State private var cancellable: Cancellable?
+    private let storiesCount: Int
+    private let timerConfiguration: TimerConfiguration
     
     init(storiesCount: Int, timerConfiguration: TimerConfiguration, currentProgress: Binding<CGFloat>) {
         self.storiesCount = storiesCount
@@ -44,8 +44,3 @@ struct StoriesProgressBar: View {
     }
 }
 
-extension StoriesProgressBar {
-    private static func makeTimer(configuration: TimerConfiguration) -> Timer.TimerPublisher {
-        Timer.publish(every: configuration.timerTickInternal, on: .main, in: .common)
-    }
-}

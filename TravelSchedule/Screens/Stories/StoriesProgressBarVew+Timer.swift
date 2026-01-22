@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension StoriesProgressBar {
+extension StoriesProgressBarView {
     static func makeTimer(configuration: TimerConfiguration) -> Timer.TimerPublisher {
         Timer.publish(every: configuration.timerTickInternal, on: .main, in: .common)
     }
