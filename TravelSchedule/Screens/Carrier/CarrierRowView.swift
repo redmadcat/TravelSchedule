@@ -21,7 +21,7 @@ struct CarrierRowView: View {
                     
                     Spacer()
                     
-                    Text(segment.fakeDepartureDate)
+                    Text(segment.departureDay)
                         .font(.system(size: 12, weight: .regular))
                         .foregroundStyle(.ypBlack)
                 }

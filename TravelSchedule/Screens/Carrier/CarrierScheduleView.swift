@@ -12,13 +12,13 @@ struct CarrierScheduleView: View {
     
     var body: some View {
         HStack(spacing: 5) {
-            Text(segment.fakeDepartureTime)
+            Text(segment.departureTime)
                 .font(.system(size: 17, weight: .regular))
                 .foregroundStyle(.ypBlack)
             Rectangle()
                 .frame(height: 1)
                 .foregroundStyle(.ypGray)
-            Text("\(segment.durationFromFakeDeparture) hours")
+            Text("\(segment.durationHours) hours")
                 .font(.system(size: 12, weight: .regular))
                 .foregroundStyle(.ypBlack)
             Rectangle()

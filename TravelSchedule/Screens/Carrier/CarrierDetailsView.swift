@@ -17,7 +17,7 @@ struct CarrierDetailsView: View {
                 .font(.system(size: 17, weight: .regular))
                 .foregroundStyle(.ypBlack)
             
-            if segment.fakeHasTransfers {
+            if segment.hasTransfers {
                 Text(NSLocalizedString("HasTransfer", comment: .empty))
                     .lineLimit(1)
                     .font(.system(size: 12, weight: .regular))
