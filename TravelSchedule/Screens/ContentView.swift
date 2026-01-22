@@ -66,7 +66,7 @@ struct ContentView: View {
                 let nearestStations = try await timetableService.getNearestStations(lat: 59.864177, lng: 30.319163, distance: 50)
                 print("Successfully fetched stations:\n\(nearestStations)")
 
-                let search = try await timetableService.search(from: "c146", to: "c213")
+                let search = try await timetableService.search(from: "c146", to: "c213", date: nil)
                 print("Successfully fetched search:\n\(search)")
                 
                 let schedule = try await timetableService.getStationSchedule(station: "s9600213")
