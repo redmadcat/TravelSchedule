@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 @Observable
 final class CarrierFilter: Hashable {
     var departures: Set<Departure> = []
@@ -48,11 +49,11 @@ final class CarrierFilter: Hashable {
         return self.transfers == transfers
     }
     
-    static func == (lhs: CarrierFilter, rhs: CarrierFilter) -> Bool {
+    nonisolated static func == (lhs: CarrierFilter, rhs: CarrierFilter) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
     
-    func hash(into hasher: inout Hasher) {
+    nonisolated func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }
     

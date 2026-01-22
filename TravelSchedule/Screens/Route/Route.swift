@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+@MainActor
 @Observable
 final class Route {
     var isValid = false
     private(set) var from = Direction()
     private(set) var to = Direction()
     
+    @MainActor
     @Observable
     final class Direction {
         private(set) var settlement: Settlement?
