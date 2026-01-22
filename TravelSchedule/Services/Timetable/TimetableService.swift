@@ -8,7 +8,15 @@
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-final class TimetableService: BaseService, TimetableServiceProtocol {
+actor TimetableService:  TimetableServiceProtocol {
+    private(set) var client: Client
+    private(set) var apiKey: String
+    
+    init(client: Client, apiKey: String) {
+        self.client = client
+        self.apiKey = apiKey
+    }
+    
     // MARK: - TimetableServiceProtocol
     func getNearestStations(lat: Double, lng: Double, distance: Int) async throws -> NearestStations {
         try await NearestStationsService(client: client, apiKey: apiKey)
@@ -37,7 +45,7 @@ final class TimetableService: BaseService, TimetableServiceProtocol {
         try await CarrierService(client: client, apiKey: apiKey).getCarrierInfo(code: code)
     }
     
-    func getAllStations() async throws -> AllStationsResponse {
+    func getAllStations() async throws -> [Settlement] {
         try await StationsService(client: client, apiKey: apiKey).getAllStations()
     }
     
