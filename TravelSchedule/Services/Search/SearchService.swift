@@ -7,12 +7,21 @@
 
 final class SearchService: BaseService, SearchServiceProtocol {
     // MARK: - SearchServiceProtocol
-    func search(from: String, to: String) async throws -> Segments {
+    func search(from: String, to: String) async throws -> [Segment] {
+        var segments: [Segment] = []
         let response = try await client.getSchedualBetweenStations(query: .init(
             apikey: apiKey,
             from: from,
             to: to
         ))
-        return try response.ok.body.json
+                
+        let result = try response.ok.body.json
+        
+        for segment in result.segments ?? [] {
+            let result = MockDataConverter.convert(segment: segment)
+            segments.append(result)
+        }
+            
+        return segments
     }
 }

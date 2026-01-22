@@ -8,5 +8,5 @@
 typealias Segments = Components.Schemas.Segments
 
 protocol SearchServiceProtocol {
-    func search(from: String, to: String) async throws -> Segments
+    func search(from: String, to: String) async throws -> [Segment]
 }
