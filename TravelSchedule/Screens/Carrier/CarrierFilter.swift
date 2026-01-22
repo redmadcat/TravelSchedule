@@ -27,12 +27,12 @@ final class CarrierFilter: Hashable {
     }
     
     func apply(_ segment: Segment) -> Bool {
-        let time = departures.contains { $0.isInBetween(departure: segment.departure ?? Date()) }
+        let time = departures.contains { $0.isInBetween(departure: segment.departureDate) }
         
         let transfer: Bool = {
             switch transfers {
-            case .yes: return segment.fakeHasTransfers
-            case .no: return !segment.fakeHasTransfers
+            case .yes: return segment.hasTransfers
+            case .no: return !segment.hasTransfers
             default:
                 return false
             }
