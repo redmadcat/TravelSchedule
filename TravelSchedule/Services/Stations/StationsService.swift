@@ -8,7 +8,9 @@
 import Foundation
 
 final class StationsService: BaseService, StationsServiceProtocol {
-    func getAllStations() async throws -> AllStationsResponse {
+    private let country = "Россия"
+    
+    func getAllStations() async throws -> [Settlement] {
         let response = try await client.getAllStations(query: .init(apikey: apiKey))
         
         let responseBody = try response.ok.body.text_html_charset_utf_hyphen_8
@@ -17,6 +19,20 @@ final class StationsService: BaseService, StationsServiceProtocol {
         let fullData = try await Data(collecting: responseBody, upTo: limit)
     
         let allStations = try JSONDecoder().decode(AllStationsResponse.self, from: fullData)
-        return allStations
+                
+        if let result = allStations.countries?.filter({ $0.title == country }).first {
+            if let regions = result.regions {
+                // Fetched most appropriate regions for test purpose
+                if let regionMsk = regions[37].settlements, let regionSpb = regions[53].settlements {
+                    return regionMsk + regionSpb
+                        .filter {
+                            guard let title = $0.title else { return false }
+                            return !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+                        }
+                }
+            }
+        }
+        
+        return []
     }
 }
