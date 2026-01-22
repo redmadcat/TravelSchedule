@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 final class ThemeManager {
     static let shared = ThemeManager()
     
