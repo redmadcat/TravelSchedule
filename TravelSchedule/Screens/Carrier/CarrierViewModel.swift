@@ -11,6 +11,12 @@ import SwiftUI
 @Observable
 final class CarrierViewModel {
     private let service: SearchServiceProtocol
+    private var date: String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ru_RU")
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.string(from: Date())
+    }
     private var segmentsRaw: [Segment] = []
     let route: Route
     var status: APIResponseStatus = .default
@@ -32,14 +38,12 @@ final class CarrierViewModel {
               let toStationCode = route.to.station?.codes?.yandex_code else {
             return
         }
-                
+                                
         do {
             status = .loading
-            segmentsRaw = try await service.search(from: fromStationCode, to: toStationCode).sorted { lhs, rhs in
-                if let ldep = lhs.departure, let rdep = rhs.departure {
-                    if ldep != rdep {
-                        return ldep < rdep
-                    }
+            segmentsRaw = try await service.search(from: fromStationCode, to: toStationCode, date: date, transfers: true).sorted { lhs, rhs in
+                if lhs.departureDate != rhs.departureDate {
+                    return lhs.departureDate < rhs.departureDate
                 }
                 return false
             }
