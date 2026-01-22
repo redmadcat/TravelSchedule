@@ -8,25 +8,21 @@
 import SwiftUI
 
 struct StoriesRibbonView: View {
-    @State private var stories: [Story] = MockStories.stories
-    @State private var selectedStory: Story?
+    @State var context: StoriesRibbonViewModel
     
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack(spacing: 12) {
-                ForEach(stories) { story in
+                ForEach(context.stories) { story in
                     StoryPreviewView(story: story)
                         .onTapGesture {
-                            selectedStory = story
+                            context.selectedStory = story
                         }
-                        .fullScreenCover(item: $selectedStory) { story in
+                        .fullScreenCover(item: $context.selectedStory) { story in
                             ZStack(alignment: .topTrailing) {
-                                StoriesView(stories: story.stories)
+                                StoriesView(context: StoriesViewModel(stories: story.stories))
                                 Button(String.empty, image: .close) {
-                                    if let index = stories.firstIndex(where: { $0.id == story.id }) {
-                                        stories[index].visited = true
-                                    }
-                                    selectedStory = nil
+                                    context.visited(story)
                                 }
                                 .padding(.top, 57)
                                 .padding(.trailing, 16)
@@ -42,5 +38,5 @@ struct StoriesRibbonView: View {
 }
 
 #Preview {
-    StoriesRibbonView()
+    StoriesRibbonView(context: StoriesRibbonViewModel())
 }
