@@ -12,7 +12,6 @@ final class CarrierViewModel {
     private let service: SearchServiceProtocol
     private var segmentsRaw: [Segment] = []
     let route: Route
-    var isBusy: Bool = false
     var status: APIResponseStatus = .default
     var filter: CarrierFilter
     var segments: [Segment] {
@@ -28,8 +27,6 @@ final class CarrierViewModel {
     }
     
     func load() async  {
-        defer { isBusy = false }
-        
         guard let fromStationCode = route.from.station?.codes?.yandex_code,
               let toStationCode = route.to.station?.codes?.yandex_code else {
             return
@@ -37,16 +34,7 @@ final class CarrierViewModel {
                 
         do {
             status = .loading
-            isBusy = true
-                                    
-            let response = try await service.search(from: fromStationCode, to: toStationCode)
-                        
-            for segment in response.segments ?? [] {
-                let result = MockDataConverter.convert(segment: segment)
-                segmentsRaw.append(result)
-            }
-            
-            self.segmentsRaw = segments.sorted { lhs, rhs in
+            segmentsRaw = try await service.search(from: fromStationCode, to: toStationCode).sorted { lhs, rhs in
                 if let ldep = lhs.departure, let rdep = rhs.departure {
                     if ldep != rdep {
                         return ldep < rdep
