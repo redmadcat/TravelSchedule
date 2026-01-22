@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct StoriesTabView: View {
-    let stories: [Story]
     @Binding var currentStoryIndex: Int
-    
+    let stories: [Story]
+        
     var body: some View {
         TabView(selection: $currentStoryIndex) {
             ForEach(stories.indices, id: \.self) { index in
