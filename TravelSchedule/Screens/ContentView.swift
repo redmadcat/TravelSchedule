@@ -81,7 +81,7 @@ struct ContentView: View {
                 let carrier = try await timetableService.getCarrierInfo(code: "63438")
                 print("Successfully fetched carrier:\n\(carrier)")
                 
-                let allStations = try await timetableService.getAllStations().countries?.count
+                let allStations = try await timetableService.getAllStations().count
                 print("Successfully fetched allStations count:\n\(String(describing: allStations))")
                                                                 
                 let copyright = try await timetableService.getCopyright()
