@@ -10,15 +10,21 @@ import OpenAPIURLSession
 
 final class SettlementBuilder {
     @MainActor 
-    func build(direction: Route.Direction) -> SettlementView {
-        let client = Client(
-            serverURL: try! Servers.Server1.url(),
-            configuration: .init(dateTranscoder: ISO8601Coder()),
-            transport: URLSessionTransport()
-        )
-        
-        let service = TimetableService(client: client, apiKey: Auth.apiKey)
-        let context = SettlementViewModel(direction: direction, service: service)
-        return SettlementView(context: context)
+    func build(direction: Route.Direction) -> SettlementView? {
+        do {
+            let client = Client(
+                serverURL: try Servers.Server1.url(),
+                configuration: .init(dateTranscoder: ISO8601Coder()),
+                transport: URLSessionTransport()
+            )
+            
+            let service = TimetableService(client: client, apiKey: Auth.apiKey)
+            let context = SettlementViewModel(direction: direction, service: service)
+            return SettlementView(context: context)
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
+
     }
 }
