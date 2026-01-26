@@ -6,8 +6,8 @@
 //
 
 final class SearchService: SearchServiceProtocol {
-    let client: Client
-    let apiKey: String
+    private let client: Client
+    private let apiKey: String
     
     init(client: Client, apiKey: String) {
         self.client = client
@@ -25,8 +25,6 @@ final class SearchService: SearchServiceProtocol {
         ))
                 
         let result = try response.ok.body.json
-        print(result.segments ?? [])
-        
         return result.segments ?? []
     }
 }
