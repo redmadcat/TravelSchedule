@@ -12,7 +12,7 @@ struct ScheduleView: View {
     
     var body: some View {
         VStack {
-            StoriesRibbonView(context: StoriesRibbonViewModel())
+            StoriesRibbonView()
                 .padding(.init(top: 24, leading: 0, bottom: 24, trailing: 0))
             
             RouteFinderView(route: route)

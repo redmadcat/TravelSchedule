@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoriesRibbonView: View {
-    @State var context: StoriesRibbonViewModel
+    @State private var context = StoriesRibbonViewModel()
     
     var body: some View {
         ScrollView(.horizontal) {
@@ -38,5 +38,5 @@ struct StoriesRibbonView: View {
 }
 
 #Preview {
-    StoriesRibbonView(context: StoriesRibbonViewModel())
+    StoriesRibbonView()
 }
