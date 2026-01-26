@@ -11,6 +11,9 @@ final class StationsService: StationsServiceProtocol {
     let client: Client
     let apiKey: String
     private let country = "Россия"
+    private var decoder: JSONDecoder {
+        JSONDecoder()
+    }
     
     init(client: Client, apiKey: String) {
         self.client = client
@@ -25,7 +28,7 @@ final class StationsService: StationsServiceProtocol {
         let limit = 50 * 1024 * 1024
         let fullData = try await Data(collecting: responseBody, upTo: limit)
     
-        let stationsResponse = try JSONDecoder().decode(AllStationsResponse.self, from: fullData)
+        let stationsResponse = try decoder.decode(AllStationsResponse.self, from: fullData)
                             
         guard let result = stationsResponse.countries?.filter({ $0.title == country }).first else { return [] }
         if let regions = result.regions {
