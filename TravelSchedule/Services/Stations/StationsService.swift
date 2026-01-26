@@ -8,12 +8,10 @@
 import Foundation
 
 final class StationsService: StationsServiceProtocol {
-    let client: Client
-    let apiKey: String
+    private let client: Client
+    private let apiKey: String
     private let country = "Россия"
-    private var decoder: JSONDecoder {
-        JSONDecoder()
-    }
+    private let decoder = JSONDecoder()
     
     init(client: Client, apiKey: String) {
         self.client = client
